@@ -1,0 +1,4 @@
+{"tip": "alindi", "acik_id": "A-02", "gpt": "gemini_ag1"}
+{"tip": "kabul", "denetleyen": "gemini_ag1", "sonuc": "KABUL", "ayni": 9, "farkli": 0, "yok": 0, "fazla": 0}
+{"tip": "alindi", "acik_id": "A-24", "gpt": "gemini_ag1"}
+{"tip": "kapi", "ad": "Kapi Evreni 7 alan adi canli yayin makbuzu", "girdi": "afair studio, afair live, selinahbap, ertanaraz ve 3 yan konsept", "sonuc": "7 ozel alan adinda kapi-evreni dizini ve uzanti listesi acilir", "kabul": "7 alan adinda HTTP 200 ve selftest FAIL sayisi 0", "gpt": "gemini_ag1", "acik_id": "A-24", "utc": "2026-11-24T21:54:00Z"}

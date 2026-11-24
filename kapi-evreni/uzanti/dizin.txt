@@ -1,0 +1,5 @@
+# Kapı Evreni uzantı dizini. Her satır uzanti/ altındaki bir .jsonl dosyasının adıdır.
+# Yalnızca sona satır eklenir; başka satıra dokunulmaz. Boş ve # ile başlayan satırlar atlanır.
+science_001.jsonl
+gemini_ag1_001.jsonl
+dila_senkron_001.jsonl
