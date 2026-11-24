@@ -1,0 +1,25 @@
+{
+  "schema": "atasehir.ucyon.v1",
+  "method": "Original schematic 3D mesh, cubic Bezier scene paths. No Google Maps/Earth, map tiles, street panoramas or georeferenced navigation.",
+  "blocks": "Three virtual launch towers; not a complete as-built project model.",
+  "address": {
+    "text": "Atatürk Mahallesi, Gülnihal Sokak, Ataşehir Modern Sitesi, Ataşehir / İstanbul",
+    "source": "https://atasehirmodern.com/iletisim"
+  },
+  "sources": [
+    "https://watergarden.com.tr/iletisim",
+    "https://ifm.gov.tr/b/2/iletisim",
+    "https://istanbulseninhaber.ibb.istanbul/haber-detay/ibb-orhangazi-sehir-parkinda-bir-gun",
+    "https://istanbulseninhaber.ibb.istanbul/haber-detay/19-mayista-maltepedeyiz",
+    "https://www.tmsf.org.tr/File/Download?fileId=931C897D-C64E-4DA7-B4BB-69953538BB60&typeId=1"
+  ],
+  "reference_video": {
+    "source": "User-supplied Genie4a9e6d1c51a64fa385ecab73bca03709.mp4",
+    "published_copy": "referans-ucus.mp4"
+  },
+  "availability": {
+    "connected_calendar": false,
+    "booking_confirmation": false
+  },
+  "pantone": "No physical sample measurement or licensed Pantone equivalence asserted."
+}
