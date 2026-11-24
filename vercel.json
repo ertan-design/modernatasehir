@@ -19,5 +19,12 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "destination": "/",
+      "source": "/modern-atasehir-pilot.html",
+      "permanent": false
+    }
   ]
 }
