@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre &amp; Açık Kapı Motoru</title>
+  <link rel="stylesheet" href="./dila-sinema.css">
+</head>
+<body>
+  <nav class="ust-serit" aria-label="Dila 5 Senkron Önyüz Gezintisi">
+    <a class="dila-chip" href="./index.html">1 · Galeri &amp; Renk Analizi</a>
+    <a class="dila-chip" href="./iki-mezura.html">2 · Evde İki-Mezura</a>
+    <a class="dila-chip" href="./yasam-alani.html">3 · Yan-Yana Ayna</a>
+    <a class="dila-chip" href="./canli-podyum.html">4 · Canlı Sıçrama Podyumu</a>
+    <a class="dila-chip aktif" href="./sinema.html">5 · Sinema &amp; WebGPU 50K</a>
+    <a class="dila-chip" href="/kapi-evreni/">Kapı Evreni (122+Uzantı)</a>
+    <a class="dila-chip" href="https://ertanaraz.com/argon-r23/">Argon r23 Stüdyo</a>
+    <a class="dila-chip" href="https://ertanaraz.com/dila-3d-vr/">3D/VR Uzamsal Sahne</a>
+  </nav>
+
+  <main class="kapsayici">
+    <header class="baslik-kutu">
+      <h1>Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik &amp; Açık Kapılar</h1>
+      <p class="alt-bilgi">İki-Mezura terzi ölçümü ve Siyah-Veto (saf siyah elenerek Gece İndigosu #10192E ve Mulberry #1A1325) mimarisiyle 7 özel alan adında çalışan birleşik sinema gösterimi ve Kapı Evreni A-05 · A-09 · A-10 · A-12 araçları.</p>
+      <div class="rozet-satir">
+        <span class="rozet">Siyah-Veto: Saf Siyah Sayısı 0</span>
+        <span class="rozet">7 Alan Adı Senkron: dila.senkron.v1</span>
+        <span class="rozet">A-12: WebGPU 50.000 Hücre</span>
+        <span class="rozet">A-05: 106 × 7 = 742 Kapı Sicili</span>
+        <span class="rozet">A-09 &amp; A-10: Paket + Uzantı Denetçisi</span>
+      </div>
+    </header>
+
+    <section class="izgara-iki">
+      <article class="kart" id="sinema-bolumu">
+        <h2>1 · Dila Yerel H.264 Sinema Salonu (Sıfır Dış Kaynak, CSP-Temiz)</h2>
+        <p id="film-aciklama">Sahne 1: Yasak Siyah Galeri — Gece İndigosu ve Mulberry ipek yansıma analizi.</p>
+        <video id="dila-video" class="sinema-oynatici" controls playsinline preload="metadata" src="./medya/dila_01_yasak_siyah_galeri.mp4"></video>
+        <div class="dugme-satir" id="film-dugmeleri">
+          <button type="button" class="secili" data-film="0">Sahne 1 · Yasak Siyah Galeri</button>
+          <button type="button" data-film="1">Sahne 2 · Evde İki-Mezura Atölye</button>
+          <button type="button" data-film="2">Sahne 3 · AFAIR Sıçrama Podyumu</button>
+        </div>
+        <div class="metrik-kutu" id="senkron-durum">Senkron kanalı hazır · Aktif sahne: 1/3 · Sekmeler arası BroadcastChannel aktif</div>
+      </article>
+
+      <article class="kart" id="webgpu-bolumu">
+        <h2>2 · Kapı Evreni A-12: WebGPU 50.000 Hücre Kumaş &amp; Kapı Hesaplama</h2>
+        <p>50.000 hücrenin (250 × 200 ipek dokuma ve kapı durumu) WGSL compute shader / tipli dizi geri dönüşü ile hesaplanması.</p>
+        <canvas id="gpu-tuval" class="gpu-tuval" width="500" height="200"></canvas>
+        <div class="dugme-satir">
+          <button type="button" id="btn-gpu-hesapla">50.000 Hücreyi Yeniden Hesapla</button>
+          <button type="button" id="btn-gpu-dalga">İki-Mezura Dalga Tetikle</button>
+        </div>
+        <div class="metrik-kutu" id="gpu-metrik">Hesaplanıyor...</div>
+      </article>
+    </section>
+
+    <section class="izgara-iki">
+      <article class="kart" id="a05-bolumu">
+        <h2>3 · Kapı Evreni A-05: 106 Şablon × 7 Alan Adı Sicil Üreticisi</h2>
+        <p>106 kapı şablonu ile 7 canlı özel alan adını çarparak deterministik kapı sicili satırları üretir (742 gerçek satır).</p>
+        <div class="dugme-satir">
+          <select id="hedef-secim" aria-label="Hedef Alan Adı Filtresi">
+            <option value="TUMU">Tüm 7 Alan Adı (106 × 7 = 742 Kapı)</option>
+            <option value="afair.studio">afair.studio (106 Kapı)</option>
+            <option value="afair.live">afair.live (106 Kapı)</option>
+            <option value="selinahbap.com">selinahbap.com (106 Kapı)</option>
+            <option value="ertanaraz.com">ertanaraz.com (106 Kapı)</option>
+            <option value="modernatasehir.com">modernataşehir.com (106 Kapı)</option>
+            <option value="atasehirmodern.com">ataşehirmodern.com (106 Kapı)</option>
+            <option value="codekafa.com">codekafa.com (106 Kapı)</option>
+          </select>
+          <button type="button" id="btn-a05-uret">Sicil Satırlarını Üret</button>
+        </div>
+        <div class="metrik-kutu" id="a05-metrik">Üretilen satır: 0</div>
+        <textarea id="a05-cikti" rows="5" readonly aria-label="Üretilen Kapı Sicili Önizlemesi"></textarea>
+      </article>
+
+      <article class="kart" id="a09-bolumu">
+        <h2>4 · Kapı Evreni A-09: Yoğun Metin (Boru Ayraçlı) Paket Okuyucusu</h2>
+        <p>Boru (|) ayraçlı arkadaş paketini ayrıştırıp satır ve sütun sayısıyla tabloya dönüştürür.</p>
+        <textarea id="a09-girdi" rows="4" aria-label="Boru Ayraçlı Paket Girdisi">KOD|ISTASYON|KONSEPT|DURUM|KABUL
+K-01|afair.studio|Dila Galeri ve Siyah-Veto|CANLI|HTTP 200
+K-02|afair.live|Evde Iki-Mezura Terzi|CANLI|HTTP 200
+K-03|selinahbap.com|1903 Birlesik Podyum|CANLI|HTTP 200
+K-04|ertanaraz.com|Argon r23 ve 3D VR Sahne|CANLI|HTTP 200</textarea>
+        <div class="dugme-satir">
+          <button type="button" id="btn-a09-coz">Paketi Tabloya Çözümle</button>
+        </div>
+        <div class="metrik-kutu" id="a09-metrik">Satır: 0 · Sütun: 0</div>
+        <div class="tablo-sarmal"><table id="a09-tablo"></table></div>
+      </article>
+    </section>
+
+    <section class="izgara-iki">
+      <article class="kart" id="a10-bolumu">
+        <h2>5 · Kapı Evreni A-10: Canlı Uzantı Doğrulayıcı (/kapi-evreni/uzanti/)</h2>
+        <p>Aynı alan adındaki uzanti/dizin.txt ve .jsonl dosyalarını okuyup RE_RISK kurallarına göre geçerli ve geçersiz satırları ayrı sayar.</p>
+        <div class="dugme-satir">
+          <button type="button" id="btn-a10-denetle">Uzantı Klasörünü Canlı Denetle</button>
+        </div>
+        <div class="metrik-kutu" id="a10-metrik">Denetim bekleniyor...</div>
+        <div class="tablo-sarmal"><table id="a10-tablo"></table></div>
+      </article>
+
+      <article class="kart">
+        <h2>6 · Ekosistemdeki Tüm Canlı Dila Film &amp; 3D Uçları (Çoklu İstasyon)</h2>
+        <p>Codex, Prizma, Claude Terazi, Karbon, Argon ve Gemini istasyonlarının canlıya aldığı tüm video ve 3D sahneler:</p>
+        <ul class="baglanti-liste">
+          <li><a href="https://www.afair.studio/dila-filmler/">afair.studio · Dila Higgsfield Pilot Filmler</a></li>
+          <li><a href="https://www.afair.studio/">afair.studio · 3D Etkileşimli Ana Sahne</a></li>
+          <li><a href="https://www.afair.live/dila-video/">afair.live · Galeride İpek &amp; Terzinin Dokunuşu</a></li>
+          <li><a href="https://www.afair.live/dila-video/galeriden-atolyeye/">afair.live · Galeriden Atölyeye</a></li>
+          <li><a href="https://www.selinahbap.com/birlesik.html">selinahbap.com · Birleşik 13-Slot &amp; 4 Dila Filmi</a></li>
+          <li><a href="https://ertanaraz.com/dila_video.html">ertanaraz.com · RTX 3090 + Higgsfield 6 Film</a></li>
+          <li><a href="https://ertanaraz.com/argon-r23/">ertanaraz.com · Argon r23 Dila Video Stüdyo</a></li>
+          <li><a href="https://ertanaraz.com/dila-3d-vr/">ertanaraz.com · Dila 3D/VR Uzamsal Galeri</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="sinama-kutu" id="selftest-kutu" aria-live="polite">
+      Öz-sınama (?selftest=1 ile ayrıntılı döküm verir): hazırlanıyor...
+    </section>
+  </main>
+
+  <script src="./dila-sinema.js"></script>
+</body>
+</html>

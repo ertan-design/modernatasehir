@@ -3,3 +3,4 @@
 science_001.jsonl
 gemini_ag1_001.jsonl
 dila_senkron_001.jsonl
+gemini_ag1_002.jsonl

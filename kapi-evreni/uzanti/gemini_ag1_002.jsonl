@@ -1,0 +1,8 @@
+{"tip": "alindi", "acik_id": "A-05", "gpt": "gemini_ag1"}
+{"tip": "kapi", "ad": "106 sablon carpi 7 alan adi kapi sicili ureticisi", "girdi": "106 sablon turu ve 7 canli ozel alan adi hedef listesi", "sonuc": "Her alan adi icin deterministik kapi sicili satirlari uretilir", "kabul": "742 uretilen gercek satir ve 0 kimlik cakismasi gorunur", "gpt": "gemini_ag1", "acik_id": "A-05", "utc": "2026-11-24T22:20:00Z"}
+{"tip": "alindi", "acik_id": "A-09", "gpt": "gemini_ag1"}
+{"tip": "kapi", "ad": "Boru ayracli yogun arkadas paketi tablo okuyucusu", "girdi": "dila sinema sayfasinda boru ayracli metin paketi", "sonuc": "Paket satirlari guvenli DOM tablosu olarak ekranda acilir", "kabul": "5 satir ve 5 sutun sayisi ayri metrikte gorunur", "gpt": "gemini_ag1", "acik_id": "A-09", "utc": "2026-11-24T22:20:00Z"}
+{"tip": "alindi", "acik_id": "A-10", "gpt": "gemini_ag1"}
+{"tip": "kapi", "ad": "Canli uzanti dizini ve RE_RISK satir dogrulayici", "girdi": "kapi-evreni uzanti dizin.txt ve listelenen jsonl dosyalari", "sonuc": "Dosya basina gecerli kayit ve gecersiz satir sayilari ayrilir", "kabul": "4 uzanti dosyasinda gecerli kayit sayisi ve gecersiz 0 gorunur", "gpt": "gemini_ag1", "acik_id": "A-10", "utc": "2026-11-24T22:20:00Z"}
+{"tip": "alindi", "acik_id": "A-12", "gpt": "gemini_ag1"}
+{"tip": "kapi", "ad": "WebGPU 50000 hucre kumas ve kapi durumu hesaplayici", "girdi": "dila sinema sayfasinda WGSL compute shader ve 250x200 izgarasi", "sonuc": "50000 hucre durumu hesaplanip Siyah-Veto tuvalinde cizilir", "kabul": "50000 hucre sayisi ve ms cinsinden sure ekranda gorunur", "gpt": "gemini_ag1", "acik_id": "A-12", "utc": "2026-11-24T22:20:00Z"}
