@@ -1,0 +1,587 @@
+/* ==========================================================================
+   DOKUMA UFUK · ATASEHIR MODERN 3-BLOK KANAT UCUSU & BASKA ISTANBUL YOK
+   8 Ayrik Pantone TCX Iplik Sistemi · Sifir Saf Siyah (Saf Siyah = 0)
+   Sifir Camur Gradyan · Sifir Google Maps · Gercek Keten & Ipek Dokuma
+   ========================================================================== */
+:root {
+  --pt-ekru-cozgu: #f3eee5;      /* PANTONE 11-0604 TCX Gardenia (Ham Ipek Cozgu) */
+  --pt-keten-atki: #dfd6c7;      /* PANTONE 13-0905 TCX Birch (Anadolu Keten Atki) */
+  --pt-kagit-parlak: #faf7f1;    /* Kalip Kagidi Acik Dokuma */
+  --pt-gece-indigo: #1d2b44;     /* PANTONE 19-4027 TCX Night Sky (Siyah-Veto Ana Murekkep) */
+  --pt-murdum-ipek: #4f213a;     /* PANTONE 19-2428 TCX Magenta Purple (Blok 1 Arya -> Watergarden) */
+  --pt-kobalt-ifm: #24567e;      /* PANTONE 18-4043 TCX Palace Blue (Blok 2 Beste -> Finanskent) */
+  --pt-terrakota-kiyi: #c46d3b;  /* PANTONE 16-1342 TCX Potter's Clay (Blok 3 Opera -> Maltepe Sahil) */
+  --pt-adacayi-tarim: #5e7458;   /* PANTONE 16-0213 TCX Tea Sage (Tarim Danismani & Parsel) */
+  --pt-pirinc-cetvel: #9e7b3e;   /* PANTONE 15-1040 TCX Brass Stitch (Mezura & Muhur Dikisi) */
+  --pt-soluk-iplik: #596375;     /* Yardimci Etiket Ipligi */
+  --dikis-cizgi: #cfc4b2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--pt-ekru-cozgu);
+  color: var(--pt-gece-indigo);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Ust Dokuma Kenari (Selvedge) Gezinti Kusagi */
+.kenar-serit {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background-color: var(--pt-kagit-parlak);
+  border-bottom: 2px solid var(--pt-gece-indigo);
+  padding: 10px 22px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.marka-damga {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.marka-damga strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: var(--pt-gece-indigo);
+}
+
+.marka-damga span {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 11.5px;
+  color: var(--pt-murdum-ipek);
+  padding: 2px 8px;
+  border: 1px solid var(--dikis-cizgi);
+  background-color: var(--pt-ekru-cozgu);
+}
+
+.gezinti-baglar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.iplik-bag {
+  text-decoration: none;
+  color: var(--pt-gece-indigo);
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 5px 11px;
+  background-color: var(--pt-ekru-cozgu);
+  border: 1px solid var(--dikis-cizgi);
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.iplik-bag:hover,
+.iplik-bag.aktif {
+  background-color: var(--pt-gece-indigo);
+  color: var(--pt-kagit-parlak);
+  border-color: var(--pt-gece-indigo);
+}
+
+/* Ana Sayfa Pafta Duzeni */
+.pafta {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 28px 22px 72px;
+}
+
+/* Manşet Paftası (Editorial Monograph Header) */
+.manset-pafta {
+  background-color: var(--pt-kagit-parlak);
+  border: 1px solid var(--pt-gece-indigo);
+  padding: 28px 30px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.manset-ust-etiket {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--pt-murdum-ipek);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.manset-pafta h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(26px, 3.4vw, 44px);
+  line-height: 1.14;
+  letter-spacing: -0.025em;
+  margin: 0 0 12px;
+  color: var(--pt-gece-indigo);
+}
+
+.manset-aciklama {
+  margin: 0 0 18px;
+  max-width: 980px;
+  font-size: 15.5px;
+  color: var(--pt-soluk-iplik);
+}
+
+/* 8 Ayrik Pantone TCX Bobin Kartelasi */
+.pantone-serit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--dikis-cizgi);
+}
+
+.pantone-kart {
+  border: 1px solid var(--pt-gece-indigo);
+  background-color: var(--pt-kagit-parlak);
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  overflow: hidden;
+}
+
+.pantone-kart:hover,
+.pantone-kart.secili {
+  outline: 2px solid var(--pt-pirinc-cetvel);
+  outline-offset: 1px;
+}
+
+.renk-numune {
+  display: block;
+  height: 34px;
+  border-bottom: 1px solid var(--pt-gece-indigo);
+}
+
+.numune-ekru { background-color: var(--pt-ekru-cozgu); }
+.numune-keten { background-color: var(--pt-keten-atki); }
+.numune-indigo { background-color: var(--pt-gece-indigo); }
+.numune-murdum { background-color: var(--pt-murdum-ipek); }
+.numune-kobalt { background-color: var(--pt-kobalt-ifm); }
+.numune-terrakota { background-color: var(--pt-terrakota-kiyi); }
+.numune-adacayi { background-color: var(--pt-adacayi-tarim); }
+.numune-pirinc { background-color: var(--pt-pirinc-cetvel); }
+
+.pantone-bilgi {
+  display: block;
+  padding: 6px 8px;
+}
+
+.pantone-kod {
+  display: block;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--pt-gece-indigo);
+}
+
+.pantone-ad {
+  display: block;
+  font-size: 11.5px;
+  color: var(--pt-soluk-iplik);
+}
+
+/* Bolum Basliklari */
+.bolum-baslik {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 2px solid var(--pt-gece-indigo);
+  padding-bottom: 8px;
+  margin: 30px 0 16px;
+}
+
+.bolum-baslik h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(20px, 2.3vw, 28px);
+  margin: 0;
+  color: var(--pt-gece-indigo);
+}
+
+.bolum-kod {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 12px;
+  color: var(--pt-murdum-ipek);
+}
+
+/* 3-Kule Ucus & Genie4 Sahnesi */
+.ucus-izgara {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 980px) {
+  .ucus-izgara {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cerceve-kutu {
+  background-color: var(--pt-kagit-parlak);
+  border: 1px solid var(--pt-gece-indigo);
+  padding: 18px;
+}
+
+.cerceve-kutu h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 19px;
+  margin: 0 0 8px;
+  color: var(--pt-gece-indigo);
+}
+
+.cerceve-kutu p {
+  margin: 0 0 12px;
+  font-size: 13.5px;
+  color: var(--pt-soluk-iplik);
+}
+
+.ufuk-tuval {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1040 / 460;
+  border: 1px solid var(--pt-gece-indigo);
+  background-color: var(--pt-ekru-cozgu);
+  display: block;
+  cursor: crosshair;
+  margin-bottom: 12px;
+}
+
+.kule-dugme-grubu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.pafta-dugme {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 13px;
+  background-color: var(--pt-ekru-cozgu);
+  color: var(--pt-gece-indigo);
+  border: 1px solid var(--pt-gece-indigo);
+}
+
+.pafta-dugme:hover,
+.pafta-dugme.aktif {
+  background-color: var(--pt-gece-indigo);
+  color: var(--pt-kagit-parlak);
+}
+
+.pafta-dugme.murdum.aktif {
+  background-color: var(--pt-murdum-ipek);
+  border-color: var(--pt-murdum-ipek);
+}
+
+.pafta-dugme.kobalt.aktif {
+  background-color: var(--pt-kobalt-ifm);
+  border-color: var(--pt-kobalt-ifm);
+}
+
+.pafta-dugme.terrakota.aktif {
+  background-color: var(--pt-terrakota-kiyi);
+  border-color: var(--pt-terrakota-kiyi);
+}
+
+.surgu-satir {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 12px;
+}
+
+.surgu-satir input[type="range"] {
+  flex: 1;
+  accent-color: var(--pt-murdum-ipek);
+}
+
+.telemetri-serit {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 12px;
+  padding: 10px 12px;
+  background-color: var(--pt-ekru-cozgu);
+  border-left: 4px solid var(--pt-gece-indigo);
+  color: var(--pt-gece-indigo);
+}
+
+.genie-video {
+  width: 100%;
+  border: 1px solid var(--pt-gece-indigo);
+  background-color: var(--pt-keten-atki);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hedef-ozet-kutu {
+  border-top: 1px dashed var(--dikis-cizgi);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.hedef-ozet-kutu h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: var(--pt-murdum-ipek);
+}
+
+.hedef-etiketler {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.hedef-etiketler a {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 11.5px;
+  text-decoration: none;
+  color: var(--pt-gece-indigo);
+  background-color: var(--pt-ekru-cozgu);
+  border: 1px solid var(--pt-gece-indigo);
+  padding: 4px 9px;
+}
+
+.hedef-etiketler a:hover {
+  background-color: var(--pt-murdum-ipek);
+  color: var(--pt-kagit-parlak);
+}
+
+/* Gercek Kumas ve Iplik Dokuma Mikroskobu */
+.dokuma-izgara {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 980px) {
+  .dokuma-izgara {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dokuma-tuval {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 920 / 320;
+  border: 1px solid var(--pt-gece-indigo);
+  background-color: var(--pt-keten-atki);
+  display: block;
+  cursor: zoom-in;
+  margin-bottom: 12px;
+}
+
+.secim-iki {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+label.alan-etiket {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--pt-gece-indigo);
+}
+
+select,
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--pt-gece-indigo);
+  background-color: var(--pt-ekru-cozgu);
+  border: 1px solid var(--pt-gece-indigo);
+}
+
+.teknik-tablo {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  margin-top: 8px;
+}
+
+.teknik-tablo th,
+.teknik-tablo td {
+  padding: 7px 9px;
+  border-bottom: 1px solid var(--dikis-cizgi);
+  text-align: left;
+}
+
+.teknik-tablo th {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 11.5px;
+  color: var(--pt-soluk-iplik);
+  width: 46%;
+}
+
+.teknik-tablo td {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-weight: 600;
+  color: var(--pt-gece-indigo);
+}
+
+/* 4-Site Yeni Tasinan Sakin Tam Yasam Konsiyerj Masalari */
+.daire-secici-kusak {
+  background-color: var(--pt-kagit-parlak);
+  border: 1px solid var(--pt-gece-indigo);
+  padding: 16px 20px;
+  margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+
+.dort-masa-izgara {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.yasam-masa {
+  background-color: var(--pt-kagit-parlak);
+  border: 1px solid var(--pt-gece-indigo);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.masa-ust-bant {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 11px;
+  padding: 3px 8px;
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--pt-kagit-parlak);
+}
+
+.bant-moda { background-color: var(--pt-murdum-ipek); }
+.bant-tarim { background-color: var(--pt-adacayi-tarim); }
+.bant-sanat { background-color: var(--pt-pirinc-cetvel); }
+.bant-elektronik { background-color: var(--pt-kobalt-ifm); }
+
+.yasam-masa h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 19px;
+  margin: 0 0 8px;
+}
+
+.durum-isigi {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 12px;
+  padding: 8px 10px;
+  background-color: var(--pt-ekru-cozgu);
+  border: 1px solid var(--dikis-cizgi);
+  margin-bottom: 10px;
+}
+
+.fis-cikti {
+  margin-top: 10px;
+  padding: 9px 10px;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 11.5px;
+  background-color: var(--pt-keten-atki);
+  border-left: 3px solid var(--pt-murdum-ipek);
+  min-height: 44px;
+}
+
+/* Zehrac Dogrulanmis Rolove & gorsel arsiv */
+.arsiv-izgara {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 14px;
+}
+
+.arsiv-kart {
+  background-color: var(--pt-kagit-parlak);
+  border: 1px solid var(--pt-gece-indigo);
+  padding: 12px;
+}
+
+.arsiv-kart img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border: 1px solid var(--dikis-cizgi);
+  background-color: var(--pt-ekru-cozgu);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.arsiv-kart strong {
+  display: block;
+  font-size: 13.5px;
+  margin-bottom: 4px;
+}
+
+.arsiv-kart span {
+  display: block;
+  font-size: 12px;
+  color: var(--pt-soluk-iplik);
+}
+
+/* Baska Istanbul Yok 7-Halka Tablosu */
+.halka-tablo-sarmal {
+  overflow-x: auto;
+  background-color: var(--pt-kagit-parlak);
+  border: 1px solid var(--pt-gece-indigo);
+}
+
+.halka-tablo {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.halka-tablo th,
+.halka-tablo td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--dikis-cizgi);
+  text-align: left;
+}
+
+.halka-tablo th {
+  background-color: var(--pt-keten-atki);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 11.5px;
+}
+
+.muhur-altbilgi {
+  margin-top: 28px;
+  padding: 14px 18px;
+  background-color: var(--pt-kagit-parlak);
+  border: 1px solid var(--pt-gece-indigo);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 12px;
+  color: var(--pt-gece-indigo);
+}
