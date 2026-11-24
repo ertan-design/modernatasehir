@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="GAIA ile Ataşehir'den üç sanal rota. Yeni komşular için moda, sanat, elektronik ve tarım.">
+<title>Bir şehir, üç çatı · Ataşehir</title><link rel="stylesheet" href="/yasam/yasam.css"><script src="/yasam/yasam.js" defer></script></head>
+<body>
+<header class="bar"><a class="brand" href="/yasam">ATAŞEHİR <span> / </span> YAŞAM</a><nav aria-label="Sayfada gezin"><a href="#rotalar">Rotalar</a><a href="#yasam">Mahalle</a><a href="/yasam/baska-istanbul">Başka İstanbul Yok ↗</a></nav></header>
+<main>
+<section class="hero" id="rotalar" aria-labelledby="hero-title">
+<div class="intro"><p class="eyebrow">İSTANBUL · ATAŞEHİR</p><h1 id="hero-title">Bir şehir,<br><em>üç çatı.</em></h1><p class="lede" id="lede">GAIA ile bir çatı seç. Suyun, işin ya da sahnenin peşinden git.</p>
+<div class="routes" aria-label="Sanal rotayı seç">
+<button type="button" data-route="a" aria-pressed="true"><span>A</span> Watergarden</button>
+<button type="button" data-route="b" aria-pressed="false"><span>B</span> Finanskent</button>
+<button type="button" data-route="c" aria-pressed="false"><span>C</span> Maltepe sahili</button>
+</div></div>
+<div class="stage"><canvas id="city" width="1000" height="620" role="img" aria-label="GAIA'nın üç sanal rotasını gösteren, kumaş dokulu özgün bir üç boyutlu kent sahnesi"></canvas>
+<div class="stage-label"><span id="scene-label">A / WATERGARDEN</span><span>SANAL ROTA</span></div>
+<div class="stage-controls"><button id="fly" type="button">GAIA ile uç <span aria-hidden="true">↗</span></button><button id="stop" type="button" disabled>Hareketi durdur</button><output id="flight-status" aria-live="polite">A çatısı seçili.</output></div>
+</div>
+<div class="route-note"><strong id="route-title">Watergarden</strong><p id="route-description">Su avlusu, buluşma ve evden atölyeye uzanan ilk durak.</p><a id="route-source" href="https://watergarden.com.tr/iletisim">Mekân bilgisi ↗</a></div>
+<small>Sanal sahnedeki çatı adları ve uçuş çizgileri kurgu. Bina planı, gerçek uçuş rotası veya seyir tarifi içermez.</small>
+</section>
+<section class="neighborhood" id="yasam">
+<p class="eyebrow">YENİ KOMŞULAR İÇİN</p><h2>Taşındın. Şimdi ne lazım?</h2>
+<div class="services">
+<article><span class="swatch coral"></span><h3>Moda</h3><p>Evde ölçü, prova ve renk analizi. Terzi için uygun gününü belirt.</p><button data-service="moda" type="button">Prova talebi hazırla</button><a href="https://www.afair.studio/dila-prova">Dila prova ↗</a></article>
+<article><span class="swatch amber"></span><h3>Sanat</h3><p>Galeri seçkisini keşfet. Bir gösterim için ziyaret talebi hazırla.</p><button data-service="sanat" type="button">Galeri talebi hazırla</button><a href="https://www.afair.live/dila-video/galeriden-atolyeye/">Galeriden Atölyeye ↗</a></article>
+<article><span class="swatch blue"></span><h3>Elektronik</h3><p>Wi-Fi, ev ağı veya cihaz kurulumu için yapılacak işi tarif et.</p><button data-service="elektronik" type="button">Kurulum talebi hazırla</button></article>
+<article><span class="swatch mint"></span><h3>Tarım</h3><p>Balkon, bitki seçimi veya sulama için danışmanlık başlığı oluştur.</p><button data-service="tarim" type="button">Danışmanlık talebi hazırla</button><a href="https://ertanaraz.com/tarim">Tarım çalışma alanı ↗</a></article>
+</div>
+<form id="request" hidden><h3>Randevu talebi taslağı</h3><p>Canlı takvim bağlantısı bekleniyor. Müsaitlik teyit edilmedi. Taslak cihazına iner.</p><label>Hizmet <select name="service"><option value="moda">Moda / terzi provası</option><option value="sanat">Sanat / galeri ziyareti</option><option value="elektronik">Elektronik / kurulum</option><option value="tarim">Tarım / danışmanlık</option></select></label><label>Tercih ettiğin gün <input name="date" type="date" required></label><label>Kısa not <textarea name="note" maxlength="400" rows="3"></textarea></label><button type="submit">Talebi indir</button><output id="request-status" aria-live="polite"></output></form>
+</section>
+</main><footer class="bar footer"><strong>GAIA · Ataşehir</strong><nav aria-label="Yaşam ağı"><a href="https://www.xn--ataehirmodern-ktc.com/">Ataşehir Modern</a><a href="https://www.xn--modernataehir-qtc.com/">Modern Ataşehir</a><a href="https://www.afair.live/">AFAIR Live</a><a href="https://www.afair.studio/">AFAIR Studio</a></nav></footer>
+</body></html>
