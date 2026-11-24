@@ -25,6 +25,11 @@
       "destination": "/",
       "source": "/modern-atasehir-pilot.html",
       "permanent": false
+    },
+    {
+      "permanent": false,
+      "destination": "/",
+      "source": "/modern-atasehir-pilot"
     }
   ]
 }
