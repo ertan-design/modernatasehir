@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATAŞEHİR MODERN × BAŞKA İSTANBUL YOK — 3 Kule Uçuş Atlası &amp; Pantone Kumaş Atölyesi</title>
+  <meta name="description" content="Google Maps olmadan özgün 3 kule çatı uçuş motoru (Flex, Balance, Grand Tower), Pantone TCX ayrık gerçek kumaş ve iplik mikroskobu, ve yeni taşınan misafir için 4-site tam yaşam konsiyerji.">
+  <link rel="stylesheet" href="./atolye.css">
+  <script src="./atolye-veri.js" defer></script>
+  <script src="./atolye-motor.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="mast-brand" href="#levha-1">
+      <strong>PRIZMA ATELIER</strong>
+      <span>Ataşehir Modern · Başka İstanbul Yok</span>
+    </a>
+    <nav class="mast-nav" aria-label="Atölye levhaları">
+      <a href="#levha-2">3 Kule Uçuş</a>
+      <a href="#levha-3">Pantone &amp; İplik</a>
+      <a href="#levha-4">4-Site Yaşam</a>
+      <a href="#ust-halka">Başka İstanbul Yok</a>
+    </nav>
+    <span class="mast-coords">40°58'48"K · 29°07'12"D · 0 GOOGLE MAPS</span>
+  </header>
+
+  <main>
+    <section id="levha-1" class="plate">
+      <div class="cover-grid">
+        <div>
+          <p class="plate-num">LEVHA I · ATATÜRK MAH., AHMET YESEVİ CAD. · ATAŞEHİR / İSTANBUL</p>
+          <h1>Üç kuleden göğe açıl;<br>iplikten kente tek hassasiyetle yaşa.</h1>
+          <p class="editorial-lead">
+            Harita karoları ve hazır pencereler olmadan kuruldu. Ataşehir Modern'in <strong>Flex (43 kat)</strong>,
+            <strong>Balance (35 kat)</strong> ve <strong>Grand (25 kat)</strong> kulelerinin çatısından
+            <strong>Finanskent'e</strong>, <strong>Watergarden'a</strong> ve <strong>Maltepe Sahiline</strong> süzül;
+            eve indiğinde tarım parseli hassasiyetinde ayrıştırılmış gerçek Pantone TCX kumaşlar, online iki-mezura terzi,
+            sanat ve tarım danışmanıyla yaşam başlasın.
+          </p>
+          <div class="action-row">
+            <a class="btn-atelier" href="#levha-2">Çatıdan Uçuşa Geç</a>
+            <a class="btn-atelier btn-outline" href="#levha-3">Pantone İplik Mikroskobu</a>
+            <a class="btn-atelier btn-outline" href="#levha-4">Online Terzi &amp; Tarım Randevusu</a>
+          </div>
+        </div>
+        <figure class="cover-figure">
+          <img class="cover-img" src="./medya/levha_01_atasehir_kuleler.jpg" alt="Ataşehir Modern üç kulesinden günbatımında Marmara Denizi ve Adalar ufku">
+          <figcaption class="cover-caption">
+            <span>Flex 43K · Balance 35K · Grand 25K</span>
+            <span>Dış Halka: Başka İstanbul Yok</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="levha-2" class="plate-full">
+      <div class="plate-inner">
+        <div class="flight-header">
+          <div>
+            <p class="plate-num">LEVHA II · GOOGLE MAPS OLMADAN ÖZGÜN 3-KULE UÇUŞ MOTORU</p>
+            <h2>Her bloğun çatısından farklı bir İstanbul'a süzül.</h2>
+          </div>
+          <p class="editorial-lead">
+            Aşağıdaki sahne harita karosu değil, özgün birinci-şahıs perspektif uçuş motorudur. Bir kule seç,
+            imleçle kanat açını yönlendir ve ışık halkalarından geçerek hedefe in; ya da üst halkadan tüm İstanbul'a yüksel.
+          </p>
+        </div>
+
+        <div class="tower-selector" id="tower-selector" role="tablist" aria-label="Ataşehir Modern 3 Kule ve Üst Halka"></div>
+
+        <div class="flight-stage-wrap">
+          <canvas id="flight-canvas" class="flight-canvas" width="1280" height="680" aria-label="Ataşehir Modern 3 Kule birinci şahıs uçuş sahnesi"></canvas>
+          <video id="genie-ref-video" class="flight-video is-hidden" controls playsinline loop muted preload="metadata" poster="./medya/genie_ucus_referans.jpg" src="./medya/genie_ucus_referans.mp4"></video>
+
+          <div class="flight-telemetry" aria-live="polite">
+            <div class="tele-cell"><span class="tele-lbl">Kalkış Kulesi</span><strong class="tele-val" id="t-tower">BALANCE · 35 KAT</strong></div>
+            <div class="tele-cell"><span class="tele-lbl">Yön &amp; Ufuk</span><strong class="tele-val" id="t-bearing">242° GB · WATERGARDEN</strong></div>
+            <div class="tele-cell"><span class="tele-lbl">İrtifa</span><strong class="tele-val" id="t-alt">126 m</strong></div>
+            <div class="tele-cell"><span class="tele-lbl">Süzülüş Hızı</span><strong class="tele-val" id="t-speed">118 km/sa</strong></div>
+            <div class="tele-cell"><span class="tele-lbl">Kalan Mesafe</span><strong class="tele-val" id="t-dist">2,40 km</strong></div>
+          </div>
+
+          <div class="flight-controls">
+            <p class="flight-brief" id="flight-brief">İmleci sahne üzerinde sağa/sola kaydırarak kanat yatışını kontrol edebilirsiniz.</p>
+            <div class="action-row">
+              <button type="button" class="btn-atelier btn-brass" id="btn-flight-relaunch">Çatıdan Yeniden Atla</button>
+              <button type="button" class="btn-atelier btn-outline" id="btn-flight-pause">Duraklat</button>
+              <button type="button" class="btn-atelier btn-outline" id="btn-toggle-genie">Genie Referans Filmini Göster</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="levha-3" class="plate">
+      <p class="plate-num">LEVHA III · PANTONE TCX AYRIK GERÇEK KUMAŞLAR &amp; İPLİK MİKROSKOBU</p>
+      <h2>Tarımdaki parsel hassasiyeti,<br>tekstil lifinde ve Pantone ayrımında.</h2>
+      <p class="editorial-lead">
+        Gökçeada'daki 189/2 parselde yağışı, toprağı ve buharlaşmayı nasıl santim santim ölçüyorsak; burada da her kumaşı
+        <strong>Pantone TCX kodu, CIE L*a*b* değeri, çözgü-atkı büküm numarası (Ne), gramajı (g/m²) ve bitkisel boya banyosu</strong>
+        ile ayrıştırıyoruz. Saf <code>#000000</code> siyah tüm koleksiyondan çıkarılmıştır.
+      </p>
+
+      <div class="macro-duo">
+        <figure class="macro-fig">
+          <img class="macro-img" src="./medya/levha_02_zumrut_keten_makro.jpg" alt="Oksitlenmiş zümrüt ham ipek, ağartılmamış keten ve kehribar iplik makaraları makro incelemesi">
+          <figcaption class="cover-caption">
+            <span>PANTONE 19-5918 TCX · 12-0710 TCX · 16-0948 TCX</span>
+            <span>Bursa Ham İpeği × Trakya Organik Keteni</span>
+          </figcaption>
+        </figure>
+        <figure class="macro-fig">
+          <img class="macro-img" src="./medya/levha_03_espresso_murdum_makro.jpg" alt="Gece espressosu soğuk yün gabardin, derin patlıcan ipek krep ve ay ışığı antrasit kaşmir makro dokusu">
+          <figcaption class="cover-caption">
+            <span>PANTONE 19-1111 TCX · 19-2024 TCX · 19-4013 TCX</span>
+            <span>2/2 Gabardin Dimi · Bükümlü İpek Krep · Kaşmir</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="pantone-strip" id="pantone-strip" role="tablist" aria-label="Pantone TCX Kumaş Kartelası"></div>
+
+      <div class="loupe-grid">
+        <div class="loupe-frame">
+          <canvas id="loupe-canvas" class="loupe-canvas" width="760" height="475" aria-label="Gerçek zamanlı çözgü ve atkı iplik dokusu optik mikroskop görüntüsü"></canvas>
+          <div class="loupe-bar">
+            <div class="zoom-group" id="zoom-group" aria-label="Optik büyütme oranı">
+              <button type="button" class="zoom-btn" data-zoom="1">1× Kumaş</button>
+              <button type="button" class="zoom-btn is-selected" data-zoom="4">4× Örgü</button>
+              <button type="button" class="zoom-btn" data-zoom="12">12× Lif</button>
+            </div>
+            <label class="kelvin-wrap" for="loupe-kelvin">
+              <span>Işık</span>
+              <input type="range" id="loupe-kelvin" min="2700" max="5600" step="100" value="3800">
+              <strong id="loupe-kelvin-lbl">3800 K</strong>
+            </label>
+          </div>
+        </div>
+
+        <aside class="spec-sheet" aria-live="polite">
+          <p class="plate-num" id="spec-pantone">PANTONE 19-5918 TCX</p>
+          <h3 id="spec-name">Oksitlenmiş Zümrüt Ham İpek</h3>
+          <p class="editorial-lead" id="spec-story"></p>
+          <ul class="spec-list" id="spec-list"></ul>
+          <div class="veto-note" id="spec-veto"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="levha-4" class="plate-linen">
+      <div class="plate-inner">
+        <p class="plate-num">LEVHA IV · ATAŞEHİR MODERN'DE YAŞAM BAŞLADIĞINDA · 4-SİTE TAM YAŞAM KONSİYERJİ</p>
+        <h2>Yeni taşınan bir misafirin ilk gününde<br>moda, sanat, tarım ve elektronik tek çatıda.</h2>
+        <p class="editorial-lead">
+          “Online terzi şu an müsait mi?”, “Tarım danışmanımdan nasıl randevu alabilirim?”, “Yeni salonuma hangi tablo ve ışık uyar?” —
+          4 bağlı site tek bir yaşam akışında buluşur.
+        </p>
+
+        <div class="life-grid">
+          <article class="life-card">
+            <div>
+              <span class="life-kicker">01 · MODA &amp; İKİ MEZURA TERZİ · AFAIR.LIVE</span>
+              <h3>Online terzi şu an müsait mi?</h3>
+              <p class="editorial-lead">
+                Seçili Pantone kumaşın (<strong id="concierge-fabric">PANTONE 19-5918 TCX</strong>) otomatik eklendi.
+                Kule ve zaman aralığını seç; iki mezura eve randevu fişin anında mühürlensin.
+              </p>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="c-tower">Blok</label>
+                  <select id="c-tower">
+                    <option value="Flex Tower (43 Kat)">Flex Tower (43 Kat)</option>
+                    <option value="Balance Tower (35 Kat)" selected>Balance Tower (35 Kat)</option>
+                    <option value="Grand Tower (25 Kat)">Grand Tower (25 Kat)</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="c-terzi-slot">Müsaitlik Penceresi</label>
+                  <select id="c-terzi-slot">
+                    <option value="Bugun 11:00 — Online On Gorusme (Musait)">Bugün 11:00 — Online Ön Görüşme (Müsait)</option>
+                    <option value="Bugun 15:30 — Eve Iki Mezura Ziyareti (Musait)">Bugün 15:30 — Eve İki Mezura Ziyareti (Müsait)</option>
+                    <option value="Yarin 10:30 — Pencere Isigi Renk Analizi (Musait)">Yarın 10:30 — Pencere Işığı Renk Analizi (Müsait)</option>
+                  </select>
+                </div>
+              </div>
+              <p class="receipt-line" id="terzi-receipt">Müsaitlik hazır — fiş oluşturmak için düğmeye dokunun (yerel JSONL üretir, ödeme almaz).</p>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-atelier" id="btn-terzi-book">Terzi Randevu Fişi Oluştur</button>
+              <a class="btn-atelier btn-outline" href="https://www.afair.live/prizma/front2">İki Mezura Ölçü Defteri ↗</a>
+            </div>
+          </article>
+
+          <article class="life-card">
+            <div>
+              <span class="life-kicker">02 · TARIM &amp; HASAT DANIŞMANI · TARIM.ONLINE × HASAT.ONLINE</span>
+              <h3>Tarım danışmanımdan nasıl randevu alabilirim?</h3>
+              <p class="editorial-lead">
+                Gökçeada 189/2 parsel hassasiyetindeki iklim-toprak-hasat danışmanlığı Ataşehir'deki evine iner:
+                balkon/teras permakültürü, doğal lif kökeni veya mevsimsel hasat planlaması.
+              </p>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="c-tarim-konu">Danışmanlık Konusu</label>
+                  <select id="c-tarim-konu">
+                    <option value="Teras Permakultur & Dogal Bitki Planlama">Teras Permakültür &amp; Doğal Bitki</option>
+                    <option value="Gokceada 189/2 Mevsimsel Hasat & Zeytinyagi">Gökçeada 189/2 Mevsimsel Hasat</option>
+                    <option value="Dogal Lif & Bitkisel Boya Koken Danismanligi">Doğal Lif &amp; Bitkisel Boya Kökeni</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="c-tarim-slot">Randevu Seçeneği</label>
+                  <select id="c-tarim-slot">
+                    <option value="Cevrimici Video Gorusme — 20 dk">Çevrimiçi Video Görüşme — 20 dk</option>
+                    <option value="Parsel & Hasat Raporu Inceleme Seansi">Parsel &amp; Hasat Raporu İnceleme</option>
+                    <option value="Atasehir Teras Yerinde Kesif Talebi">Ataşehir Teras Yerinde Keşif</option>
+                  </select>
+                </div>
+              </div>
+              <p class="receipt-line" id="tarim-receipt">Danışmanlık hattı hazır — yapılandırılmış randevu kaydı üretir.</p>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-atelier" id="btn-tarim-book">Tarım Randevusu Oluştur</button>
+              <a class="btn-atelier btn-outline" href="https://www.tarim.online/">tarim.online ↗</a>
+            </div>
+          </article>
+
+          <article class="life-card">
+            <div>
+              <span class="life-kicker">03 · SANAT, GALERİ &amp; MEKÂN IŞIĞI · AFAIR.STUDIO</span>
+              <h3>Üstündeki ceketle salonundaki tablo aynı Pantone'da.</h3>
+              <p class="editorial-lead">
+                Seçtiğin Pantone TCX kumaş doğrudan AFAIR Studio AI Galeri odalarına, 2700K–5600K salon ışık kalibrasyonuna
+                ve K7 akustik atmosferine bağlanır.
+              </p>
+            </div>
+            <div class="action-row">
+              <a class="btn-atelier" href="https://www.afair.studio/prizma/front3">AI Galeri &amp; Kelvin Işık ↗</a>
+              <a class="btn-atelier btn-outline" href="https://www.afair.studio/prizma/video">6 Dila Marka Filmi ↗</a>
+            </div>
+          </article>
+
+          <article class="life-card">
+            <div>
+              <span class="life-kicker">04 · ELEKTRONİK, AKILLI EV &amp; 50.000 KAPI · SELINAHBAP × ERTANARAZ</span>
+              <h3>Binadaki tüm dijital kapılar tek SHA-256 pasaportta.</h3>
+              <p class="editorial-lead">
+                Finanskent fırsat hattı, akıllı ev entegrasyonları ve 50.000 kapılık dijital pasaport sistemi
+                sıfır şifre karmaşasıyla tek doğrulanabilir mühür altında çalışır.
+              </p>
+            </div>
+            <div class="action-row">
+              <a class="btn-atelier" href="https://ertanaraz.com/prizma/front4">Front 4 · 50K Pasaport ↗</a>
+              <a class="btn-atelier btn-outline" href="https://www.selinahbap.com/">selinahbap.com ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <section id="ust-halka" class="horizon-band" aria-labelledby="ust-halka-baslik">
+          <div>
+            <p class="plate-num">ÜST HALKA · BAŞKA İSTANBUL YOK (BASKAISTANBULYOK.COM)</p>
+            <h3 id="ust-halka-baslik">Ataşehir merkez; tüm İstanbul uçuş menzilinde.</h3>
+            <p class="editorial-lead">
+              Üç kuleden kalkan her uçuş yalnız yakın çevreyle sınırlı değildir: üst halkada <strong>Başka İstanbul Yok</strong>
+              ufku — Adalar, Boğaz, Tarihi Yarımada, Çekmeköy ormanı ve Gökçeada tarım hattı — tek bir yaşayan ağda birleşir.
+            </p>
+          </div>
+          <div class="ring-links">
+            <a class="ring-link" href="https://www.afair.studio/prizma/">AFAIR Studio / PRIZMA</a>
+            <a class="ring-link" href="https://www.afair.live/prizma/">AFAIR Live / PRIZMA</a>
+            <a class="ring-link" href="https://ertanaraz.com/prizma/">Ertan Araz Komuta</a>
+            <a class="ring-link" href="https://www.xn--ataehirmodern-ktc.com/">Ataşehir Modern Kent</a>
+            <a class="ring-link" href="https://www.xn--modernataehir-qtc.com/">Modern Ataşehir Bina</a>
+            <a class="ring-link" href="https://www.tarim.online/">Tarım Online</a>
+            <a class="ring-link" href="https://www.hasat.online/">Hasat Online</a>
+            <a class="ring-link" href="https://www.selinahbap.com/">Selin Ahbap 50K</a>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <span>PRIZMA ATELIER · Ataşehir Modern × Başka İstanbul Yok · 0 Google Maps · 0 Dış CDN · Katı CSP Uyumlu · 0 Saf Siyah</span>
+    <span>k="eksik": Randevu fişleri yerel SHA-16 JSONL üretir (canlı SMS/takvim API bağlı değildir); baskaistanbulyok.com DNS yönlendirmesi ayrıca aktifleştirilmelidir.</span>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+  "schema": "prizma.atasehir-atelier.v1",
+  "generated_utc": "2026-11-24T22:45:11.611Z",
+  "google_maps_used": false,
+  "csp_strict_safe": true,
+  "zero_cdn": true,
+  "zero_pure_black_ui": true,
+  "file_count": 9,
+  "files": [
+    {
+      "file": "atolye-motor.js",
+      "bytes": 23054,
+      "sha256": "2e600d5a54dc1961250f8343d3dc1cadb30ffd2df908cebee7cb593ccd22e3fe",
+      "sha16": "2e600d5a54dc1961"
+    },
+    {
+      "file": "atolye-veri.js",
+      "bytes": 7336,
+      "sha256": "1f0c5b42d8fab73da870a362145e31852ccbf13782d069457d02cea239a90bc0",
+      "sha16": "1f0c5b42d8fab73d"
+    },
+    {
+      "file": "atolye.css",
+      "bytes": 12663,
+      "sha256": "00d5ad6bb24a4849b9889672e4ad27b095b3395c819bd78f9d8920b032329842",
+      "sha16": "00d5ad6bb24a4849"
+    },
+    {
+      "file": "index.html",
+      "bytes": 17170,
+      "sha256": "00e468ddb45b3df0e881295f0dd7a6f0998725f9806a47d32931e4e4b03cafa7",
+      "sha16": "00e468ddb45b3df0"
+    },
+    {
+      "file": "medya/genie_ucus_referans.jpg",
+      "bytes": 45591,
+      "sha256": "3638133d280d55df781124c7740ce12256bd1e4c11dcdc606e4d94bb3f87d401",
+      "sha16": "3638133d280d55df"
+    },
+    {
+      "file": "medya/genie_ucus_referans.mp4",
+      "bytes": 1763220,
+      "sha256": "2c4aea45214cc7476488d6a4274064bb537ede2b467bae042ec96ac78f25214d",
+      "sha16": "2c4aea45214cc747"
+    },
+    {
+      "file": "medya/levha_01_atasehir_kuleler.jpg",
+      "bytes": 173325,
+      "sha256": "2de785ec379e41714092565f6ae739dad3f7945420200a4c606ef31801e7ce0e",
+      "sha16": "2de785ec379e4171"
+    },
+    {
+      "file": "medya/levha_02_zumrut_keten_makro.jpg",
+      "bytes": 287036,
+      "sha256": "6b287b8bdfc72530412a46d901b9855f8e43a2b40c3ef61572dc7ba821406009",
+      "sha16": "6b287b8bdfc72530"
+    },
+    {
+      "file": "medya/levha_03_espresso_murdum_makro.jpg",
+      "bytes": 124823,
+      "sha256": "13ff71d544a07472657c93d3ebfdcd53bd4e44156ed1c3b5243d4b33cc89cf67",
+      "sha16": "13ff71d544a07472"
+    }
+  ]
+}

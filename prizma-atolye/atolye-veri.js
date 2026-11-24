@@ -1,0 +1,182 @@
+(function () {
+  "use strict";
+
+  var TOWERS = [
+    {
+      id: "balance",
+      kicker: "KULE II · 35 KAT · 126 M",
+      ad: "Balance Tower",
+      hedef: "Watergarden İstanbul AVM",
+      yon_derece: "242° GB",
+      mesafe_km: 2.4,
+      baslangic_irtifa: 126,
+      hiz_kmh: 118,
+      halka_renk: "#d8b46d",
+      gok_ust: "#1c2838",
+      gok_alt: "#7d5b42",
+      ufuk_tip: "watergarden",
+      ozet: "Balance Tower çatısından Güneybatı rüzgârıyla Watergarden İstanbul'a süzülüş: gastronomi, AFAIR iki-mezura terzi ve sanat galerisi hattı."
+    },
+    {
+      id: "flex",
+      kicker: "KULE I · 43 KAT · 155 M",
+      ad: "Flex Tower",
+      hedef: "İstanbul Finans Merkezi (İFM)",
+      yon_derece: "048° KD",
+      mesafe_km: 2.8,
+      baslangic_irtifa: 155,
+      hiz_kmh: 134,
+      halka_renk: "#6fc8d8",
+      gok_ust: "#142030",
+      gok_alt: "#455c73",
+      ufuk_tip: "finanskent",
+      ozet: "En yüksek zirve Flex Tower çatısından Kuzeydoğu'ya İFM ve Finanskent fırsatlarına doğrudan süzülüş: teknoloji, elektronik ve iş ağı."
+    },
+    {
+      id: "grand",
+      kicker: "KULE III · 25 KAT · 92 M",
+      ad: "Grand Tower",
+      hedef: "Maltepe Sahili · Konser & Miting",
+      yon_derece: "174° G",
+      mesafe_km: 10.8,
+      baslangic_irtifa: 92,
+      hiz_kmh: 146,
+      halka_renk: "#59c4b0",
+      gok_ust: "#18283a",
+      gok_alt: "#8f664b",
+      ufuk_tip: "maltepe",
+      ozet: "Grand Tower'dan güneye, Marmara Denizi'ne ve Maltepe Orhangazi Şehir Parkı konser/miting alanına açık deniz süzülüşü."
+    },
+    {
+      id: "istanbul",
+      kicker: "ÜST HALKA · 420 M UFUK",
+      ad: "Başka İstanbul Yok",
+      hedef: "Adalar · Boğaz · Gökçeada Hattı",
+      yon_derece: "360° İSTANBUL",
+      mesafe_km: 28.5,
+      baslangic_irtifa: 420,
+      hiz_kmh: 172,
+      halka_renk: "#e3c584",
+      gok_ust: "#171c2b",
+      gok_alt: "#6d4e44",
+      ufuk_tip: "istanbul",
+      ozet: "Ataşehir Modern'in üst halkası: baskaistanbulyok.com ufku — Marmara Adaları, Boğaz geçidi, Çekmeköy ormanı ve Gökçeada 189/2 tarım bağı."
+    }
+  ];
+
+  var FABRICS = [
+    {
+      id: "zumrut",
+      pantone: "PANTONE 19-5918 TCX",
+      ad: "Oksitlenmiş Zümrüt Ham İpek",
+      kisa: "Ham İpek · 2/2 Dimi",
+      hex: "#132E2A",
+      atkiHex: "#1E4740",
+      parlaklik: "#4D8276",
+      lab: "L* 17.8 · a* -11.4 · b* -0.6",
+      orgu: "dimi22",
+      orgu_ad: "2/2 Diyagonal Dimi (Twill)",
+      iplik_ne: "Çözgü 40/2 Ne · Atkı 36/1 Ne",
+      gramaj: "145 g/m²",
+      lif_koken: "Bursa Dut İpeği (%100 Doğal Filament)",
+      boya_banyosu: "Bitkisel İndigo + Ceviz Kabuğu (K6)",
+      hikaye: "Zeytin ve nötr alt-tonlarda cildin ışıltısını söndüren saf siyahın yerine geçen ana mimari kumaş; 3800K galeri spotunda zümrüt derinliği açılır.",
+      veto: "PANTONE Black 6 C (#000000) ile karşılaştırıldığında 2/2 dimi sırtları ışığı %340 daha zengin kırar; yüz hattında sert gölge kopması yaratmaz."
+    },
+    {
+      id: "espresso",
+      pantone: "PANTONE 19-1111 TCX",
+      ad: "Gece Espressosu Soğuk Yün",
+      kisa: "Gabardin · 2/2 Dimi",
+      hex: "#2A1E1B",
+      atkiHex: "#3E2D28",
+      parlaklik: "#7A5D52",
+      lab: "L* 14.2 · a* +5.1 · b* +4.8",
+      orgu: "dimi22",
+      orgu_ad: "Sıkı Gabardin 2/2 Dimi",
+      iplik_ne: "Çözgü 60/2 Nm · Atkı 60/2 Nm",
+      gramaj: "260 g/m²",
+      lif_koken: "Organik Merinos Soğuk Yün (17,5 mikron)",
+      boya_banyosu: "Kavrulmuş Meşe Palamudu + Kökboya",
+      hikaye: "Sıcak kehribar alt-tonlar için tasarlanmış, dört mevsim dökümlü terzi gabardini. İki mezura hareket payıyla omuzda heykelsi duruş verir.",
+      veto: "Ölü karbon siyah yerine sıcak kahve alt-tonu barındırdığı için 3200K ev akşam ışığında kumaş canlı dokusunu korur."
+    },
+    {
+      id: "murdum",
+      pantone: "PANTONE 19-2024 TCX",
+      ad: "Derin Patlıcan İpek Krep",
+      kisa: "Yıkanmış İpek · Krep",
+      hex: "#2D1C2B",
+      atkiHex: "#442B41",
+      parlaklik: "#8A5F84",
+      lab: "L* 14.9 · a* +10.2 · b* -6.4",
+      orgu: "krep",
+      orgu_ad: "Yüksek Bükümlü İpek Krep",
+      iplik_ne: "Çözgü 22/24 Denye · S/Z Ters Büküm",
+      gramaj: "118 g/m²",
+      lif_koken: "Yıkanmış Doğal İpek (Mat-İnci Dokulu)",
+      boya_banyosu: "Kızılkök + Karadut Doğal Özütü",
+      hikaye: "Yumuşak şafak alt-tonu için yüksek S/Z ters bükümlü, akışkan ve ışığı kadife gibi dağıtan akşam kumaşı.",
+      veto: "Düşük kontrastlı ciltte saf siyah kişiyi geri iterken Derin Patlıcan yüzü odak noktasında tutar."
+    },
+    {
+      id: "kehribar",
+      pantone: "PANTONE 16-0948 TCX",
+      ad: "Antik Kehribar Keten-İpek",
+      kisa: "Keten × İpek · Bezayağı",
+      hex: "#B87E35",
+      atkiHex: "#CFA058",
+      parlaklik: "#F2D59B",
+      lab: "L* 57.6 · a* +14.8 · b* +44.1",
+      orgu: "bezayagi",
+      orgu_ad: "1/1 Dengeli Bezayağı (Plain)",
+      iplik_ne: "Çözgü 32/1 Ne Keten · Atkı 40/1 İpek",
+      gramaj: "190 g/m²",
+      lif_koken: "Trakya Organik Keteni %65 + Ham İpek %35",
+      boya_banyosu: "Safran + Muhabbet Çiçeği (Reseda)",
+      hikaye: "Ataşehir Modern'in günbatımı traverten ışığını kumaşa taşıyan vurgu tonu; K2 AFAIR Studio altın varaklı tuvallerle doğrudan konuşur.",
+      veto: "Doğal keten düğümcükleri (slub) her metrede benzersiz mikro-topoloji üretir; sentetik parlak boya kullanılmaz."
+    },
+    {
+      id: "keten",
+      pantone: "PANTONE 12-0710 TCX",
+      ad: "Ham Ağartılmamış Keten",
+      kisa: "Organik Keten · Bezayağı",
+      hex: "#E2D5BE",
+      atkiHex: "#CFC0A5",
+      parlaklik: "#F7F1E5",
+      lab: "L* 85.4 · a* +2.4 · b* +12.6",
+      orgu: "bezayagi",
+      orgu_ad: "1/1 Ham Doğal Bezayağı",
+      iplik_ne: "Çözgü 24/1 Ne · Atkı 24/1 Ne Islak Eğirme",
+      gramaj: "215 g/m²",
+      lif_koken: "%100 Ağartılmamış Uzun Lifli Keten",
+      boya_banyosu: "Boyasız — Çiyde Doğal Havuzlama (Dew Retted)",
+      hikaye: "Gökçeada ve Trakya tarım hassasiyetinin tekstildeki saf hali: sıfır optik beyazlatıcı, yüksek hava geçirgenliği, ev perdesi ve yazlık ceket uyumu.",
+      veto: "Kireç beyazı (#FFFFFF) yerine doğal keten kremi gözü yormaz ve tüm Yeni Siyah tonlarıyla kusursuz nefes verir."
+    },
+    {
+      id: "antrasit",
+      pantone: "PANTONE 19-4013 TCX",
+      ad: "Ay Işığı Antrasit Kaşmir",
+      kisa: "Kaşmir-Yün · Saten Dimi",
+      hex: "#1B2230",
+      atkiHex: "#2B364B",
+      parlaklik: "#687C9E",
+      lab: "L* 14.1 · a* -0.4 · b* -9.2",
+      orgu: "saten",
+      orgu_ad: "5/1 Yumuşak Saten-Dimi",
+      iplik_ne: "Çözgü 28/2 Nm · Atkı 28/2 Nm",
+      gramaj: "285 g/m²",
+      lif_koken: "%40 İnce Kaşmir + %60 Merinos Yünü",
+      boya_banyosu: "Derin Çivit + Demir Mordanı",
+      hikaye: "Serin porselen alt-tonlu sakinler için Marmara gece ufkunun rengini taşıyan mimari manto ve ceket kumaşı.",
+      veto: "Mavi-gri alt-tonlu koyuluğu sayesinde saf siyahın yapay sertliğini kırmadan maksimum mimari netlik verir."
+    }
+  ];
+
+  window.ATOLYE_VERI = {
+    TOWERS: TOWERS,
+    FABRICS: FABRICS
+  };
+})();
