@@ -2,81 +2,50 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#05070b">
-<meta name="description" content="Modern Ataşehir: üç blok, yaklaşık bin konut. Binayı üç boyutta gez, ihtiyacını hizmet taslağına dönüştür.">
-<title>MODERN ATAŞEHİR · 3B bina</title>
-<link rel="stylesheet" href="/ana.css">
-<script src="/ana.js" defer></script>
-<script src="/sehir3d.js" defer></script>
-<script src="/site.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MODERN ATAŞEHİR / YAŞAM · Temsili 3B bina maketi</title>
+<meta name="description" content="3B makette yapı kütlesi, gündelik yaşam alanı ve gün ışığı arasında geçiş yap.">
+<link rel="stylesheet" href="/dila-3b/sahne.0fbb13978c.css">
+<script src="/dila-3b/sahne.e1b5005f08.js" defer></script>
 </head>
-<body>
-<a class="atla" href="#ana">İçeriğe geç</a>
-<header class="ust">
-  <p class="marka">MODERN <span>·</span> ATAŞEHİR</p>
-  <nav aria-label="Ana gezinme">
-    <a href="#hizmet-katmani">Hizmet</a>
-    <a href="#taslak">Taslak hazırla</a>
-    <a class="dar" href="https://www.xn--ataehirmodern-ktc.com/">Şehir pilotu ↗</a>
-  </nav>
+<body data-world="modern">
+<a class="skip" href="#ana">İçeriğe geç</a>
+<header class="bar">
+<a class="wordmark" href="/" aria-label="MODERN ATAŞEHİR / YAŞAM · Temsili 3B bina maketi ana sayfası">MODERN ATAŞEHİR / YAŞAM</a>
+<nav aria-label="Ana menü"><a href="/onceki-ana-sayfa.html">Modern Ataşehir ilk sürüm</a><a href="/kapi-evreni">Kapı Evreni</a><a href="https://www.xn--ataehirmodern-ktc.com/">Ataşehir kent pilotuna geç</a></nav>
 </header>
-
 <main id="ana">
-  <section class="sahne" aria-label="Modern Ataşehir üç boyutlu bina modeli">
-    <canvas id="sahne3d" data-sehir3d="bina" tabindex="0" aria-label="3B bina modeli. Sürükleyerek döndür, tekerlekle yakınlaştır, daireye dokunarak seç."></canvas>
-    <div class="giris">
-      <p class="ust-not">3 blok · yaklaşık 1.000 konut · ilk sürüm 24 Kasım 2026</p>
-      <h1>Bir binadan <em>daha fazlası.</em></h1>
-      <p>Her daire bir ışık. Binayı döndür, bir daireye dokun; misafir ve sakin için yapay zekâ hizmetinin hangi kapıdan başlayacağını gör.</p>
-      <div class="dugmeler">
-        <button type="button" class="dugme ana" id="vr-gir" hidden>VR'da gez</button>
-        <a class="dugme" href="#taslak">Hizmet taslağı hazırla</a>
-        <a class="dugme" href="https://www.xn--ataehirmodern-ktc.com/">Şehir pilotu ↗</a>
-      </div>
-    </div>
-    <aside class="kart" id="secim" hidden aria-live="polite">
-      <p class="k-ust">Seçili daire</p><h2></h2><p></p>
-    </aside>
-    <p class="ipucu" id="ipucu">Sürükle: döndür · Tekerlek ya da iki parmak: yakınlaştır · Daireye dokun: seç</p>
-  </section>
+<section class="hero" aria-labelledby="baslik">
+<div class="hero-copy">
+<p class="overline">MODERN ATAŞEHİR / YAŞAM</p>
+<h1 id="baslik">Bir yapıyı <em>içeriden keşfet.</em></h1>
+<p class="summary">3B makette yapı kütlesi, gündelik yaşam alanı ve gün ışığı arasında geçiş yap.</p>
+<div class="actions"><a class="action" href="/onceki-ana-sayfa.html">Modern Ataşehir ilk sürüm</a><a class="ghost" href="/kapi-evreni">Kapı Evreni</a></div>
+</div>
+<div class="console">
+<figure class="stage">
+<canvas id="sahne" tabindex="0" aria-label="Temsili 3B bina maketi">
+Sahneyi görüntülemek için WebGL destekli bir tarayıcı kullan.
+</canvas>
+<figcaption>Temsili 3B bina maketi</figcaption>
+</figure>
+<div class="panel">
+<div class="modes" role="group" aria-label="Sahne seçenekleri"><button type="button" class="mode" data-mode="0" aria-pressed="true">Yapı kütlesi</button>
+<button type="button" class="mode" data-mode="1" aria-pressed="false">Yaşam alanı</button>
+<button type="button" class="mode" data-mode="2" aria-pressed="false">Gün ışığı</button></div>
+<div class="camera" role="group" aria-label="Kamera">
+<button id="kamera-sifirla" type="button" class="ghost">Kamerayı sıfırla</button>
+<button id="kamera-oynat" type="button" class="ghost" aria-pressed="false">Otomatik dönüş</button>
+<button id="vr" type="button" class="ghost" hidden>VR gözlükle aç</button>
+</div>
+<p id="sahne-durum" class="state" role="status">Sahne yükleniyor…</p>
+</div>
+</div>
+</section>
+<p class="note">Temsili mimari maket. Ölçüler, yerleşim ve ışık görselleştirme amaçlıdır.</p>
+<div class="more"><a href="https://www.xn--ataehirmodern-ktc.com/">Ataşehir kent pilotuna geç</a></div>
 
-  <dl class="olcu">
-    <div><dt>Seçilebilir daire</dt><dd data-olcu="secilebilir">— <small>temsili: 3 blok × 28 kat × 12</small></dd></div>
-    <div><dt>Sahnedeki parça</dt><dd data-olcu="kutu">— <small>tek çizim çağrısı</small></dd></div>
-    <div><dt>Kütüphane</dt><dd>0 <small>saf WebGL2</small></dd></div>
-    <div><dt>Ağ isteği</dt><dd>0 <small>model tarayıcıda üretilir</small></dd></div>
-  </dl>
-
-  <section class="bolum" id="hizmet-katmani" aria-labelledby="hizmet-baslik">
-    <h2 id="hizmet-baslik">Bina bir arayüzdür</h2>
-    <p>Üç blok, yaklaşık bin konut ve misafirleri için yapay zekâ sistemi. Modeldeki kat ve daire yerleşimi temsilidir; gerçek plan değil, hizmetin nasıl adreslenileceğini gösterir.</p>
-    <div class="katman">
-      <article><b>01 · DAİRE</b><h3>Her birim bir adres</h3><p>Blok, kat ve daire üçlüsü hizmetin kapısıdır. Bir talep, nereden geldiğiyle birlikte hazırlanır.</p></article>
-      <article><b>02 · BLOK</b><h3>Ortak alan ve teknik</h3><p>Asansör, otopark, bahçe: ortak alan ihtiyaçları blok düzeyinde toplanır.</p></article>
-      <article><b>03 · MİSAFİR</b><h3>Bilgilendirme</h3><p>Misafir, binayı ekranda görerek yönünü bulur. Bugün yalnız taslak; giriş izni veya rezervasyon yapılmaz.</p></article>
-      <article><b>04 · ŞEHİR</b><h3>Mahalleye bağlanır</h3><p>Bina, Ataşehir şehir pilotunun altın kuleleridir. Aynı motor iki ölçekte çalışır.</p></article>
-    </div>
-  </section>
-
-  <section class="bolum" id="taslak" aria-labelledby="taslak-baslik">
-    <h2 id="taslak-baslik">Hizmet taslağı oluştur</h2>
-    <p>Bu sürüm talep taslağı oluşturur. Yönetim sistemine gönderim, giriş izni veya rezervasyon henüz yapılmaz; hesap, ödeme veya kişisel bilgi gerektirmez.</p>
-    <div class="form">
-      <label>Konu<select id="kind"><option>Misafir bilgilendirme</option><option>Ortak alan ihtiyacı</option><option>Teknik destek</option></select></label>
-      <label>Başlık<input id="title" maxlength="180" required></label>
-      <label>Notun<textarea id="note" maxlength="6000" placeholder="Kişisel bilgi eklemeden ihtiyacını anlat."></textarea></label>
-      <div class="satir"><button type="button" class="dugme ana" id="prepare">Taslağı hazırla</button><button type="button" class="dugme" id="download">TXT olarak indir</button></div>
-      <p id="status" role="status" aria-live="polite"></p>
-      <label>Hazırlanan taslak<textarea id="result" readonly></textarea></label>
-    </div>
-  </section>
 </main>
-
-<footer class="alt-bilgi">
-  <p>MODERN ATAŞEHİR · 3B model temsilidir; kat sayısı, daire yerleşimi ve konum gerçek plan değildir.</p>
-  <p>Hazırladığın not bu sayfadan sunucuya gönderilmez. Kapanmadan önce indir.</p>
-</footer>
+<footer><span>MODERN ATAŞEHİR / YAŞAM</span><a href="/onceki-ana-sayfa.html">Önceki ana sayfa</a></footer>
 </body>
 </html>
