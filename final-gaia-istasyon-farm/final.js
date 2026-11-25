@@ -602,9 +602,9 @@
       var mekF = val('inp-mekan-farm', 'modern');
       var tflops = (masa * saatF * 14.8).toFixed(1);
       var yeniDugum = (masa * saatF / 88).toFixed(2);
-      html = '<strong>GAIA Bilgisayar Farmı (' + mekF.toUpperCase() + '):</strong> <strong>' + masa + ' misafir istasyonu</strong> × ' + saatF + ' saat ortak çalışmada arkada çalışan GPT filosu <strong>' + tflops + ' TFLOP·saat</strong> görev işledi.<br>' +
-             '<strong>GAIA Ağına Katılan Yeni Bilgisayar Payı:</strong> <strong>+' + yeniDugum + ' otonom düğüm/gün</strong>.';
-      sonCiktiNesnesi = { sema: 'gaia.kafe.farm.v1', aktifIstasyon: masa, gunlukSaat: saatF, mekan: mekF, uretilenTflopSaat: Number(tflops), kazanilanDugumGun: Number(yeniDugum) };
+      html = '<strong>GAIA kapasite senaryosu (' + mekF.toUpperCase() + '):</strong> <strong>' + masa + ' misafir istasyonu</strong> × ' + saatF + ' saat için varsayımsal toplam <strong>' + tflops + ' TFLOP·saat</strong> hesaplandı.<br>' +
+             '<strong>Varsayımsal düğüm karşılığı:</strong> <strong>+' + yeniDugum + ' otonom düğüm/gün</strong>.';
+      sonCiktiNesnesi = { sema: 'gaia.kafe.farm.v1', aktifIstasyon: masa, gunlukSaat: saatF, mekan: mekF, uretilenTflopSaat: Number(tflops), kazanilanDugumGun: Number(yeniDugum), kaynak: 'ORNEK_SENARYO' };
     }
 
     sonucEl.innerHTML = html;

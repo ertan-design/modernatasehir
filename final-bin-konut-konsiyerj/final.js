@@ -572,8 +572,8 @@
       var hiz = val('inp-hizmet', 'terzi');
       var fis = 'KONUT-' + kblok + '-K' + katno + '-' + fnvOzeti(kblok + katno + hiz).slice(0, 6).toUpperCase();
       html = '<strong>1.000 Konut Misafir AI Karşılama:</strong> <strong>' + kblok + ' · ' + katno + '. Kat</strong> daireniz tanımlandı.<br>' +
-             '<strong>Seçilen Hizmet (' + hiz.toUpperCase() + '):</strong> Bugün 15 dakika içinde daire kapısında / online bağlantıda <strong>MÜSAİT</strong> · Fiş: <code>' + fis + '</code>';
-      sonCiktiNesnesi = { sema: 'modernatasehir.1000konut.v1', blok: kblok, kat: katno, hizmet: hiz, karsilamaFisi: fis };
+             '<strong>Seçilen Hizmet (' + hiz.toUpperCase() + '):</strong> Hizmet talebi taslağı · Fiş: <code>' + fis + '</code>';
+      sonCiktiNesnesi = { sema: 'modernatasehir.1000konut.v1', blok: kblok, kat: katno, hizmet: hiz, karsilamaFisi: fis, durum: 'TASLAK', musaitlikDogrulandi: false };
     }
     else if (MOD === 'barista_sanart') {
       var oda = val('inp-oda', '1');
