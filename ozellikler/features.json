@@ -2,6 +2,13 @@
   "site": "modernatasehir",
   "entries": [
     {
+      "path": "kartela/index.html",
+      "title": "Başka İstanbul Yok · Kartela",
+      "description": "Ataşehir’in gerçek planı, plaka plaka dokundu. Ayır, üfle, bak.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
       "path": "final/yasam-takvimi-ics/index.html",
       "title": "8-Temas Yeni Misafir Yaşam Rehberi",
       "description": "İlk gün yerleşiminden sanat, ses ve tarıma uzanan 8 temas noktalı rehber ve .ics indirici.",

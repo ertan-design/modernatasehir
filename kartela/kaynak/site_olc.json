@@ -1,0 +1,197 @@
+{
+ "sema": "biy.siteler.olcum.v1",
+ "yontem": "Salt-okur HTTP GET (tek istek/adres, tarayıcı benzeri User-Agent); yalnız durum kodu, süre, <title>, <h1>, meta açıklama ve belirtilen cümleler alındı.",
+ "olcumler": {
+  "atasehirmodern": {
+   "url": "https://www.xn--ataehirmodern-ktc.com/",
+   "durum": 200,
+   "son_adres": "https://www.xn--ataehirmodern-ktc.com/",
+   "ms": 477,
+   "baslik": "ATAŞEHİR AIOS 3B · Çatıdan uç. Kenti yaşa.",
+   "aciklama": "İstanbul Ataşehir AIOS 3D City pilotu · Google Maps olmadan 3B yönlendir.",
+   "h1": "Çatıdan uç. Kenti yaşa.",
+   "alinti": {},
+   "zaman_utc": "2026-11-25T16:54:22Z"
+  },
+  "atasehirmodern-yon": {
+   "url": "https://www.xn--ataehirmodern-ktc.com/uc-yon/",
+   "durum": 200,
+   "son_adres": "https://www.xn--ataehirmodern-ktc.com/uc-yon/",
+   "ms": 509,
+   "baslik": "Ataşehir · Üç Yön",
+   "aciklama": "Üç sanal çıkıştan İstanbul",
+   "h1": "Evinden çık. Şehri keşfet.",
+   "alinti": {
+    "takvim": "Terzi ve danışmanların canlı takvim bağlantısı henüz yok.",
+    "kesin": "uygunluk veya randevu kesinleşmiş sayılmaz"
+   },
+   "zaman_utc": "2026-11-25T16:54:22Z"
+  },
+  "ust-halka-kardes": {
+   "url": "https://www.xn--ataehirmodern-ktc.com/uc-yon/istanbul.html",
+   "durum": 200,
+   "son_adres": "https://www.xn--ataehirmodern-ktc.com/uc-yon/istanbul",
+   "ms": 670,
+   "baslik": "Bir şehir.Birbirine değen hayatlar. · Ataşehir Modern",
+   "aciklama": "",
+   "h1": "Bir şehir. Birbirine değen hayatlar.",
+   "alinti": {},
+   "zaman_utc": "2026-11-25T16:54:22Z"
+  },
+  "modernatasehir": {
+   "url": "https://www.xn--modernataehir-qtc.com/",
+   "durum": 200,
+   "son_adres": "https://www.xn--modernataehir-qtc.com/",
+   "ms": 539,
+   "baslik": "MODERN ATAŞEHİR · Üç blok. Bin yaşam.",
+   "aciklama": "1.000 konutluk misafir yapay zekâsı · Terzi, tarım, sanat ve ses hazır.",
+   "h1": "Üç blok. Bin yaşam.",
+   "alinti": {},
+   "zaman_utc": "2026-11-25T16:54:22Z"
+  },
+  "afair-studio": {
+   "url": "https://www.afair.studio/",
+   "durum": 200,
+   "son_adres": "https://www.afair.studio/",
+   "ms": 395,
+   "baslik": "AFFFAIR STUDIO · Dokun. Çevir. Dalgalansın.",
+   "aciklama": "Her tasarımcıya özel alt-domain ve 360° gerçek ipek dokuma sergisi.",
+   "h1": "Dokun. Çevir. Dalgalansın.",
+   "alinti": {},
+   "zaman_utc": "2026-11-25T16:54:22Z"
+  },
+  "lif-atolyesi": {
+   "url": "https://www.afair.studio/lif-atolyesi/",
+   "durum": 200,
+   "son_adres": "https://www.afair.studio/lif-atolyesi/",
+   "ms": 360,
+   "baslik": "Lif Atölyesi · AFAIR Studio",
+   "aciklama": "Liften dokumaya, numuneden provaya: iki malzeme fikrini yan yana incele. Fiziksel numune ve tedarikçi doğrulama adımlarını açıkça gör.",
+   "h1": "Rengi ekranda gör. Kararı kumaşla ver.",
+   "alinti": {},
+   "zaman_utc": "2026-11-25T16:54:23Z"
+  },
+  "afair-live": {
+   "url": "https://www.afair.live/afair-live-vitrin.html",
+   "durum": 200,
+   "son_adres": "https://www.afair.live/afair-live-vitrin",
+   "ms": 476,
+   "baslik": "AFAIR / LIVE",
+   "aciklama": "Defile, koleksiyon ve yaratıcı buluşmalar için yayın alanı.",
+   "h1": "Tasarım sahneye çıkar.",
+   "alinti": {},
+   "zaman_utc": "2026-11-25T16:54:23Z"
+  },
+  "yasam-terzi": {
+   "url": "https://www.afair.live/yasam-destegi/?konu=terzi",
+   "durum": 200,
+   "son_adres": "https://www.afair.live/yasam-destegi/?konu=terzi",
+   "ms": 389,
+   "baslik": "AFAIR · Yaşam Masası",
+   "aciklama": "Ataşehir’de yeni yaşam için terzi, tarım danışmanlığı, sanat ve teknoloji taleplerini hazırla.",
+   "h1": "Evin için ne lazım?",
+   "alinti": {
+    "musaitlik": "Müsaitlik bilgisi bağlı değil. Burada bir talep taslağı hazırlarsın; henüz randevu alınmaz veya sağlayıcıya mesaj gönderilmez.",
+    "taslak": "Burada bir talep taslağı hazırlarsın; henüz randevu alınmaz veya sağlayıcıya mesaj gönderilmez."
+   },
+   "zaman_utc": "2026-11-25T16:54:23Z"
+  },
+  "yasam-tarim": {
+   "url": "https://www.afair.live/yasam-destegi/?konu=tarim",
+   "durum": 200,
+   "son_adres": "https://www.afair.live/yasam-destegi/?konu=tarim",
+   "ms": 360,
+   "baslik": "AFAIR · Yaşam Masası",
+   "aciklama": "Ataşehir’de yeni yaşam için terzi, tarım danışmanlığı, sanat ve teknoloji taleplerini hazırla.",
+   "h1": "Evin için ne lazım?",
+   "alinti": {
+    "musaitlik": "Müsaitlik bilgisi bağlı değil. Burada bir talep taslağı hazırlarsın; henüz randevu alınmaz veya sağlayıcıya mesaj gönderilmez.",
+    "taslak": "Burada bir talep taslağı hazırlarsın; henüz randevu alınmaz veya sağlayıcıya mesaj gönderilmez."
+   },
+   "zaman_utc": "2026-11-25T16:54:23Z"
+  },
+  "yasam-teknoloji": {
+   "url": "https://www.afair.live/yasam-destegi/?konu=teknoloji",
+   "durum": 200,
+   "son_adres": "https://www.afair.live/yasam-destegi/?konu=teknoloji",
+   "ms": 224,
+   "baslik": "AFAIR · Yaşam Masası",
+   "aciklama": "Ataşehir’de yeni yaşam için terzi, tarım danışmanlığı, sanat ve teknoloji taleplerini hazırla.",
+   "h1": "Evin için ne lazım?",
+   "alinti": {
+    "musaitlik": "Müsaitlik bilgisi bağlı değil. Burada bir talep taslağı hazırlarsın; henüz randevu alınmaz veya sağlayıcıya mesaj gönderilmez.",
+    "taslak": "Burada bir talep taslağı hazırlarsın; henüz randevu alınmaz veya sağlayıcıya mesaj gönderilmez."
+   },
+   "zaman_utc": "2026-11-25T16:54:23Z"
+  },
+  "yasam-sanat": {
+   "url": "https://www.afair.live/yasam-destegi/?konu=sanat",
+   "durum": 200,
+   "son_adres": "https://www.afair.live/yasam-destegi/?konu=sanat",
+   "ms": 275,
+   "baslik": "AFAIR · Yaşam Masası",
+   "aciklama": "Ataşehir’de yeni yaşam için terzi, tarım danışmanlığı, sanat ve teknoloji taleplerini hazırla.",
+   "h1": "Evin için ne lazım?",
+   "alinti": {
+    "musaitlik": "Müsaitlik bilgisi bağlı değil. Burada bir talep taslağı hazırlarsın; henüz randevu alınmaz veya sağlayıcıya mesaj gönderilmez.",
+    "taslak": "Burada bir talep taslağı hazırlarsın; henüz randevu alınmaz veya sağlayıcıya mesaj gönderilmez."
+   },
+   "zaman_utc": "2026-11-25T16:54:23Z"
+  },
+  "tarim-online": {
+   "url": "https://www.tarim.online/",
+   "durum": 200,
+   "son_adres": "https://www.tarim.online/",
+   "ms": 300,
+   "baslik": "Tarım Online",
+   "aciklama": "Parsel ölçeğinde iklim profili, sulama ve girdi hesapları.",
+   "h1": "Aşırı Yerelleştirilmiş Tarımsal Veri Modellemeleri",
+   "alinti": {},
+   "zaman_utc": "2026-11-25T16:54:23Z"
+  },
+  "hasat-online": {
+   "url": "https://www.hasat.online/",
+   "durum": 200,
+   "son_adres": "https://www.hasat.online/",
+   "ms": 585,
+   "baslik": "hasat.online — ne ekeyim, paket, satış",
+   "aciklama": "Gökçeada hasat rehberi: EcoCrop uygunluk, GESTAŞ tarife, Open-Meteo model, örnek satış hesabı. Lab/anemometre/GESTAŞ iptali uydurulmaz.",
+   "h1": "Kaça satarım",
+   "alinti": {},
+   "zaman_utc": "2026-11-25T16:54:23Z"
+  },
+  "watergarden-resmi": {
+   "url": "https://watergarden.com.tr/iletisim",
+   "durum": 200,
+   "son_adres": "https://watergarden.com.tr/iletisim",
+   "ms": 414,
+   "baslik": "Watergarden Alışveriş Merkezi Resmi Websitesi",
+   "aciklama": "Watergarden Alışveriş Merkezi Resmi Websitesi",
+   "h1": "İletişim",
+   "alinti": {},
+   "zaman_utc": "2026-11-25T16:54:23Z"
+  },
+  "ifm-resmi": {
+   "url": "https://ifm.gov.tr/b/2/iletisim",
+   "durum": 200,
+   "son_adres": "https://ifm.gov.tr/b/2/iletisim",
+   "ms": 743,
+   "baslik": "İletişim - İstanbul Finans Merkezi",
+   "aciklama": "",
+   "h1": "",
+   "alinti": {},
+   "zaman_utc": "2026-11-25T16:54:23Z"
+  },
+  "modern-resmi-adres": {
+   "url": "https://atasehirmodern.com/iletisim",
+   "durum": 200,
+   "son_adres": "https://atasehirmodern.com/iletisim",
+   "ms": 810,
+   "baslik": "Ataşehir Modern",
+   "aciklama": "",
+   "h1": "İletişim",
+   "alinti": {},
+   "zaman_utc": "2026-11-25T16:54:24Z"
+  }
+ }
+}

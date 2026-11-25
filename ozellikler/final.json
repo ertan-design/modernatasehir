@@ -3,9 +3,18 @@
   "site": "modernatasehir",
   "origin": "https://www.xn--modernataehir-qtc.com",
   "homepage_preserved": true,
-  "entry_count": 34,
-  "restored_count": 8,
+  "entry_count": 35,
+  "restored_count": 9,
   "entries": [
+    {
+      "path": "kartela/index.html",
+      "title": "Başka İstanbul Yok · Kartela",
+      "description": "Ataşehir’in gerçek planı, plaka plaka dokundu. Ayır, üfle, bak.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--modernataehir-qtc.com/kartela/index.html",
+      "sha256": "63b6ce7eaf5bb3cd86fd97e40795d1d856ff1b44b581e3e04b54c4cb66e2e542"
+    },
     {
       "path": "final/yasam-takvimi-ics/index.html",
       "title": "8-Temas Yeni Misafir Yaşam Rehberi",

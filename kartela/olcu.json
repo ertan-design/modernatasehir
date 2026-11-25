@@ -1,0 +1,312 @@
+{
+ "sema": "biy.kartela.dogrulama.v1",
+ "zaman_utc": "2026-11-25T17:00:35Z",
+ "tarayici": "chromium-1248",
+ "kosular": {
+  "masaustu": {
+   "genislik": 1440,
+   "yukseklik": 900,
+   "ms": 17399,
+   "konsol_hata": [],
+   "sonuc": {
+    "hata": null,
+    "olc": [
+     [
+      "dis",
+      "0",
+      "o"
+     ],
+     [
+      "harita",
+      "0",
+      "o"
+     ],
+     [
+      "dokuma",
+      "302 ms",
+      "o"
+     ],
+     [
+      "mesafe",
+      "0,46 m sapma",
+      "o"
+     ],
+     [
+      "de",
+      "ΔE00 25,4",
+      "o"
+     ],
+     [
+      "kontrast",
+      "12,7 : 1",
+      "o"
+     ],
+     [
+      "cevre",
+      "169 + 3 bina",
+      "o"
+     ],
+     [
+      "butunluk",
+      "✓ d77320caf6c9",
+      "o"
+     ]
+    ],
+    "ms": 302,
+    "gw": 288,
+    "gh": 162,
+    "hucre": 4,
+    "dik": false,
+    "kaynak": [
+     [
+      "/kartela/kartela.css",
+      20225
+     ],
+     [
+      "/kartela/veri.js",
+      42212
+     ],
+     [
+      "/kartela/kartela.js",
+      55458
+     ],
+     [
+      "/kartela/veri.json",
+      42114
+     ]
+    ],
+    "tasma": 0,
+    "bolum": 5,
+    "kart": 5,
+    "dort": 4,
+    "harici": 25,
+    "eksikRel": 0,
+    "h1": "Başka İstanbul yok.",
+    "gec": [
+     "/",
+     "/ozellikler/"
+    ],
+    "kanvas": [
+     "1152x696",
+     "1152x696",
+     "1152x696",
+     "1152x696",
+     "1152x696",
+     "1152x696",
+     "1152x696"
+    ]
+   }
+  },
+  "mobil": {
+   "genislik": 390,
+   "yukseklik": 844,
+   "ms": 18444,
+   "konsol_hata": [],
+   "sonuc": {
+    "hata": null,
+    "olc": [
+     [
+      "dis",
+      "0",
+      "o"
+     ],
+     [
+      "harita",
+      "0",
+      "o"
+     ],
+     [
+      "dokuma",
+      "311 ms",
+      "o"
+     ],
+     [
+      "mesafe",
+      "0,46 m sapma",
+      "o"
+     ],
+     [
+      "de",
+      "ΔE00 25,4",
+      "o"
+     ],
+     [
+      "kontrast",
+      "12,7 : 1",
+      "o"
+     ],
+     [
+      "cevre",
+      "169 + 3 bina",
+      "o"
+     ],
+     [
+      "butunluk",
+      "✓ d77320caf6c9",
+      "o"
+     ]
+    ],
+    "ms": 311,
+    "gw": 120,
+    "gh": 196,
+    "hucre": 3,
+    "dik": true,
+    "kaynak": [
+     [
+      "/kartela/kartela.css",
+      20225
+     ],
+     [
+      "/kartela/veri.js",
+      42212
+     ],
+     [
+      "/kartela/kartela.js",
+      55458
+     ],
+     [
+      "/kartela/veri.json",
+      42114
+     ]
+    ],
+    "tasma": 0,
+    "bolum": 5,
+    "kart": 5,
+    "dort": 4,
+    "harici": 25,
+    "eksikRel": 0,
+    "h1": "Başka İstanbul yok.",
+    "gec": [
+     "/",
+     "/ozellikler/"
+    ],
+    "kanvas": [
+     "360x624",
+     "360x624",
+     "360x624",
+     "360x624",
+     "360x624",
+     "360x624",
+     "360x624"
+    ]
+   }
+  },
+  "ayrik": {
+   "genislik": 1440,
+   "yukseklik": 900,
+   "ms": 12548,
+   "konsol_hata": [],
+   "sonuc": {
+    "hata": null,
+    "olc": [
+     [
+      "dis",
+      "0",
+      "o"
+     ],
+     [
+      "harita",
+      "0",
+      "o"
+     ],
+     [
+      "dokuma",
+      "305 ms",
+      "o"
+     ],
+     [
+      "mesafe",
+      "0,46 m sapma",
+      "o"
+     ],
+     [
+      "de",
+      "ΔE00 25,4",
+      "o"
+     ],
+     [
+      "kontrast",
+      "12,7 : 1",
+      "o"
+     ],
+     [
+      "cevre",
+      "169 + 3 bina",
+      "o"
+     ],
+     [
+      "butunluk",
+      "✓ d77320caf6c9",
+      "o"
+     ]
+    ],
+    "ms": 305,
+    "gw": 288,
+    "gh": 162,
+    "hucre": 4,
+    "dik": false,
+    "kaynak": [
+     [
+      "/kartela/kartela.css",
+      20225
+     ],
+     [
+      "/kartela/veri.js",
+      42212
+     ],
+     [
+      "/kartela/kartela.js",
+      55458
+     ],
+     [
+      "/kartela/veri.json",
+      42114
+     ]
+    ],
+    "tasma": 0,
+    "bolum": 5,
+    "kart": 5,
+    "dort": 4,
+    "harici": 25,
+    "eksikRel": 0,
+    "h1": "Başka İstanbul yok.",
+    "gec": [
+     "/",
+     "/ozellikler/"
+    ],
+    "kanvas": [
+     "1152x696",
+     "1152x696",
+     "1152x696",
+     "1152x696",
+     "1152x696",
+     "1152x696",
+     "1152x696"
+    ]
+   }
+  }
+ },
+ "dosyalar": {
+  "index.html": {
+   "bayt": 7443,
+   "sha256": "63b6ce7eaf5bb3cd86fd97e40795d1d856ff1b44b581e3e04b54c4cb66e2e542"
+  },
+  "kartela.css": {
+   "bayt": 20225,
+   "sha256": "2fafa5dd598e43937ed2ddaede022da3ddb6a0cf8902d39dcce133df98b230c8"
+  },
+  "kartela.js": {
+   "bayt": 55458,
+   "sha256": "fbffb5e3b5861b058c9b4cfa543513273e065f050dcf3e0c06cd172d3eb9ca8f"
+  },
+  "veri.js": {
+   "bayt": 42212,
+   "sha256": "51b5f60640dc14f632de035b4027696b42f02706d82c55aae93c732d081c5db1"
+  },
+  "veri.json": {
+   "bayt": 42114,
+   "sha256": "d77320caf6c910c80f5cef6faed403de689fd6c259afa41b71d6ebdcb2bdafe0"
+  }
+ },
+ "sorun": []
+}
