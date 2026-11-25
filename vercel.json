@@ -32,5 +32,6 @@
       "source": "/modern-atasehir-pilot"
     }
   ],
-  "buildCommand": "node yayin-kontrol.cjs"
+  "buildCommand": "",
+  "outputDirectory": "."
 }
