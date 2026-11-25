@@ -245,6 +245,13 @@
       "category": "Sahne ve film",
       "restored": false,
       "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "final-terazi/tarim-randevu/index.html",
+      "title": "Tarım danışmanı randevusu",
+      "description": "Tarım danışmanından randevu: bitkini anlat, saatini seç.",
+      "category": "Geri getirilen",
+      "restored": true
     }
   ]
 }

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>TARIM · ATAŞEHİR · Tarım Danışmanı Randevu Sahnesi</title>
+<meta name="description" content="Binaya yeni taşınan komşu için parsel seç, danışmanla buluş.">
+
+
+<link rel="stylesheet" href="stil.css">
+<link rel="stylesheet" href="ft-nav.css">
+</head>
+<body>
+<a class="ft-geri" href="/">← Ana sayfa</a>
+<div class="hero-stage">
+  <canvas id="glStage" aria-label="360 derece yönlendirilebilir 3 boyutlu sahne"></canvas>
+
+  <header class="top-bar">
+    <a class="brand-pill" href="#canli-ag">TARIM · ATAŞEHİR</a>
+    <a class="nav-pill" href="/">Lif İkizi →</a>
+  </header>
+
+  <div class="hero-head">
+    <h1>Tarım Danışmanı Randevu Sahnesi</h1>
+    <p>Binaya yeni taşınan komşu için parsel seç, danışmanla buluş.</p>
+  </div>
+
+  <div class="dock-bar" role="region" aria-label="Sahne yönlendirme seçenekleri">
+    <button type="button" class="dock-pill on" data-preset="0">Bugün 16:30 Müsait</button>
+    <button type="button" class="dock-pill" data-preset="1">Kardeş Parsel</button>
+    <button type="button" class="dock-pill" data-preset="2">Balkon &amp; Teras</button>
+    <button type="button" class="dock-pill" data-preset="3">Doğal Hasat</button>
+  </div>
+</div>
+
+<main class="content-wrap">
+  <section class="sim-box" aria-label="Topraktan İpliğe &amp; Ziraat Danışmanı Canlı Randevu Masası">
+    <h2>Topraktan İpliğe &amp; Ziraat Danışmanı Canlı Randevu Masası</h2>
+    <p>SoilGrids + ERA5 iklim verisiyle doğrulanan lif kalitesini Pantone dokuma kartelasına ve danışman randevusuna bağlayın:</p>
+    <div class="sim-row">
+      <select id="widgetSelect" class="sim-select" aria-label="Mod seçimi"><option value="0">Keten Lifi -&gt; Pantone 13-0919 &amp; Danışman 16:30</option><option value="1">Ege Pamuğu -&gt; Pantone 11-0604 &amp; Danışman 18:00</option><option value="2">Ataşehir Kardeş Parsel -&gt; Canlı Görüşme 10:30</option></select>
+      <input id="widgetInput" class="sim-input" type="text" placeholder="Parsel veya konut blok notu..." aria-label="Not girişi">
+    </div>
+    <div id="widgetOut" class="sim-out"></div>
+  </section>
+
+  <section class="card-grid" aria-label="Özgün sahne kapıları">
+    <article class="lux-card">
+      <div><h2>Online Terzi Müsait mi?</h2><p>Tarım danışmanı randevusunun hemen ardından evde iki-mezura terzi randevusuna tek tıkla geçiş.</p></div>
+      <div><a class="dock-pill" href="https://www.afair.live/iki-mezura-randevu">Terziye Bak</a></div>
+    </article>
+    <article class="lux-card">
+      <div><h2>Modern Ataşehir Misafir Masası</h2><p>1.000 konutluk 3 blokta yaşayan sakinlerin günlük yaşam ve GAIA kafe merkezi.</p></div>
+      <div><a class="dock-pill" href="https://www.xn--modernataehir-qtc.com/serdar-konum-3b">Konut Masası</a></div>
+    </article>
+    <article class="lux-card">
+      <div><h2>Topraktan İpliğe Lif İkizi</h2><p>Seçilen parselin ürettiği keten ve pamuk liflerinin 3B topografik analizi.</p></div>
+      <div><a class="dock-pill" href="/">Lif İkizini Aç</a></div>
+    </article>
+  </section>
+
+  <section class="sim-box" id="canli-ag" aria-label="Canlı bağımsız ağ geçitleri">
+    <h2>Bağımsız Taşınabilir Canlı Ağ Geçitleri (%100 Öz-Yeterli Tek-Dosya)</h2>
+    <div class="link-grid">
+      <a class="link-chip" href="https://www.afair.live/iki-mezura-randevu">01 · afair.live — İki-Mezura &amp; Online Terzi</a>
+      <a class="link-chip" href="https://www.afair.studio/rufat">02 · afair.studio (Rufat) — rufat.afair.studio Couture</a>
+      <a class="link-chip" href="https://www.afair.studio/dila-8d">03 · afair.studio (Dila) — dila.afair.studio 8B Dokuma</a>
+      <a class="link-chip" href="https://tarim-ortak-yayin.vercel.app/petek/keten-toprak-terzi-ikizi/">04 · Tarım Ortak (Keten) — Toprak-Terzi Lif İkizi</a>
+      <a class="link-chip" href="https://tarim-ortak-yayin.vercel.app/petek/atasehir-tarim-randevu/">05 · Tarım Ortak (Randevu) — Ataşehir Tarım Danışmanı</a>
+      <a class="link-chip" href="https://www.xn--ataehirmodern-ktc.com/gulnihal-sokak">06 · ataşehirmodern.com — Gülnihal Sokak 3B Kent</a>
+      <a class="link-chip" href="https://www.xn--modernataehir-qtc.com/serdar-konum-3b">07 · modernataşehir.com — 1.000 Konut &amp; GAIA Kafe</a>
+      
+      <a class="link-chip" href="https://www.codekafa.com/baton-pass">09 · codekafa.com/baton-pass — 4-GPT Baton-Pass Gözlemevi</a>
+      
+      <a class="link-chip" href="https://www.selinahbap.com/emre-ikiz-karar">11 · selinahbap.com — İki-Karar &amp;  Terazi</a>
+      <a class="link-chip" href="https://www.tarim.online/">12 · tarim.online — Tarım Online Ana Portal</a>
+      <a class="link-chip" href="https://www.gospor.com/">13 · gospor.com — Maltepe Sahil &amp; Spor Hattı</a>
+      <a class="link-chip" href="https://www.hasat.online/">14 · hasat.online — Kardeş Parsel &amp; Hasat</a>
+      <a class="link-chip" href="https://www.pazar.live/">15 · pazar.live &amp; prxs.com — Canlı Üretici Meydanı</a>
+    </div>
+  </section>
+</main>
+<script src="kod-2.js"></script>
+</body>
+</html>
