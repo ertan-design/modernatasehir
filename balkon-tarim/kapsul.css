@@ -1,0 +1,59 @@
+/* BAGIMSIZ TASINABILIR AA KAPSUL — Yalniz ./kapsul.css, 0 dis bagimlilik, 0 saf siyah */
+:root {
+  --oda: #090b10;
+  --cam: rgba(14, 18, 27, 0.64);
+  --panel: rgba(14, 18, 27, 0.88);
+  --fildisi: #f3eadc;
+  --soluk: rgba(243, 234, 220, 0.66);
+  --vurgu: #d8bc8c;
+  --cizgi: rgba(243, 234, 220, 0.16);
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body {
+  margin: 0; padding: 0; width: 100%; height: 100%; max-width: 100vw;
+  background-color: var(--oda); color: var(--fildisi);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 12px; overflow: hidden; user-select: none;
+}
+#tuval {
+  position: fixed; inset: 0; width: 100vw; height: 100dvh;
+  display: block; cursor: grab; touch-action: none; z-index: 1;
+}
+#tuval:active { cursor: grabbing; }
+.ust {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 16px 20px; pointer-events: none;
+}
+.sol, .sag { pointer-events: auto; display: flex; align-items: center; gap: 6px; }
+.damga, .dugme {
+  appearance: none; text-decoration: none; color: var(--fildisi);
+  background-color: var(--cam); border: 1px solid var(--cizgi);
+  border-radius: 999px; padding: 7px 13px; font-family: inherit; font-size: 12px;
+  cursor: pointer; backdrop-filter: blur(14px);
+}
+.damga { font-family: Georgia, serif; letter-spacing: 0.18em; text-transform: uppercase; }
+.dugme:hover, .dugme.aktif { border-color: var(--vurgu); color: var(--vurgu); }
+.baslik {
+  position: fixed; left: 22px; bottom: 76px; z-index: 8;
+  max-width: min(430px, calc(100vw - 44px)); pointer-events: none;
+}
+.baslik h1 {
+  margin: 0 0 6px; font-family: Georgia, serif; font-weight: 400;
+  font-size: 36px; line-height: 1.08; letter-spacing: -0.02em;
+}
+.baslik p { margin: 0; font-size: 14px; line-height: 1.4; color: var(--soluk); }
+.alt {
+  position: fixed; left: 20px; right: 20px; bottom: 18px; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  pointer-events: none;
+}
+.alt-sol { pointer-events: auto; display: flex; align-items: center; gap: 6px; }
+.etiket { font-size: 12px; color: var(--vurgu); letter-spacing: 0.03em; }
+@media (max-width: 640px) {
+  .ust { padding: 12px; }
+  .baslik { left: 14px; bottom: 66px; }
+  .baslik h1 { font-size: 28px; }
+  .alt { left: 12px; right: 12px; bottom: 12px; }
+  .etiket { display: none; }
+}
