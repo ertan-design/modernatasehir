@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>ATAŞEHİR × AFAIR · Dokun, Çevir, Şehre Uç</title>
+  <meta name="description" content="Kumaşa dokun, 360° çevir, rüzgârla dalgalandır veya üç çatıdan Watergarden, Finanskent ve Maltepe sahiline uç.">
+  <link rel="stylesheet" href="./afair-8d.css">
+</head>
+<body data-baslik="Dokun. Çevir. Şehre uç.">
+  <canvas id="sahne-tuval" aria-label="360 derece yönlendirilebilir gerçek kumaş ve üç blok çatı uçuş sahnesi"></canvas>
+
+  <header class="ust-bar">
+    <div class="marka-grup">
+      <a class="marka" href="./index.html">ATAŞEHİR</a>
+    </div>
+    <nav class="kip-grup" aria-label="Sahne">
+      <button type="button" class="hap aktif" id="kip-kumas">Kumaş</button>
+      <button type="button" class="hap" id="kip-ucus">Uçuş</button>
+      <button type="button" class="hap" id="kip-yasam">Yaşam</button>
+    </nav>
+  </header>
+
+  <section class="baslik-katmani" aria-live="polite">
+    <h1 id="hero-baslik">Dokun. Çevir. Şehre uç.</h1>
+    <p id="hero-alt">360° sürükle. Üç çatıdan yönünü seç.</p>
+  </section>
+
+  <aside class="mini-kart gizli" id="mini-cekmece" aria-live="polite">
+    <p id="cekmece-metin">Online İki-Mezura Terzi şu an müsait.</p>
+    <video id="cekmece-video" class="gizli" controls playsinline loop muted preload="none" data-src="/dokuma-ufuk/medya/genie_ucus_referans.mp4"></video>
+    <div class="mini-aksiyon">
+      <a class="cam-dugme aktif" id="cekmece-bag" href="https://www.afair.live/dila/iki-mezura.html">Aç ↗</a>
+      <button type="button" class="cam-dugme" id="cekmece-kapat">Kapat</button>
+    </div>
+  </aside>
+
+  <footer class="alt-bar">
+    <div class="alt-dugmeler">
+      <button type="button" class="cam-dugme" id="btn-sec">Kumaş</button>
+      <button type="button" class="cam-dugme" id="btn-ruzgar">Rüzgâr</button>
+      <button type="button" class="cam-dugme" id="btn-ses">8D Ses</button>
+    </div>
+    <span class="durum-etiket" id="canli-durum">Şampanya İpeği · 22°</span>
+  </footer>
+
+  <script src="./afair-8d.js"></script>
+</body>
+</html>
