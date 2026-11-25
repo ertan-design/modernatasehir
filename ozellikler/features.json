@@ -1,0 +1,201 @@
+{
+  "site": "modernatasehir",
+  "entries": [
+    {
+      "path": "ozellikler/misafir-plani/index.html",
+      "title": "Misafir planı",
+      "description": "Blok, ulaşım ve ziyaret amacını seç; kişisel planını indir.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "ozellikler/dokunmus-yasam/index.html",
+      "title": "Dokunmuş yaşam",
+      "description": "Ev, blok ve kent arasındaki önceki yaşam sahnesini incele.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "bina.html",
+      "title": "Bir binadan daha fazlası.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "calisma-notu.html",
+      "title": "Gördüğün ne?",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "calisma-rehberi/bina.html",
+      "title": "Bina kullanımı",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "calisma-rehberi/hizmet.html",
+      "title": "Ev için hizmet",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "calisma-rehberi/ilk-gun.html",
+      "title": "Yeni evde ilk gün",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila/canli-podyum.html",
+      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "dila/iki-mezura.html",
+      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç."
+    },
+    {
+      "path": "dila/sinema.html",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik &amp; Açık Kapılar",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "dila/yasam-alani.html",
+      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dokuma-ufuk/ilk-kurgu.html",
+      "title": "Harita Karosu Değil, Dokunmuş Ufuk: Üç Kuleden GAIA’ya Kanat Açan Tam Yaşam Ekosistemi",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "gaia-kafe-farm.html",
+      "title": "Misafir çalışır. GAIA büyür.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "serdar-konum-3b.html",
+      "title": "Bin Konut Misafir Meydanı",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "uc-yon/istanbul.html",
+      "title": "Bir şehir. Birbirine değen hayatlar.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "yasam/baska-istanbul.html",
+      "title": "Başka İstanbul Yok.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "yasam/bina.html",
+      "title": "Bir şehir, üç çatı.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "balkon-tarim/index.html",
+      "title": "Balkonunda doğa kur.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "bina-gaia-istasyon/index.html",
+      "title": "Ortak salonda üret.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila/index.html",
+      "title": "Yaptığın her seçim, bir sonraki sıçramayı diker.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dokuma-ufuk/index.html",
+      "title": "İlk gün rehberi",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "ilk-gun/index.html",
+      "title": "Yeni evinde ilk gün.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "online-terzi-kapi/index.html",
+      "title": "Terzin kapında hazır.",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "prizma-atolye/index.html",
+      "title": "Daireni seç. Dört yaşam kapını planla.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "uc-cati/index.html",
+      "title": "Burada yaşam yere sığmaz.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "uc-yon/index.html",
+      "title": "Evine hoş geldin. Hayatı keşfet.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "yasam/index.html",
+      "title": "Bir şehir, üç çatı.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "yeni-misafir/index.html",
+      "title": "Yeni evinle tanış.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    }
+  ]
+}

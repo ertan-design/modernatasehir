@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Modern Ataşehir misafirleri için blok seçimi ve ziyaret hazırlığı ekranı.">
+<title>Modern Ataşehir · Misafir Rehberi</title>
+<link rel="stylesheet" href="./style-1.css">
+<body><a class="af-restore-back" href="/ozellikler/">← Tüm özellikler</a>
+<a href="#ziyaret" class="skip">Ziyaret planına geç</a>
+<header class="top"><div class="wrap"><p class="brand"><span class="mark" aria-hidden="true">M</span> Modern Ataşehir</p><a href="#bilgi">Ziyaret bilgileri</a></div></header>
+<main class="wrap">
+ <section class="hero" aria-labelledby="title">
+  <div class="hero-copy"><p class="eyebrow">Modern Ataşehir · Misafir rehberi</p><h1 id="title">Ziyaretini kolayca planla.</h1><p>Blok ve geliş biçimini seç. Ev sahibinle teyit edeceğin adımları tek listede hazırla.</p></div>
+  <div class="art" aria-hidden="true"><div class="towers" id="towers"><div class="tower active"><span>A</span></div><div class="tower"><span>B</span></div><div class="tower"><span>C</span></div></div></div>
+ </section>
+ <p class="scope"><strong>Örnek yerleşim.</strong> A, B ve C geçici blok adlarıdır. Resmî giriş ve konum bilgilerini ev sahibinden teyit et.</p>
+ <div class="split" id="ziyaret">
+  <section class="panel arrive" aria-labelledby="arrive-title">
+   <h2 id="arrive-title">Gelişini seç</h2><p class="sub">Plan, seçimlerinle birlikte güncellenir.</p>
+   <fieldset class="blocks"><legend>Gideceğin blok</legend><div class="buttons"><button type="button" class="block" data-block="A" aria-pressed="true">A <small>Blok</small></button><button type="button" class="block" data-block="B" aria-pressed="false">B <small>Blok</small></button><button type="button" class="block" data-block="C" aria-pressed="false">C <small>Blok</small></button></div></fieldset>
+   <div class="fields">
+    <label>Geliş biçimi<select id="mode"><option value="yaya">Yürüyerek</option><option value="arac">Özel araçla</option><option value="taksi">Taksiyle</option></select></label>
+    <label>Ziyaret amacı<select id="purpose"><option value="misafir">Misafir ziyareti</option><option value="teslim">Teslimat</option><option value="hizmet">Teknik hizmet</option></select></label>
+   </div>
+   <label class="check"><input type="checkbox" id="access"> Basamaksız güzergâhı teyit edeceğim</label>
+   <p class="sub">Bu ekranda ad, telefon, daire numarası veya erişim kodu girilmez.</p>
+  </section>
+  <section class="panel plan" aria-labelledby="plan-title">
+   <h2 id="plan-title">Ziyaret planın</h2>
+   <div id="meta" class="meta" aria-live="polite" aria-atomic="true"></div>
+   <ol class="route" id="steps"></ol>
+   <div class="actions"><button type="button" class="primary" id="copy">Planı kopyala</button><button type="button" id="download">Metni indir</button></div>
+   <p class="status" id="status" role="status" aria-live="polite"></p>
+   <textarea id="fallback" class="visually-hidden" tabindex="-1" aria-label="Kopyalanacak plan" readonly></textarea>
+  </section>
+ </div>
+ <section id="bilgi" class="panel quick" aria-labelledby="quick-title">
+  <h2 id="quick-title">Ziyaret bilgileri</h2>
+  <details><summary>Doğru girişi nasıl bulurum?</summary><p>Blok seçimini ev sahibinle teyit et. Ev sahibinden güncel konum paylaşımı ve hangi girişin kullanılacağına dair bilgi iste.</p></details>
+  <details><summary>Araçla giriş için ne yapmalıyım?</summary><p>Gelmeden önce araç kabulünü ve park seçeneğini teyit et. Bu ziyaret planı park yeri ayırmaz.</p></details>
+  <details><summary>Basamaksız giriş gerekiyor. Nasıl ilerlerim?</summary><p>Planındaki basamaksız güzergâh seçeneğini işaretle. Erişilebilir giriş ve asansörün durumunu ev sahibinle önceden doğrula.</p></details>
+ </section>
+</main>
+<footer class="wrap">Modern Ataşehir · Yerel misafir rehberi</footer>
+<noscript><p class="wrap">Ziyaret planını oluşturmak için tarayıcıda JavaScript’i etkinleştir.</p></noscript>
+<script src="./script-2.js"></script>
+</body></html>
