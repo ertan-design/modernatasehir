@@ -374,7 +374,7 @@
 
   function val(id, defVal) {
     var el = document.getElementById(id);
-    return el ? el.value : defVal;
+    return String(el ? el.value : defVal).replace(/[&<>"']/g, function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});
   }
 
   function atolyeHesapla() {
@@ -573,7 +573,7 @@
       var hiz = val('inp-hizmet', 'terzi');
       var fis = 'KONUT-' + kblok + '-K' + katno + '-' + fnvOzeti(kblok + katno + hiz).slice(0, 6).toUpperCase();
       html = '<strong>1.000 Konut Misafir AI Karşılama:</strong> <strong>' + kblok + ' · ' + katno + '. Kat</strong> daireniz tanımlandı.<br>' +
-             '<strong>Seçilen Hizmet (' + hiz.toUpperCase() + '):</strong> Bugün 15 dakika içinde daire kapısında / online bağlantıda <strong>MÜSAİT</strong> · Fiş: <code>' + fis + '</code>';
+             '<strong>Seçilen Hizmet (' + hiz.toUpperCase() + '):</strong> Talep taslağı; sağlayıcı ve müsaitlik doğrulanmadı · Fiş: <code>' + fis + '</code>';
       sonCiktiNesnesi = { sema: 'modernatasehir.1000konut.v1', blok: kblok, kat: katno, hizmet: hiz, karsilamaFisi: fis };
     }
     else if (MOD === 'barista_sanart') {
@@ -593,7 +593,7 @@
       var kc = urun === 'zeytin' ? 0.65 : (urun === 'sebze' ? 1.05 : 0.80);
       var suMl = Math.round((280 + gunes * 65 + Number(ruzgarMs) * 40) * kc);
       html = '<strong>' + tkat + '. Kat (' + yukseklikM.toFixed(1) + ' m) Balkon İklimi:</strong> Rüzgâr Hızı <code>v(z)=' + ruzgarMs + ' m/sn</code> · Güneşlenme: <strong>' + gunes + ' saat/gün</strong><br>' +
-             '<strong>Günlük Damla Sulama Bütçesi:</strong> Saksı başına <strong>' + suMl + ' ml/gün</strong> (' + urun.toUpperCase() + ') · Tarım danışmanı randevusu hazır.';
+             '<strong>Günlük Damla Sulama Bütçesi:</strong> Saksı başına <strong>' + suMl + ' ml/gün</strong> (' + urun.toUpperCase() + ') · Danışman randevusu oluşturulmadı.';
       sonCiktiNesnesi = { sema: 'modern.balkon.tarim.v1', kat: tkat, yukseklik_m: Number(yukseklikM.toFixed(1)), ruzgar_ms: Number(ruzgarMs), gunesSaat: gunes, gunlukSu_ml: suMl, kit: urun };
     }
     else {
@@ -602,12 +602,12 @@
       var mekF = val('inp-mekan-farm', 'modern');
       var tflops = (masa * saatF * 14.8).toFixed(1);
       var yeniDugum = (masa * saatF / 88).toFixed(2);
-      html = '<strong>GAIA Bilgisayar Farmı (' + mekF.toUpperCase() + '):</strong> <strong>' + masa + ' misafir istasyonu</strong> × ' + saatF + ' saat ortak çalışmada arkada çalışan GPT filosu <strong>' + tflops + ' TFLOP·saat</strong> görev işledi.<br>' +
+      html = '<strong>GAIA Bilgisayar Farmı (' + mekF.toUpperCase() + '):</strong> <strong>' + masa + ' misafir istasyonu</strong> × ' + saatF + ' saat ortak çalışmada arkada çalışan GPT filosu <strong>' + tflops + ' TFLOP·saat</strong> varsayımsal kapasitedir; gerçek görev çalıştırılmadı.<br>' +
              '<strong>GAIA Ağına Katılan Yeni Bilgisayar Payı:</strong> <strong>+' + yeniDugum + ' otonom düğüm/gün</strong>.';
       sonCiktiNesnesi = { sema: 'gaia.kafe.farm.v1', aktifIstasyon: masa, gunlukSaat: saatF, mekan: mekF, uretilenTflopSaat: Number(tflops), kazanilanDugumGun: Number(yeniDugum) };
     }
 
-    sonucEl.innerHTML = html;
+    sonCiktiNesnesi.durum='SENARYO_TASLAGI'; sonCiktiNesnesi.gercekHizmetOnayi=false; sonucEl.innerHTML='<strong>Varsayımlı örnek senaryo</strong><br>'+html;
     if (svgKutu && svgBag) {
       if (svgStr) {
         svgKutu.innerHTML = svgStr;
