@@ -201,7 +201,9 @@
     "  vec3 L = normalize(uLightDir);",
     "  vec3 Lrim = normalize(vec3(-L.x, 0.35, -L.z));",
     "",
-    "  // Procedural woven micro-thread normal & warp/weft yarn separation",
+    "  // Distance-aware micro-thread normal (silky smooth from afar, woven threads on zoom)",
+    "  float camDist = length(uCamPos - vPos);",
+    "  float weaveVis = smoothstep(4.2, 1.35, camDist);",
     "  vec2 t = vUv * uWeaveFreq;",
     "  float wx = sin(t.x * 6.28318);",
     "  float wy = sin(t.y * 6.28318);",
@@ -218,29 +220,30 @@
     "    pattern = mix(wx * 0.4 + wy * 0.4, satin, 0.65);",
     "  }",
     "",
-    "  // Perturb normal slightly for tactile yarn fiber sheen",
-    "  vec3 microN = normalize(N + vec3(wx * 0.09, wy * 0.09, pattern * 0.06));",
-    "  vec3 albedo = mix(uBaseCol, uWeftCol, 0.5 + 0.5 * pattern);",
+    "  // Subtle tactile micro-normal scaled cleanly by zoom proximity",
+    "  vec3 microN = normalize(N + vec3(wx * 0.045, wy * 0.045, pattern * 0.03) * weaveVis);",
+    "  vec3 albedo = mix(uBaseCol, uWeftCol, 0.5 + 0.36 * pattern * (0.25 + 0.75 * weaveVis));",
     "",
     "  // Low-key charismatic museum spotlight + deep velvet fold shadows",
     "  float ndl = max(dot(microN, L), 0.0);",
-    "  float wrapDiff = max((dot(microN, L) + 0.32) / 1.32, 0.0);",
-    "  float foldAO = clamp(0.42 + (vPos.z + 0.55) * 0.62, 0.22, 1.0);",
+    "  float wrapDiff = max((dot(microN, L) + 0.22) / 1.22, 0.0);",
+    "  float foldAO = clamp(0.28 + (vPos.z + 0.52) * 0.78, 0.14, 1.0);",
     "  vec3 H = normalize(L + V);",
-    "  float specPow = mix(42.0, 14.0, uRough);",
-    "  float spec = pow(max(dot(microN, H), 0.0), specPow) * mix(0.62, 0.20, uRough);",
+    "  float specPow = mix(64.0, 18.0, uRough);",
+    "  float spec = pow(max(dot(microN, H), 0.0), specPow) * mix(0.82, 0.24, uRough);",
+    "  float broadSpec = pow(max(dot(microN, H), 0.0), 10.0) * 0.22;",
     "",
     "  // Velvet / silk grazing sheen (Charlie Fresnel glow)",
     "  float ndv = max(dot(microN, V), 0.0);",
-    "  float fresnel = pow(1.0 - ndv, 3.1);",
-    "  float rim = pow(1.0 - ndv, 2.4) * max(dot(microN, Lrim) + 0.35, 0.0);",
+    "  float fresnel = pow(1.0 - ndv, 2.85);",
+    "  float rim = pow(1.0 - ndv, 2.2) * max(dot(microN, Lrim) + 0.35, 0.0);",
     "",
-    "  // Warm dim studio tungsten key + subtle cool rim",
-    "  vec3 keyLight = vec3(1.12, 0.96, 0.80) * (wrapDiff * 0.88 + ndl * 0.45);",
-    "  vec3 ambient = albedo * vec3(0.24, 0.20, 0.18);",
+    "  // Warm dim studio tungsten key + dramatic velvet shadow depth",
+    "  vec3 keyLight = vec3(1.18, 0.98, 0.78) * (wrapDiff * 0.85 + ndl * 0.55);",
+    "  vec3 ambient = albedo * vec3(0.16, 0.13, 0.12);",
     "  vec3 col = ambient + albedo * keyLight * foldAO;",
-    "  col += uSheenCol * (spec * foldAO + fresnel * 0.42);",
-    "  col += vec3(0.76, 0.64, 0.46) * rim * 0.36;",
+    "  col += uSheenCol * ((spec + broadSpec) * foldAO + fresnel * 0.48);",
+    "  col += vec3(0.84, 0.69, 0.48) * rim * 0.44;",
     "",
     "  // Surreal 8D thin-film pearlescent liquid-silk iridescence",
     "  if (uSurreal > 0.01) {",
@@ -358,16 +361,17 @@
         var hang = 0.25 + 0.75 * v; // couture silk flows freer toward bottom hem
         for (var c = 0; c <= GRID; c++) {
           var u = c / GRID;
-          var x0 = (u - 0.5) * 3.1;
-          var y0 = (0.5 - v) * 2.15;
+          var x0 = (u - 0.5) * 3.15 + 0.38 * (1.0 - surrealMix);
+          var y0 = (0.5 - v) * 2.25;
 
-          // Multi-wave physical wind ripple
+          // Multi-wave physical wind ripple + luxury couture fold pleats
           var proj = x0 * wx + y0 * wy;
           var cross = -x0 * wy + y0 * wx;
-          var w1 = Math.sin(proj * 2.35 - t * (1.8 + pwr * 1.45)) * 0.26 * pwr * hang;
-          var w2 = Math.sin(proj * 4.9 + cross * 1.8 - t * (3.1 + pwr * 1.9)) * 0.085 * pwr * hang;
-          var w3 = Math.cos(cross * 3.6 - t * 1.4) * 0.06 * hang;
-          var drape = -0.14 * Math.sin(u * Math.PI) * v;
+          var pleat = Math.sin(u * Math.PI * 5.0) * 0.075 * v;
+          var w1 = Math.sin(proj * 2.25 - t * (1.7 + pwr * 1.4)) * 0.32 * pwr * hang;
+          var w2 = Math.sin(proj * 4.6 + cross * 1.7 - t * (2.9 + pwr * 1.8)) * 0.10 * pwr * hang;
+          var w3 = Math.cos(cross * 3.4 - t * 1.3) * 0.065 * hang;
+          var drape = -0.18 * Math.sin(u * Math.PI) * v + pleat;
 
           var z = w1 + w2 + w3 + drape;
           var x = x0 + Math.cos(proj * 2.35 - t * 2.1) * 0.055 * pwr * hang;

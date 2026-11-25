@@ -184,11 +184,12 @@
         rings.sort(function (a, b) { return b.z - a.z; });
         for (var ri = 0; ri < rings.length; ri++) {
           var rg = rings[ri];
+          var prevZ = rg.z;
           rg.z -= vz;
-          if (rg.z < 0.38 && !rg.passed) {
+          if (prevZ >= 0.45 && rg.z < 0.45 && !rg.passed) {
             rg.passed = true;
             var hitDist = Math.hypot(rg.x - steerX * 0.95, rg.y + steerY * 0.5);
-            if (hitDist < rg.r * 1.25) {
+            if (hitDist < rg.r * 1.35) {
               ringScore++;
               flashEnergy = 1.0;
               updateHud();
@@ -337,10 +338,14 @@
       showGenie = !showGenie;
       canvas.classList.toggle("is-hidden", showGenie);
       vidGenie.classList.toggle("is-hidden", !showGenie);
+      vidGenie.hidden = !showGenie;
       btnGenie.classList.toggle("is-active", showGenie);
       btnGenie.textContent = showGenie ? "3D Uçuşa Dön" : "Genie Filmi";
-      if (showGenie) vidGenie.play().catch(function () {});
-      else vidGenie.pause();
+      if (showGenie) {
+        vidGenie.play().catch(function () {});
+      } else {
+        vidGenie.pause();
+      }
     });
 
     wireConcierge();

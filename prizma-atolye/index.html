@@ -3,80 +3,215 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <title>ATAŞEHİR × AFAIR · Çatıdan Uç, Kumaşa Dokun, Şehri Yaşa</title>
-  <meta name="description" content="Kumaşa dokun, 360° çevir, rüzgârla dalgalandır veya üç çatıdan Watergarden, Finanskent ve Maltepe sahiline uç.">
-  <link rel="stylesheet" href="./afair-8d.css">
+  <title>AFFFAIR × PRIZMA — Kumaşına Dokun. Evinden Uç.</title>
+  <meta name="description" content="Sana özel kumaş. Üç kule. Özgür İstanbul. 360° rüzgarlı WebGL 3D kumaş, Sürreal 8D atmosfer, yönlendirilebilir Ataşehir Modern uçuşu ve 4-site yaşam.">
+  <link rel="stylesheet" href="./atolye.css">
+  <script src="./atolye-veri.js" defer></script>
+  <script src="./atolye-webgl-kumas.js" defer></script>
+  <script src="./atolye-webgl-ucus.js" defer></script>
 </head>
-<body data-baslangic-kip="kumas" data-kumas-baslik="Dokun. Rüzgârı çevir. Şehre uç.">
-  <canvas id="sahne-tuval" aria-label="360 derece yönlendirilebilir gerçek kumaş ve üç blok çatı uçuş sahnesi"></canvas>
-
-  <header class="ust-bar">
-    <div class="marka-kutu">
-      <a class="marka" href="./index.html">ATAŞEHİR × AFAIR</a>
-    </div>
-
-    <nav class="kip-secici" aria-label="Sahne Kipi">
-      <button type="button" class="hap-dugme aktif" id="kip-kumas">360° Kumaş</button>
-      <button type="button" class="hap-dugme" id="kip-ucus">Çatıdan Uç</button>
-      <button type="button" class="hap-dugme" id="kip-yasam">Yaşam</button>
+<body>
+  <header class="top-nav">
+    <a class="wordmark" href="#sahne-kumas">
+      <strong>AFFFAIR</strong>
+      <span>Atölye · İstanbul</span>
+    </a>
+    <nav class="nav-items" aria-label="Bölümler">
+      <a href="#sahne-kumas">360° Kumaş</a>
+      <a href="#sahne-ucus">3 Kule Uçuş</a>
+      <a href="#sahne-yasam">Yaşam</a>
+      <a href="./gpt.json">GPT API</a>
     </nav>
-
-    <div class="sag-araclar">
-      <button type="button" class="ince-dugme" id="btn-8d-ses">8D Ses</button>
-      <button type="button" class="ince-dugme" id="btn-sade">Sade Görünüm</button>
-      <a class="ince-dugme" href="/ryte-canli.json">GPT · RYTE</a>
-    </div>
   </header>
 
-  <section class="baslik-katmani" aria-live="polite">
-    <h1 id="hero-baslik">Dokun. Rüzgârı çevir. Şehre uç.</h1>
-    <p id="hero-alt">Sürükleyip 360° döndür. Üç çatıdan yönünü seç.</p>
-  </section>
+  <main>
+    <!-- EKRAN 1: GÖRÜR GÖRMEZ HAREKETLİ, LOŞ, 360° RÜZGARLI + SÜRREAL 8D WEBGL KUMAŞ -->
+    <section id="sahne-kumas" class="cloth-stage" aria-label="360 derece rüzgarlı ve sürreal 8D kumaş sahnesi">
+      <canvas id="cloth-webgl" class="stage-canvas" aria-label="Sürükleyerek 360 derece döndürülebilen rüzgarlı kumaş"></canvas>
 
-  <aside class="mini-kart gizli" id="mini-cekmece" aria-live="polite">
-    <h2 id="cekmece-baslik">Online Terzi Şu An Müsait</h2>
-    <p id="cekmece-ozet">AFAIR İki-Mezura ustası 6 dk içinde görüntülü bağlanır.</p>
-    <video id="cekmece-video" class="gizli" controls playsinline loop muted preload="metadata" src="./medya/genie_ucus_referans.mp4"></video>
-    <div class="mini-aksiyonlar">
-      <a class="ince-dugme aktif" id="cekmece-bag" href="https://www.afair.live/dila/iki-mezura.html">Hemen Aç ↗</a>
-      <button type="button" class="ince-dugme" id="cekmece-kapat">Kapat</button>
-    </div>
-  </aside>
+      <div class="hero-overlay">
+        <p class="whisper-tag">AFFFAIR HAUTE COUTURE · QUIET LUXURY · 0 SAF SİYAH</p>
+        <h1>Kumaşına dokun.<br>Evinden uç.</h1>
+        <p class="hero-sub">Sana özel kumaş. Üç kule. Özgür İstanbul.</p>
+        <p class="gesture-hint" id="cloth-gesture-hint">Sürükle: 360° döndür · Tekerlek: ipliğe yaklaş · Dokun: dalga yarat</p>
+      </div>
 
-  <footer class="alt-konsol">
-    <div class="kumas-bobinler" id="grup-kumas">
-      <button type="button" class="bobin-dugme aktif" data-kumas="0"><span class="renk-damla damla-indigo"></span>Gece İpeği</button>
-      <button type="button" class="bobin-dugme" data-kumas="1"><span class="renk-damla damla-murdum"></span>Mürdüm Kadife</button>
-      <button type="button" class="bobin-dugme" data-kumas="2"><span class="renk-damla damla-kum"></span>Kum Keteni</button>
-      <button type="button" class="bobin-dugme" data-kumas="3"><span class="renk-damla damla-bakir"></span>Bakır Atlas</button>
-      <button type="button" class="bobin-dugme" data-kumas="4"><span class="renk-damla damla-adacayi"></span>Adaçayı Yün</button>
-      <button type="button" class="ince-dugme" id="btn-dalga">Dalga Vur</button>
-    </div>
+      <div class="cloth-dock" role="region" aria-label="Kumaş, rüzgar, ışık ve 8D kontrolleri">
+        <div class="dock-group">
+          <button type="button" class="swatch-btn sw-zumrut is-active" data-fabric="zumrut" aria-label="PANTONE 19-5918 Oksitlenmiş Zümrüt"></button>
+          <button type="button" class="swatch-btn sw-espresso" data-fabric="espresso" aria-label="PANTONE 19-1111 Gece Espressosu"></button>
+          <button type="button" class="swatch-btn sw-murdum" data-fabric="murdum" aria-label="PANTONE 19-2024 Derin Patlıcan"></button>
+          <button type="button" class="swatch-btn sw-kehribar" data-fabric="kehribar" aria-label="PANTONE 16-0948 Antik Kehribar"></button>
+          <button type="button" class="swatch-btn sw-keten" data-fabric="keten" aria-label="PANTONE 12-0710 Ham Keten"></button>
+          <button type="button" class="swatch-btn sw-antrasit" data-fabric="antrasit" aria-label="PANTONE 19-4013 Ay Işığı Kaşmir"></button>
+          <div class="fabric-readout" aria-live="polite">
+            <strong id="ui-fab-name">Oksitlenmiş Zümrüt İpek</strong>
+            <span id="ui-fab-spec">PANTONE 19-5918 TCX · 2/2 Dimi · 145 g/m²</span>
+          </div>
+        </div>
 
-    <div class="ucus-yonler gizli" id="grup-ucus">
-      <button type="button" class="bobin-dugme aktif" data-hedef="0">1 · Su Bahçesi (Watergarden)</button>
-      <button type="button" class="bobin-dugme" data-hedef="1">2 · İş Kuleleri (Finanskent)</button>
-      <button type="button" class="bobin-dugme" data-hedef="2">3 · Deniz Sahnesi (Maltepe)</button>
-      <button type="button" class="ince-dugme" id="btn-genie-film">Uçuş Videosu</button>
-    </div>
+        <div class="dock-group">
+          <button type="button" class="pill-btn is-active" id="btn-mode-orbit">360° Döndür</button>
+          <button type="button" class="pill-btn" id="btn-mode-touch">Kumaşa Dokun</button>
+          <button type="button" class="pill-btn" id="btn-mode-surreal">Sürreal 8D</button>
+          <button type="button" class="pill-btn" id="btn-audio-8d">8D Ses</button>
+        </div>
 
-    <div class="yasam-kapilar gizli" id="grup-yasam">
-      <button type="button" class="bobin-dugme aktif" data-yasam="terzi">Terzi Çağır</button>
-      <button type="button" class="bobin-dugme" data-yasam="tarim">Bahçe Kur</button>
-      <button type="button" class="bobin-dugme" data-yasam="sanat">Sanat Seç</button>
-      <button type="button" class="bobin-dugme" data-yasam="ses">Ses Kur</button>
-    </div>
+        <div class="dock-group">
+          <label class="dial-wrap" for="ctl-wind-dir">
+            <span>Rüzgâr</span>
+            <input type="range" id="ctl-wind-dir" min="0" max="360" step="1" value="35">
+            <output id="out-wind-dir">35°</output>
+          </label>
+          <label class="dial-wrap" for="ctl-wind-pwr">
+            <span>Dalga</span>
+            <input type="range" id="ctl-wind-pwr" min="15" max="180" step="5" value="95">
+            <output id="out-wind-pwr">95%</output>
+          </label>
+          <label class="dial-wrap" for="ctl-light-ang">
+            <span>Loş Işık</span>
+            <input type="range" id="ctl-light-ang" min="0" max="360" step="1" value="42">
+            <output id="out-light-ang">42°</output>
+          </label>
+        </div>
+      </div>
+    </section>
 
-    <div class="surgu-grubu">
-      <label class="mini-surgu">360°<input type="range" id="surgu-aci" min="0" max="360" value="24"></label>
-      <label class="mini-surgu">Rüzgâr<input type="range" id="surgu-ruzgar" min="0" max="100" value="64"></label>
-      <label class="mini-surgu">Gölge<input type="range" id="surgu-isik" min="0" max="360" value="45"></label>
-      <label class="mini-surgu">8D<input type="range" id="surgu-surreal" min="0" max="100" value="72"></label>
-      <span class="durum-etiketi" id="canli-durum">Gece İpeği (19-4027 TCX) · 360° Aktif</span>
-    </div>
+    <!-- EKRAN 2: YÖNLENDİRİLEBİLİR 3D WEBGL 3-KULE UÇUŞU (0 GOOGLE MAPS) -->
+    <section id="sahne-ucus" class="flight-section" aria-labelledby="ucus-baslik">
+      <div class="section-wrap">
+        <div class="flight-top">
+          <div>
+            <p class="whisper-tag">ATAŞEHİR MODERN · 0 GOOGLE MAPS · YÖNLENDİRİLEBİLİR 3D UÇUŞ</p>
+            <h2 id="ucus-baslik">Çatıdan seç, yönlendir, uç.</h2>
+          </div>
+          <div class="route-tabs" id="route-tabs" role="tablist" aria-label="Uçuş rotaları"></div>
+        </div>
+
+        <div class="flight-viewport">
+          <canvas id="flight-webgl" class="flight-canvas" width="1280" height="672" aria-label="Sürükleyerek veya ok tuşlarıyla yönlendirilebilen 3D uçuş sahnesi"></canvas>
+          <video id="genie-video" class="flight-video is-hidden" hidden controls playsinline loop muted preload="none" poster="./medya/genie_ucus_referans.jpg" src="./medya/genie_ucus_referans.mp4"></video>
+
+          <div class="flight-hud-bar">
+            <div class="hud-stats" aria-live="polite">
+              <div><span>KULE</span><strong id="hud-tower">BALANCE · 35K</strong></div>
+              <div><span>HEDEF</span><strong id="hud-dest">WATERGARDEN · 2,4 KM</strong></div>
+              <div><span>İRTİFA</span><strong id="hud-alt">126 M</strong></div>
+              <div><span>HALKA</span><strong id="hud-rings">0</strong></div>
+            </div>
+
+            <div class="dock-group">
+              <label class="dial-wrap" for="ctl-flight-spd">
+                <span>Hız</span>
+                <input type="range" id="ctl-flight-spd" min="40" max="220" step="10" value="120">
+                <output id="out-flight-spd">120</output>
+              </label>
+              <button type="button" class="pill-btn" id="btn-steer-left">← Sol</button>
+              <button type="button" class="pill-btn" id="btn-steer-center">Ortala</button>
+              <button type="button" class="pill-btn" id="btn-steer-right">Sağ →</button>
+              <button type="button" class="pill-btn" id="btn-genie-toggle">Genie Filmi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EKRAN 3: GERÇEK DOKU ARŞİVİ + SADE 4-KAPI YAŞAM -->
+    <section id="sahne-yasam" class="atelier-light" aria-labelledby="yasam-baslik">
+      <div class="section-wrap">
+        <p class="whisper-tag">GERÇEK LİF · GERÇEK DOKU · AFFFAIR ATÖLYE ARŞİVİ</p>
+        <h2 id="yasam-baslik">Tek dokunuşla yaşam.</h2>
+
+        <div class="macro-triptych">
+          <figure class="macro-card" data-pick-fabric="zumrut">
+            <img src="./medya/levha_02_zumrut_keten_makro.jpg" alt="Oksitlenmiş zümrüt ipek ve organik keten makro dokusu">
+            <figcaption><span>PANTONE 19-5918 · 12-0710</span><span>3D Sahneye Al ↑</span></figcaption>
+          </figure>
+          <figure class="macro-card" data-pick-fabric="espresso">
+            <img src="./medya/levha_03_espresso_murdum_makro.jpg" alt="Gece espressosu gabardin ve patlıcan ipek krep makro dokusu">
+            <figcaption><span>PANTONE 19-1111 · 19-2024</span><span>3D Sahneye Al ↑</span></figcaption>
+          </figure>
+          <figure class="macro-card" data-pick-fabric="antrasit">
+            <img src="./medya/levha_01_atasehir_kuleler.jpg" alt="Ataşehir Modern üç kulesi ve Marmara Adaları günbatımı">
+            <figcaption><span>Flex 43K · Balance 35K · Grand 25K</span><span>Başka İstanbul Yok</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="life-four">
+          <article class="life-tile">
+            <div>
+              <span class="whisper-tag">01 · AFAIR.LIVE</span>
+              <h3>Online terzi</h3>
+              <p>Müsait. İki mezura ve seçtiğin kumaş evine gelir.</p>
+              <select class="mini-select" id="sel-terzi-slot" aria-label="Terzi müsaitlik saati">
+                <option value="Bugun 11:00 · Online">Bugün 11:00 · Online</option>
+                <option value="Bugun 15:30 · Eve Ziyaret">Bugün 15:30 · Eve Ziyaret</option>
+                <option value="Yarin 10:30 · Renk Analizi">Yarın 10:30 · Renk Analizi</option>
+              </select>
+              <p class="tile-receipt" id="out-terzi-rec"></p>
+            </div>
+            <div class="tile-actions">
+              <button type="button" class="btn-dark" id="btn-book-terzi">Randevu Fişi Al</button>
+              <a class="btn-quiet-light" href="https://www.afair.live/prizma/front2">Ölçü Defteri ↗</a>
+            </div>
+          </article>
+
+          <article class="life-tile">
+            <div>
+              <span class="whisper-tag">02 · AFAIR.STUDIO</span>
+              <h3>Sanat &amp; ışık</h3>
+              <p>Seçtiğin Pantone kumaşla aynı tonda tablo ve salon ışığı.</p>
+            </div>
+            <div class="tile-actions">
+              <a class="btn-dark" href="https://www.afair.studio/prizma/front3">Galeri Odaları ↗</a>
+              <a class="btn-quiet-light" href="https://www.afair.studio/prizma/video">6 Dila Filmi ↗</a>
+            </div>
+          </article>
+
+          <article class="life-tile">
+            <div>
+              <span class="whisper-tag">03 · TARIM.ONLINE</span>
+              <h3>Tarım danışmanı</h3>
+              <p>Gökçeada 189/2 hassasiyetiyle teras ve hasat randevusu.</p>
+              <select class="mini-select" id="sel-tarim-slot" aria-label="Tarım danışmanı konusu">
+                <option value="Teras Permakultur · Video 20dk">Teras Permakültür · 20 dk</option>
+                <option value="Gokceada 189/2 Hasat">Gökçeada 189/2 Hasat</option>
+                <option value="Dogal Lif & Boya Kokeni">Doğal Lif &amp; Boya Kökeni</option>
+              </select>
+              <p class="tile-receipt" id="out-tarim-rec"></p>
+            </div>
+            <div class="tile-actions">
+              <button type="button" class="btn-dark" id="btn-book-tarim">Danışman Randevusu</button>
+              <a class="btn-quiet-light" href="https://www.tarim.online/">tarim.online ↗</a>
+            </div>
+          </article>
+
+          <article class="life-tile">
+            <div>
+              <span class="whisper-tag">04 · BAŞKA İSTANBUL YOK</span>
+              <h3>50.000 kapı &amp; GPT</h3>
+              <p>Dijital pasaportun, 4 front ve GPT makine arayüzü.</p>
+            </div>
+            <div class="tile-actions">
+              <a class="btn-dark" href="https://ertanaraz.com/prizma/front4">50K Pasaport ↗</a>
+              <a class="btn-quiet-light" href="./gpt.json">gpt.json (GPT API) ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot-minimal">
+    <span>AFFFAIR × PRIZMA · Ataşehir Modern · Başka İstanbul Yok · 0 Google Maps · 0 Saf Siyah</span>
+    <nav class="foot-links" aria-label="Canlı ekosistem">
+      <a href="https://www.afair.studio/prizma/atolye/">afair.studio</a>
+      <a href="https://www.afair.live/prizma/atolye/">afair.live</a>
+      <a href="https://www.xn--ataehirmodern-ktc.com/prizma-atolye/">ataşehirmodern</a>
+      <a href="https://www.xn--modernataehir-qtc.com/prizma-atolye/">modernataşehir</a>
+      <a href="https://ertanaraz.com/prizma-atolye/">ertanaraz</a>
+      <a href="./gpt.json">gpt.json</a>
+    </nav>
   </footer>
-
-  <script src="./afair-8d.js"></script>
 </body>
 </html>

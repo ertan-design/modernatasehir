@@ -55,17 +55,17 @@ a {
   left: 0;
   right: 0;
   z-index: 50;
-  padding: 18px 34px;
+  padding: 16px 34px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  background: linear-gradient(180deg, rgba(17, 13, 12, 0.86) 0%, rgba(17, 13, 12, 0) 100%);
-  pointer-events: none;
+  background: rgba(17, 13, 12, 0.88);
+  border-bottom: 1px solid var(--line-dark);
 }
 
-.top-nav > * {
-  pointer-events: auto;
+section[id] {
+  scroll-margin-top: 68px;
 }
 
 .wordmark {
@@ -304,7 +304,7 @@ h1 {
   min-height: 100vh;
   background: var(--void-soft);
   border-top: 1px solid var(--line-dark);
-  padding: 76px 32px 64px;
+  padding: 96px 32px 64px;
 }
 
 .section-wrap {
@@ -567,4 +567,9 @@ h2 {
   .life-four {
     grid-template-columns: 1fr;
   }
+}
+
+[hidden],
+.is-hidden {
+  display: none !important;
 }
