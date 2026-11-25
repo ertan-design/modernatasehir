@@ -1,0 +1,262 @@
+{
+  "schema": "gaia.feature-directory.v1",
+  "site": "modernatasehir",
+  "origin": "https://www.xn--modernataehir-qtc.com",
+  "homepage_preserved": true,
+  "entry_count": 28,
+  "restored_count": 2,
+  "entries": [
+    {
+      "path": "ozellikler/dokunmus-yasam/index.html",
+      "title": "Dokunmuş yaşam",
+      "description": "Ev, blok ve kent arasındaki önceki yaşam sahnesini incele.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--modernataehir-qtc.com/ozellikler/dokunmus-yasam/index.html",
+      "sha256": "1f7d944598f942dacc7cce33166c96e1819860e5950eead265611801d9ba084a"
+    },
+    {
+      "path": "ozellikler/misafir-plani/index.html",
+      "title": "Misafir planı",
+      "description": "Blok, ulaşım ve ziyaret amacını seç; kişisel planını indir.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--modernataehir-qtc.com/ozellikler/misafir-plani/index.html",
+      "sha256": "9a6c677fbfc1155dd2a3bd1bb6cf92bb44a0c71138f939815b8e3dba869517ec"
+    },
+    {
+      "path": "balkon-tarim/index.html",
+      "title": "Balkonunda doğa kur.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/balkon-tarim/index.html",
+      "sha256": "7c17c723228f51dedce39b955b311feb766a98d07b5d0fe45fca6bcd1426d86b"
+    },
+    {
+      "path": "yasam/baska-istanbul.html",
+      "title": "Başka İstanbul Yok.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/yasam/baska-istanbul.html",
+      "sha256": "c6668ff3c362612d11df33822b5f54465050fc98b5bf629eb985a7c466643833"
+    },
+    {
+      "path": "serdar-konum-3b.html",
+      "title": "Bin Konut Misafir Meydanı",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/serdar-konum-3b.html",
+      "sha256": "10752133b11c28d1a78ea1fc687e30b8e5ffd53e4974a5d8fdd9f43e8485f142"
+    },
+    {
+      "path": "calisma-rehberi/bina.html",
+      "title": "Bina kullanımı",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/calisma-rehberi/bina.html",
+      "sha256": "e2606ab506f50233740b85308b44fb08519874c40f99592bec10b0a5fbd7e4c8"
+    },
+    {
+      "path": "bina.html",
+      "title": "Bir binadan daha fazlası.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/bina.html",
+      "sha256": "3ee28f55d19bd9b15acc13925b0ecf0e0458b1dcf61066a928c1bf438e0eaf99"
+    },
+    {
+      "path": "yasam/bina.html",
+      "title": "Bir şehir, üç çatı.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/yasam/bina.html",
+      "sha256": "0dca0542f87633c149f1e2d99ea14186fde38905212f7c2a3ae71b706a4f9a98"
+    },
+    {
+      "path": "yasam/index.html",
+      "title": "Bir şehir, üç çatı.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/yasam/index.html",
+      "sha256": "0dca0542f87633c149f1e2d99ea14186fde38905212f7c2a3ae71b706a4f9a98"
+    },
+    {
+      "path": "uc-yon/istanbul.html",
+      "title": "Bir şehir. Birbirine değen hayatlar.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/uc-yon/istanbul.html",
+      "sha256": "d82def9dc7461621f4ead116fb5317af5149dadc95bde334a1bbcc8c7d786347"
+    },
+    {
+      "path": "uc-cati/index.html",
+      "title": "Burada yaşam yere sığmaz.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/uc-cati/index.html",
+      "sha256": "279d17f5669c9da75d11770937d858c40b11f287c8c9480aa1ad1acf65bf81d0"
+    },
+    {
+      "path": "prizma-atolye/index.html",
+      "title": "Daireni seç. Dört yaşam kapını planla.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/prizma-atolye/index.html",
+      "sha256": "2d1f0317cdd7402b5c4f99e153f4355269c9af7ba57f3163e04eefff20470837"
+    },
+    {
+      "path": "dila/sinema.html",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik &amp; Açık Kapılar",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/dila/sinema.html",
+      "sha256": "a47edf2ccfdeaceff5d28a304fc0d688995acba7dbfd15f5e03927d4fee71865"
+    },
+    {
+      "path": "calisma-rehberi/hizmet.html",
+      "title": "Ev için hizmet",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/calisma-rehberi/hizmet.html",
+      "sha256": "d113327758fe172a462e90d353a9064b86e4e16dbee7fb053262f166cc4c8b6c"
+    },
+    {
+      "path": "uc-yon/index.html",
+      "title": "Evine hoş geldin. Hayatı keşfet.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/uc-yon/index.html",
+      "sha256": "370ba51953091d7745ca8a4093320da36a08f741179ae9184a627a0262568e38"
+    },
+    {
+      "path": "calisma-notu.html",
+      "title": "Gördüğün ne?",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/calisma-notu.html",
+      "sha256": "8743a6393d66cba1326fbe9062fafdea42a5372da710e54a1d7356236e17aa51"
+    },
+    {
+      "path": "dokuma-ufuk/ilk-kurgu.html",
+      "title": "Harita Karosu Değil, Dokunmuş Ufuk: Üç Kuleden GAIA’ya Kanat Açan Tam Yaşam Ekosistemi",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/dokuma-ufuk/ilk-kurgu.html",
+      "sha256": "2a775dc8d422152213cfe28640605b23cd0ccc54b57ea86bf92251c15744707f"
+    },
+    {
+      "path": "dokuma-ufuk/index.html",
+      "title": "İlk gün rehberi",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/dokuma-ufuk/index.html",
+      "sha256": "bad3ec3a5ba818a706c821eb78c12d26910f169a45a95e11342ce608732b2c03"
+    },
+    {
+      "path": "dila/yasam-alani.html",
+      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/dila/yasam-alani.html",
+      "sha256": "15a1d745ce69dbf92d0310d8969e2ed79548ac5869de151d6ad2bcc205aa7b9d"
+    },
+    {
+      "path": "dila/iki-mezura.html",
+      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/dila/iki-mezura.html",
+      "sha256": "d59df37a785ca339078e34792c0037ca4ddd8dd9556b409dcb9f20532a661626"
+    },
+    {
+      "path": "gaia-kafe-farm.html",
+      "title": "Misafir çalışır. GAIA büyür.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/gaia-kafe-farm.html",
+      "sha256": "cb4df35a428d1f9fac670f11ed627906b46be482c64b86d83f6d7af570bc169d"
+    },
+    {
+      "path": "bina-gaia-istasyon/index.html",
+      "title": "Ortak salonda üret.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/bina-gaia-istasyon/index.html",
+      "sha256": "d813827e146185b7464f323794d23112a03d16717b0828ff96b624d4f969ff4c"
+    },
+    {
+      "path": "online-terzi-kapi/index.html",
+      "title": "Terzin kapında hazır.",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/online-terzi-kapi/index.html",
+      "sha256": "b5c9fded68a552527702a00e82b300ebb11f28cc13494fbff65439d443d26134"
+    },
+    {
+      "path": "dila/index.html",
+      "title": "Yaptığın her seçim, bir sonraki sıçramayı diker.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/dila/index.html",
+      "sha256": "f90f7bf2f13b7bf0ff8085886a48e06cb311a25fef0099fbba4837cb78c1d98f"
+    },
+    {
+      "path": "calisma-rehberi/ilk-gun.html",
+      "title": "Yeni evde ilk gün",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/calisma-rehberi/ilk-gun.html",
+      "sha256": "f34e0e8a1a3b2e0190809c8f001cfa0199f3fe423d488c19cace0e690e097d1c"
+    },
+    {
+      "path": "ilk-gun/index.html",
+      "title": "Yeni evinde ilk gün.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/ilk-gun/index.html",
+      "sha256": "d402b6ca5e04624de048107481a35a4dd668c27f31d1b19c8c5172708299e642"
+    },
+    {
+      "path": "yeni-misafir/index.html",
+      "title": "Yeni evinle tanış.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/yeni-misafir/index.html",
+      "sha256": "1099435a6873d17bb53adfa21c1539913fab63ea1c010107d3f566fb8a32c22e"
+    },
+    {
+      "path": "dila/canli-podyum.html",
+      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç.",
+      "url": "https://www.xn--modernataehir-qtc.com/dila/canli-podyum.html",
+      "sha256": "310fdcc5d54f6d5c92729e00dcdb7f21f2c32d35c84fab8f8033c039aff88431"
+    }
+  ]
+}
