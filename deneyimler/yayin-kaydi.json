@@ -1,0 +1,142 @@
+{
+  "schema": "publication.directory.v1",
+  "site": "MODERN ATAŞEHİR / EV",
+  "domain": "www.xn--modernataehir-qtc.com",
+  "source_repo": "ertan-design/modernatasehir",
+  "checked_count": 12,
+  "method": "Independent static bundle; no external runtime data feed; route checks are timestamped reachability, not service acceptance.",
+  "pages": [
+    {
+      "site": "home",
+      "path": "/ilk-gun/",
+      "label": "İlk gün listesi",
+      "url": "https://www.xn--modernataehir-qtc.com/ilk-gun/",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/ilk-gun/",
+      "title": "MODERN ATAŞEHİR · Yeni evinde ilk gün.",
+      "checked_at": "2026-11-25T02:53:35.614Z",
+      "elapsed_ms": 223
+    },
+    {
+      "site": "home",
+      "path": "/bina",
+      "label": "Bina modeli",
+      "url": "https://www.xn--modernataehir-qtc.com/bina",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/bina",
+      "title": "MODERN ATAŞEHİR · 3B bina",
+      "checked_at": "2026-11-25T02:53:35.940Z",
+      "elapsed_ms": 549
+    },
+    {
+      "site": "home",
+      "path": "/uc-cati/",
+      "label": "Üç çatı",
+      "url": "https://www.xn--modernataehir-qtc.com/uc-cati/",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/uc-cati/",
+      "title": "Üç Çatı — Başka İstanbul Yok",
+      "checked_at": "2026-11-25T02:53:35.610Z",
+      "elapsed_ms": 219
+    },
+    {
+      "site": "home",
+      "path": "/uc-yon/",
+      "label": "Üç yön",
+      "url": "https://www.xn--modernataehir-qtc.com/uc-yon/",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/uc-yon/",
+      "title": "Modern Ataşehir · Evin Şehirle Tanışsın",
+      "checked_at": "2026-11-25T02:53:35.611Z",
+      "elapsed_ms": 220
+    },
+    {
+      "site": "home",
+      "path": "/uc-yon/istanbul",
+      "label": "İstanbul yaşam halkası",
+      "url": "https://www.xn--modernataehir-qtc.com/uc-yon/istanbul",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/uc-yon/istanbul",
+      "title": "Başka İstanbul Yok · Yaşam Halkası",
+      "checked_at": "2026-11-25T02:53:35.610Z",
+      "elapsed_ms": 219
+    },
+    {
+      "site": "home",
+      "path": "/yasam/",
+      "label": "Yaşam talepleri",
+      "url": "https://www.xn--modernataehir-qtc.com/yasam/",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/yasam/",
+      "title": "Bir şehir, üç çatı · Ataşehir",
+      "checked_at": "2026-11-25T02:53:35.610Z",
+      "elapsed_ms": 219
+    },
+    {
+      "site": "home",
+      "path": "/yasam/baska-istanbul",
+      "label": "Başka İstanbul Yok",
+      "url": "https://www.xn--modernataehir-qtc.com/yasam/baska-istanbul",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/yasam/baska-istanbul",
+      "title": "Başka İstanbul Yok",
+      "checked_at": "2026-11-25T02:53:36.321Z",
+      "elapsed_ms": 381
+    },
+    {
+      "site": "home",
+      "path": "/dila/",
+      "label": "Dila atölyesi",
+      "url": "https://www.xn--modernataehir-qtc.com/dila/",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/dila/",
+      "title": "DİLA × AFAIR STUDIO — AI Sanat Galerisi, İki-Mezura Terzi &amp; 8-Konsept Sıçrama Sistemi",
+      "checked_at": "2026-11-25T02:53:36.248Z",
+      "elapsed_ms": 308
+    },
+    {
+      "site": "home",
+      "path": "/dila/iki-mezura",
+      "label": "Terzi · İki mezura",
+      "url": "https://www.xn--modernataehir-qtc.com/dila/iki-mezura",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/dila/iki-mezura",
+      "title": "DİLA · FRONT #2 — Evde İki-Mezura Terzi Ritüeli &amp; Milimetre Kalıp Laboratuvarı",
+      "checked_at": "2026-11-25T02:53:36.248Z",
+      "elapsed_ms": 308
+    },
+    {
+      "site": "home",
+      "path": "/dila/yasam-alani",
+      "label": "Yaşam alanı ve gardırop",
+      "url": "https://www.xn--modernataehir-qtc.com/dila/yasam-alani",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/dila/yasam-alani",
+      "title": "DİLA · FRONT #3 — Yan-Yana Kromatik Ayna, Yaşam Alanı &amp; Gardırop Kürasyonu",
+      "checked_at": "2026-11-25T02:53:36.238Z",
+      "elapsed_ms": 297
+    },
+    {
+      "site": "home",
+      "path": "/dila/canli-podyum",
+      "label": "Podyum",
+      "url": "https://www.xn--modernataehir-qtc.com/dila/canli-podyum",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/dila/canli-podyum",
+      "title": "DİLA · FRONT #4 — Canlı Sıçrama Podyumu &amp; 9-İstasyon RYTE Araştırma Kütüphanesi",
+      "checked_at": "2026-11-25T02:53:36.240Z",
+      "elapsed_ms": 299
+    },
+    {
+      "site": "home",
+      "path": "/dila/sinema",
+      "label": "Sinema",
+      "url": "https://www.xn--modernataehir-qtc.com/dila/sinema",
+      "status": 200,
+      "final_url": "https://www.xn--modernataehir-qtc.com/dila/sinema",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre &amp; Açık Kapı Motoru",
+      "checked_at": "2026-11-25T02:53:36.241Z",
+      "elapsed_ms": 300
+    }
+  ]
+}
