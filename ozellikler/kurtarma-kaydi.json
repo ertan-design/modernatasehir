@@ -1,0 +1,74 @@
+{
+  "schema": "afair.recovery.v1",
+  "source_commit": "3f2cb112aa8c02d52148fc052375cdce0b937f34",
+  "homepage_preserved": true,
+  "added_buttons": [
+    {
+      "url": "/ozellikler/podyum/sinema",
+      "title": "Yaşam podyumu · Sinema"
+    },
+    {
+      "url": "/ozellikler/yasam-alani/",
+      "title": "Ev ve yaşam atölyesi"
+    }
+  ],
+  "html_repairs": [],
+  "restored_assets": [
+    {
+      "path": "ozellikler/yasam-alani/dila-kutuphane-veri.js",
+      "git_blob": "f20a417c38f9debd2e186f45e9b4ebb8eb7e380e",
+      "source_path": "dila/dila-kutuphane-veri.js"
+    },
+    {
+      "path": "ozellikler/podyum/dila-sinema.css",
+      "git_blob": "b947c5a539b141dab21f22ea82c13c3841639a94",
+      "source_path": "dila/dila-sinema.css"
+    },
+    {
+      "path": "ozellikler/podyum/dila-sinema.js",
+      "git_blob": "b28e919db98c683c5e48f8adf49a3651d1343d41",
+      "source_path": "dila/dila-sinema.js"
+    },
+    {
+      "path": "ozellikler/podyum/medya/dila_01_yasak_siyah_galeri.mp4",
+      "git_blob": "3b6b5634df67a9698c86c9cb80cc974956ff68fa",
+      "source_path": "dila/medya/dila_01_yasak_siyah_galeri.mp4"
+    },
+    {
+      "path": "ozellikler/podyum/medya/dila_02_iki_mezura_atolye.mp4",
+      "git_blob": "9ec53fc10c3132da5a07c6bd3ac85014669ddc46",
+      "source_path": "dila/medya/dila_02_iki_mezura_atolye.mp4"
+    },
+    {
+      "path": "ozellikler/podyum/medya/dila_03_afair_sicrama_reel.mp4",
+      "git_blob": "592aea619c4dfd7cbd945d12ec50c5cf4410304d",
+      "source_path": "dila/medya/dila_03_afair_sicrama_reel.mp4"
+    },
+    {
+      "path": "ozellikler/yasam-alani/dila-sinema.css",
+      "git_blob": "b947c5a539b141dab21f22ea82c13c3841639a94",
+      "source_path": "dila/dila-sinema.css"
+    },
+    {
+      "path": "ozellikler/yasam-alani/dila-sinema.js",
+      "git_blob": "b28e919db98c683c5e48f8adf49a3651d1343d41",
+      "source_path": "dila/dila-sinema.js"
+    },
+    {
+      "path": "ozellikler/yasam-alani/medya/dila_01_yasak_siyah_galeri.mp4",
+      "git_blob": "3b6b5634df67a9698c86c9cb80cc974956ff68fa",
+      "source_path": "dila/medya/dila_01_yasak_siyah_galeri.mp4"
+    },
+    {
+      "path": "ozellikler/yasam-alani/medya/dila_02_iki_mezura_atolye.mp4",
+      "git_blob": "9ec53fc10c3132da5a07c6bd3ac85014669ddc46",
+      "source_path": "dila/medya/dila_02_iki_mezura_atolye.mp4"
+    },
+    {
+      "path": "ozellikler/yasam-alani/medya/dila_03_afair_sicrama_reel.mp4",
+      "git_blob": "592aea619c4dfd7cbd945d12ec50c5cf4410304d",
+      "source_path": "dila/medya/dila_03_afair_sicrama_reel.mp4"
+    }
+  ],
+  "scope": "Asset and navigation recovery; not a complete acceptance test for all legacy product functions."
+}
