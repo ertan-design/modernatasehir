@@ -1,35 +1,58 @@
 {
-  "schema": "prizma.atasehir-atelier.v1",
-  "generated_utc": "2026-11-24T22:45:11.611Z",
+  "schema": "afffair.prizma.atelier.v2",
+  "generated_utc": "2026-11-25T01:20:54.280Z",
+  "slogan": "Kumaşına dokun. Evinden uç.",
+  "dila_8_rules_verified": true,
+  "webgl_360_wind_cloth": true,
+  "surreal_8d_audio_and_morph": true,
+  "steerable_3d_flight": true,
   "google_maps_used": false,
   "csp_strict_safe": true,
   "zero_cdn": true,
-  "zero_pure_black_ui": true,
-  "file_count": 9,
+  "gpt_contract": "./gpt.json",
+  "file_count": 12,
   "files": [
     {
-      "file": "atolye-motor.js",
-      "bytes": 23054,
-      "sha256": "2e600d5a54dc1961250f8343d3dc1cadb30ffd2df908cebee7cb593ccd22e3fe",
-      "sha16": "2e600d5a54dc1961"
+      "file": "atolye-veri.js",
+      "bytes": 3836,
+      "sha256": "015ce73143a2ec1f4161bffc452b9e36ae9897788b17cb9364299678b894c8ce",
+      "sha16": "015ce73143a2ec1f"
     },
     {
-      "file": "atolye-veri.js",
-      "bytes": 7336,
-      "sha256": "1f0c5b42d8fab73da870a362145e31852ccbf13782d069457d02cea239a90bc0",
-      "sha16": "1f0c5b42d8fab73d"
+      "file": "atolye-webgl-kumas.js",
+      "bytes": 23813,
+      "sha256": "4725272c0ac47c6d566d91fa7a9e97c79dbb676912646beb7a366e4f42ed1a1b",
+      "sha16": "4725272c0ac47c6d"
+    },
+    {
+      "file": "atolye-webgl-ucus.js",
+      "bytes": 12575,
+      "sha256": "ed470981d204965df5de15df86dbb93b4175d3394931216902545c840ed57fd0",
+      "sha16": "ed470981d204965d"
     },
     {
       "file": "atolye.css",
-      "bytes": 12663,
-      "sha256": "00d5ad6bb24a4849b9889672e4ad27b095b3395c819bd78f9d8920b032329842",
-      "sha16": "00d5ad6bb24a4849"
+      "bytes": 10024,
+      "sha256": "7d3ae69221bc9e3874d0dbb774641306628cf5db3d948c3d0eb24f9a069f575e",
+      "sha16": "7d3ae69221bc9e38"
+    },
+    {
+      "file": "gpt.json",
+      "bytes": 4374,
+      "sha256": "b84d72b4b20dd83423a4363b3d313439de06d1478e4c1fad723312d5b0adc238",
+      "sha16": "b84d72b4b20dd834"
     },
     {
       "file": "index.html",
-      "bytes": 17170,
-      "sha256": "00e468ddb45b3df0e881295f0dd7a6f0998725f9806a47d32931e4e4b03cafa7",
-      "sha16": "00e468ddb45b3df0"
+      "bytes": 11716,
+      "sha256": "2e5f9cf0c892239eb27f0c279d406e61bbc5b4697df3b6a0d26f31b1076c1ea5",
+      "sha16": "2e5f9cf0c892239e"
+    },
+    {
+      "file": "llms.txt",
+      "bytes": 630,
+      "sha256": "def81ea606810e829f96591260ee249143bebb2d0c59cdfea9ab2301d16b9344",
+      "sha16": "def81ea606810e82"
     },
     {
       "file": "medya/genie_ucus_referans.jpg",

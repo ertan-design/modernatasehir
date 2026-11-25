@@ -1,0 +1,52 @@
+{
+  "schema": "afffair.prizma.gpt-contract.v2",
+  "marka": "AFFFAIR × PRIZMA ATELIER",
+  "slogan": "Kumaşına dokun. Evinden uç.",
+  "alt_slogan": "Sana özel kumaş. Üç kule. Özgür İstanbul.",
+  "amac": "İstanbul Haute Couture (AFFFAIR) sessiz lüks estetiğini, saf siyah (#000000) vetolu 6 Pantone TCX doğal kumaşı, Google Maps olmadan 3 kule çatı uçuşunu ve Ataşehir Modern'e yeni taşınan bir misafirin 4-site yaşam ihtiyacını (online terzi, sanat/ışık, tarım danışmanı, 50K kapı pasaportu) tek sade deneyimde birleştirmek.",
+  "dila_8_kural_uyumu": {
+    "1_sifir_karisiklik": "3 tam ekran odaklı sahne; minimum metin",
+    "2_gorur_gormez_hareketli": "Açılışta canlı 60 FPS WebGL rüzgarlı kumaş",
+    "3_gen_z_ve_quiet_luxury": "AFFFAIR loş stüdyo ışığı, sıcak espresso-obsidyen (#110d0c), 0 saf siyah",
+    "4_3yas_basit_slogan": "Kumaşına dokun. Evinden uç.",
+    "5_kisa_net_oz": "Her ekranda tek odak ve 2-4 kelimelik başlıklar",
+    "6_kafa_yormayan": "Tek satırlık yüzen kontrol şeridi",
+    "7_gercek_fizik_ve_8d": "60x60 gerçek 3D WebGL kumaş örgüsü, rüzgar dalgası, kadife/ipek Fresnel gölgesi, Sürreal 8D morfu ve StereoPanner 8D ses",
+    "8_tam_yonlendirilebilir": "360° fare/dokunmatik döndürme, yakınlaştırma, kumaşa dokunup dalga yaratma, rüzgar/ışık açısı ve WASD/ok/sürükleme ile yönlendirilebilir 3D uçuş"
+  },
+  "kumaslar_pantone_tcx": [
+    { "id": "zumrut", "pantone": "PANTONE 19-5918 TCX", "ad": "Oksitlenmiş Zümrüt İpek", "hex": "#132E2A", "orgu": "2/2 Dimi", "gramaj": "145 g/m²", "koken": "Bursa İpeği" },
+    { "id": "espresso", "pantone": "PANTONE 19-1111 TCX", "ad": "Gece Espressosu Gabardin", "hex": "#2A1E1B", "orgu": "Gabardin Dimi", "gramaj": "260 g/m²", "koken": "Organik Merinos" },
+    { "id": "murdum", "pantone": "PANTONE 19-2024 TCX", "ad": "Derin Patlıcan İpek Krep", "hex": "#2D1C2B", "orgu": "Bükümlü Krep", "gramaj": "118 g/m²", "koken": "Yıkanmış İpek" },
+    { "id": "kehribar", "pantone": "PANTONE 16-0948 TCX", "ad": "Antik Kehribar Keten-İpek", "hex": "#B87E35", "orgu": "1/1 Bezayağı", "gramaj": "190 g/m²", "koken": "Trakya Keteni + İpek" },
+    { "id": "keten", "pantone": "PANTONE 12-0710 TCX", "ad": "Ham Ağartılmamış Keten", "hex": "#E2D5BE", "orgu": "1/1 Bezayağı", "gramaj": "215 g/m²", "koken": "Boyasız Organik Keten" },
+    { "id": "antrasit", "pantone": "PANTONE 19-4013 TCX", "ad": "Ay Işığı Antrasit Kaşmir", "hex": "#1B2230", "orgu": "5/1 Saten Dimi", "gramaj": "285 g/m²", "koken": "Kaşmir + Merinos" }
+  ],
+  "yasak_renk": "#000000",
+  "atasehir_modern_3_kule": {
+    "adres": "Atatürk Mah., Ahmet Yesevi Cad., Ataşehir / İstanbul",
+    "koordinat_yaklasik": "40.98 K, 29.12 D",
+    "google_maps_kullanimi": false,
+    "rotalar": [
+      { "kule": "Balance Tower (35 Kat)", "yon": "242° GB", "hedef": "Watergarden İstanbul AVM", "mesafe_km": 2.4 },
+      { "kule": "Flex Tower (43 Kat)", "yon": "048° KD", "hedef": "İstanbul Finans Merkezi (İFM)", "mesafe_km": 2.8 },
+      { "kule": "Grand Tower (25 Kat)", "yon": "174° G", "hedef": "Maltepe Sahili · Miting & Konser Alanı", "mesafe_km": 10.8 },
+      { "kule": "Üst Halka (420 m)", "yon": "360° İstanbul", "hedef": "Başka İstanbul Yok (Adalar · Boğaz · Gökçeada)", "mesafe_km": 28.5 }
+    ]
+  },
+  "canli_adresler": {
+    "afair_studio_atolye": "https://www.afair.studio/prizma/atolye/",
+    "afair_live_atolye": "https://www.afair.live/prizma/atolye/",
+    "ertanaraz_atolye": "https://ertanaraz.com/prizma-atolye/",
+    "atasehirmodern_atolye": "https://www.xn--ataehirmodern-ktc.com/prizma-atolye/",
+    "modernatasehir_atolye": "https://www.xn--modernataehir-qtc.com/prizma-atolye/",
+    "front1_renk": "https://www.afair.studio/prizma/front1",
+    "front2_mezura": "https://www.afair.live/prizma/front2",
+    "front3_galeri": "https://www.afair.studio/prizma/front3",
+    "front4_pasaport": "https://ertanaraz.com/prizma/front4",
+    "video_studyo": "https://www.afair.studio/prizma/video",
+    "tarim_danisman": "https://www.tarim.online/",
+    "selinahbap_50k": "https://www.selinahbap.com/"
+  },
+  "eksik_ve_sinir": "Randevu fişleri tarayıcı içinde SHA-16 mühürlü JSONL üretir (harici SMS/takvim/ödeme bağlı değildir); baskaistanbulyok.com DNS yönlendirmesi henüz aktif değildir."
+}
