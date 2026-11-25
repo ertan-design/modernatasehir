@@ -330,5 +330,8 @@
       "ust_bayt": 26852,
       "muhur_var": false
     }
-  ]
+  ],
+  "source_kind": "static_inventory",
+  "live_proof": false,
+  "note": "Bu dosya kayıt anındaki envanterdir; çalışan ajan veya anlık faaliyet kanıtı değildir."
 }

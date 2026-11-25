@@ -1,0 +1,9 @@
+{
+  "schema": "site.identity.v1",
+  "site_id": "modernatasehir",
+  "site_name": "Modern Ataşehir",
+  "role": "Bina yaşamı",
+  "origin": "https://www.xn--modernataehir-qtc.com",
+  "catalog": "/sayfalar/",
+  "publishing": "Git snapshot + reviewed patch; no link to local disk"
+}

@@ -615,7 +615,7 @@
 
   var yasamSira = 0;
   var YASAM_LISTE = [
-    { m: 'Online İki-Mezura Terzi şu an müsait (6 dk içinde bağlanır).', t: 'Terziye Bağlan ↗', u: 'https://www.afair.live/dila/iki-mezura.html' },
+    { m: 'Terzi görüşmesi hazırlığı. Sağlayıcı takvimi ve müsaitlik doğrulanmadı.', t: 'Terziye Bağlan ↗', u: 'https://www.afair.live/dila/iki-mezura.html' },
     { m: 'Tarım Danışmanı randevusu: teras rüzgâr/su reçetesi ve kardeş parsel.', t: 'Randevu Al ↗', u: 'https://www.tarim.online/' },
     { m: 'AFAIR Studio loş galeri seçkisi ve SanArt rölöve salonu açık.', t: 'Galeriyi Aç ↗', u: 'https://www.afair.studio/dila/index.html' },
     { m: 'Pureaker 3B oda akustiği, Finanskent fırsat ve Maltepe GoSpor.', t: 'Kapıları Aç ↗', u: 'https://www.codekafa.com/kapi-evreni/' }

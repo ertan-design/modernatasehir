@@ -1,0 +1,201 @@
+{
+  "schema": "site.pages.v1",
+  "site": "Modern Ataşehir",
+  "origin": "https://www.xn--modernataehir-qtc.com",
+  "role": "Bina yaşamı",
+  "source_commit": "aab7c7a098d33907e43b60f9add3836b69af3350",
+  "generated_at": "2026-11-25T03:08:21.568Z",
+  "verification": "Repository snapshot; live HTTP checks recorded separately",
+  "items": [
+    {
+      "url": "/bina",
+      "title": "Bir binadan daha fazlası.",
+      "category": "Keşif",
+      "source_file": "bina.html",
+      "source_blob": "d111fd6fd960666d18790f14024c951f5a376a9e",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/calisma-rehberi/bina",
+      "title": "Bina kullanımı",
+      "category": "Hazırlık",
+      "source_file": "calisma-rehberi/bina.html",
+      "source_blob": "a32e92c4b707dc80bbb15a976522252470a34ab8",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/calisma-rehberi/hizmet",
+      "title": "Ev için hizmet",
+      "category": "Hazırlık",
+      "source_file": "calisma-rehberi/hizmet.html",
+      "source_blob": "b17805428f7c81258d06af93098fd2d956fd99c4",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/calisma-rehberi/ilk-gun",
+      "title": "Yeni evde ilk gün",
+      "category": "Hazırlık",
+      "source_file": "calisma-rehberi/ilk-gun.html",
+      "source_blob": "2bf00464176bb3eb8e0a6ac62b32f979aaeabfca",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/canli-podyum",
+      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
+      "category": "Görüntü",
+      "source_file": "dila/canli-podyum.html",
+      "source_blob": "fc236f2db2957c49fd40866b647e34ddd082a58c",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/iki-mezura",
+      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
+      "category": "Hazırlık",
+      "source_file": "dila/iki-mezura.html",
+      "source_blob": "8d3e31492edba4378f99b37cf1084e0b8955751a",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/",
+      "title": "Yaptığın her seçim,bir sonraki sıçramayı diker.",
+      "category": "Malzeme",
+      "source_file": "dila/index.html",
+      "source_blob": "edf60a550b83f21c54f08fabab4bbab4a29c794e",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/sinema",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik & Açık Kapılar",
+      "category": "Görüntü",
+      "source_file": "dila/sinema.html",
+      "source_blob": "5d1281e86c500612d51a24bce9b0f66b35bdc693",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/yasam-alani",
+      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
+      "category": "Hazırlık",
+      "source_file": "dila/yasam-alani.html",
+      "source_blob": "b25a0d7d261cae877c10e2651840a1172a1dedeb",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dokuma-ufuk/ilk-kurgu",
+      "title": "Harita Karosu Değil, Dokunmuş Ufuk: Üç Kuleden GAIA’ya Kanat Açan Tam Yaşam Ekosistemi",
+      "category": "Malzeme",
+      "source_file": "dokuma-ufuk/ilk-kurgu.html",
+      "source_blob": "1ae13c1cfd262cfdacba9bed995d8c4c52512f04",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dokuma-ufuk/",
+      "title": "İlk gün rehberi",
+      "category": "Malzeme",
+      "source_file": "dokuma-ufuk/index.html",
+      "source_blob": "50fe2eca8a83c32806ea5df2ba255fb8a9381acb",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/ilk-gun/",
+      "title": "Yeni evinde ilk gün.",
+      "category": "Keşif",
+      "source_file": "ilk-gun/index.html",
+      "source_blob": "88bef6d96c4f6291d8b4d24634a6d8523c3f5981",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/kapi-evreni/",
+      "title": "İş başlar.Sonuç görünür.",
+      "category": "Teknik",
+      "source_file": "kapi-evreni/index.html",
+      "source_blob": "e5a4ebd53097185f122317dc33a544e7698d7f9a",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma-atolye/",
+      "title": "Dokun. Çevir. Şehre uç.",
+      "category": "Keşif",
+      "source_file": "prizma-atolye/index.html",
+      "source_blob": "5dd0f5158200e73bc5c639b4b9d28183df816f20",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/uc-cati/",
+      "title": "Burada yaşamyere sığmaz.",
+      "category": "Keşif",
+      "source_file": "uc-cati/index.html",
+      "source_blob": "7fd1accd18ec68beedaf4182ecad0db89cc80227",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/uc-yon/",
+      "title": "Evine hoş geldin.Hayatı keşfet.",
+      "category": "Keşif",
+      "source_file": "uc-yon/index.html",
+      "source_blob": "288057086a2a7b634951b5921aae96b435fb9519",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/uc-yon/istanbul",
+      "title": "Bir şehir.Birbirine değen hayatlar.",
+      "category": "Keşif",
+      "source_file": "uc-yon/istanbul.html",
+      "source_blob": "b39f428991066e1c6ee91e564655a230e68c60a7",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/yasam/baska-istanbul",
+      "title": "Başkaİstanbul Yok.",
+      "category": "Hazırlık",
+      "source_file": "yasam/baska-istanbul.html",
+      "source_blob": "4de7f87666ff507d8c3c941a354e4f8448354b4a",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/yasam/bina",
+      "title": "Bir şehir,üç çatı.",
+      "category": "Hazırlık",
+      "source_file": "yasam/bina.html",
+      "source_blob": "061ccfeb2723b31fe5f8f31d11d5fb08b9d2671f",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    }
+  ]
+}
