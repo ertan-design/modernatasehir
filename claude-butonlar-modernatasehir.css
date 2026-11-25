@@ -1,0 +1,9 @@
+/* Ana sayfa ozellik butonlari: yalniz bu siteye ozel, baska dosyaya bagli degil. */
+nav[data-claude-butonlar]{position:fixed;left:16px;top:50%;transform:translateY(-50%);z-index:60;display:flex;flex-direction:column;gap:8px;max-width:230px;
+ font:500 13px/1.2 ui-sans-serif,system-ui,"Segoe UI",sans-serif}
+nav[data-claude-butonlar] a{display:block;padding:10px 14px;border-radius:999px;color:#f3ede2;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+ background:rgba(14,13,12,.66);border:1px solid rgba(243,237,226,.18);backdrop-filter:blur(10px);transition:border-color .2s,background .2s}
+nav[data-claude-butonlar] a:hover,nav[data-claude-butonlar] a:focus-visible{border-color:#d8b46a;background:rgba(30,26,20,.85);outline:none}
+nav[data-claude-butonlar] a.tumu{color:#14110a;background:#d8b46a;border-color:#d8b46a;font-weight:600}
+@media (max-width:760px),(max-height:520px){nav[data-claude-butonlar]{display:none}}   /* dar ekranda alt kontrollerle cakismasin; Tumu sayfasi menuden acilir */
+@media print{nav[data-claude-butonlar]{display:none}}
