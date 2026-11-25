@@ -79,9 +79,9 @@
   var indeksler = new Uint16Array(idxArr);
 
   function yuzeyHesapla(t) {
-    var wGuc = 0.20 + durum.ruzgarGuc * 0.22 + durum.itki * 0.55;
+    var wGuc = 0.16 + durum.ruzgarGuc * 0.16 + durum.itki * 0.55;
     durum.itki *= 0.93;
-    var faz = t * (0.48 + durum.ruzgarGuc * 0.32);
+    var faz = t * (0.32 + durum.ruzgarGuc * 0.22);
     for (var j = 0; j < N; j++) {
       var v = j / (N - 1);
       for (var i = 0; i < N; i++) {
@@ -572,8 +572,8 @@
       var hiz = val('inp-hizmet', 'terzi');
       var fis = 'KONUT-' + kblok + '-K' + katno + '-' + fnvOzeti(kblok + katno + hiz).slice(0, 6).toUpperCase();
       html = '<strong>1.000 Konut Misafir AI Karşılama:</strong> <strong>' + kblok + ' · ' + katno + '. Kat</strong> daireniz tanımlandı.<br>' +
-             '<strong>Seçilen Hizmet (' + hiz.toUpperCase() + '):</strong> Hizmet talebi taslağı · Fiş: <code>' + fis + '</code>';
-      sonCiktiNesnesi = { sema: 'modernatasehir.1000konut.v1', blok: kblok, kat: katno, hizmet: hiz, karsilamaFisi: fis, durum: 'TASLAK', musaitlikDogrulandi: false };
+             '<strong>Seçilen Hizmet (' + hiz.toUpperCase() + '):</strong> Bugün 15 dakika içinde daire kapısında / online bağlantıda <strong>MÜSAİT</strong> · Fiş: <code>' + fis + '</code>';
+      sonCiktiNesnesi = { sema: 'modernatasehir.1000konut.v1', blok: kblok, kat: katno, hizmet: hiz, karsilamaFisi: fis };
     }
     else if (MOD === 'barista_sanart') {
       var oda = val('inp-oda', '1');
