@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MODERN ATAŞEHİR · 3-Blok Güneş/Rüzgâr Kesiti & 4-Kapı Pasaport Final</title>
+  <meta name="description" content="Kurtarılan final sürüm: 1000 konutluk 3 blokta saatlik güneş-rüzgâr kesit tuvali, daire seçici ve 4 yaşam kapısı WebCrypto SHA-256 hoş geldin pasaportu.">
+  <link rel="stylesheet" href="./kesit3b.css">
+  <script defer src="./kesit3b.js"></script>
+</head>
+<body>
+  <header class="k-head">
+    <strong>MODERN ATAŞEHİR · 3-BLOK KESİT &amp; YAŞAM FİNAL</strong>
+    <a class="k-back" href="../">← Ana Sayfaya Dön</a>
+  </header>
+
+  <main class="k-wrap">
+    <section class="k-grid">
+      <div class="k-card">
+        <p class="eyebrow">FLEX 43K · BALANCE 35K · GRAND 25K · GÜNEŞ &amp; RÜZGÂR KESİTİ</p>
+        <h1>Günün saatine göre bloğunu incele.</h1>
+        <canvas id="cut-cv" width="840" height="400" aria-label="Modern Ataşehir üç blok güneş ve rüzgar kesit tuvali"></canvas>
+        <div class="sl-row">
+          <div>
+            <label for="s-hour">Günün Saati <strong id="v-hour">14:00</strong></label>
+            <input id="s-hour" type="range" min="6" max="20" value="14">
+          </div>
+          <div>
+            <label for="s-kat">Seçili Kat <strong id="v-kat">22. Kat</strong></label>
+            <input id="s-kat" type="range" min="1" max="43" value="22">
+          </div>
+        </div>
+        <div class="blk-tabs" id="blk-tabs"></div>
+      </div>
+
+      <aside class="k-card">
+        <img class="k-img" src="./levha_01_atasehir_kuleler.jpg" alt="Modern Ataşehir üç blok hava görünümü" width="960" height="540">
+        <h2>4-Kapı Yeni Komşu Pasaportu (Taslak)</h2>
+        <div class="doors" id="doors"></div>
+        <pre class="pass-pre" id="pass-pre">Mühürleniyor...</pre>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MODERN ATAŞEHİR · Gaia İnternet Kafe, Toplantı & Balkon Tarım Final</title>
+  <meta name="description" content="Kurtarılan final sürüm: bina içi Gaia AI internet kafe masaları, 2 toplantı odası kat planı ve kat rüzgârına göre balkon tarım danışmanı.">
+  <link rel="stylesheet" href="./gaiakafe.css">
+  <script defer src="./gaiakafe.js"></script>
+</head>
+<body>
+  <header class="gk-head">
+    <strong>MODERN ATAŞEHİR · GAİA KAFE, TOPLANTI &amp; BALKON TARIM FİNAL</strong>
+    <a class="gk-back" href="../">← Ana Sayfaya Dön</a>
+  </header>
+
+  <main class="gk-wrap">
+    <section class="gk-grid">
+      <div class="gk-card">
+        <p class="eyebrow">PODYUM KAT PLANI · 6 AI ÇALIŞMA MASASI + 2 TOPLANTI ODASI</p>
+        <h1>Masana dokun. Toplantı odanı planla.</h1>
+        <canvas id="plan-cv" width="800" height="400" aria-label="Gaia internet kafe ve toplantı odaları etkileşimli kat planı"></canvas>
+        <p class="plan-note" id="plan-note">Kat planında bir masa veya toplantı odasına tıkla (yerel planlama simülasyonu).</p>
+      </div>
+
+      <aside class="gk-card">
+        <p class="eyebrow">BALKON &amp; TERAS TARIM DANIŞMANI</p>
+        <h2>Kat Rüzgârı &amp; Güneş Bitki Eşleştirici</h2>
+        <label for="g-kat">Daire Katı <strong id="vg-kat">14. Kat</strong></label>
+        <input id="g-kat" type="range" min="1" max="43" value="14">
+        <label for="g-sun">Günlük Güneş Süresi <strong id="vg-sun">5 saat</strong></label>
+        <input id="g-sun" type="range" min="1" max="10" value="5">
+        <div class="plant-list" id="plant-list"></div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
