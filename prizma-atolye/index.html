@@ -1,49 +1,41 @@
-<!DOCTYPE html><html lang="tr"><head>
+<!doctype html>
+<html lang="tr">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <title>Dokun. Çevir. Şehre uç. · Modern Ataşehir</title>
-  <meta name="description" content="Kumaşa dokun, 360° çevir, rüzgârla dalgalandır veya üç çatıdan Watergarden, Finanskent ve Maltepe sahiline uç.">
-  <link rel="stylesheet" href="/prizma-atolye/afair-8d.css">
-<meta name="site-identity" content="modernatasehir"><link rel="stylesheet" href="/sayfalar/kimlik.css"></head>
-<body data-baslik="Dokun. Çevir. Şehre uç.">
-  <canvas id="sahne-tuval" aria-label="360 derece yönlendirilebilir gerçek kumaş ve üç blok çatı uçuş sahnesi"></canvas>
-
-  <header class="ust-bar">
-    <div class="marka-grup">
-      <a class="marka" href="/prizma-atolye/index.html">ATAŞEHİR</a>
-    </div>
-    <nav class="kip-grup" aria-label="Sahne">
-      <button type="button" class="hap aktif" id="kip-kumas">Kumaş</button>
-      <button type="button" class="hap" id="kip-ucus">Uçuş</button>
-      <button type="button" class="hap" id="kip-yasam">Yaşam</button>
-    </nav>
+  <title>MODERN ATAŞEHİR · Yeni Komşu 4-Kapı Yaşam Masası</title>
+  <meta name="description" content="Yaklaşık 1000 konutluk 3 bloklu Modern Ataşehir yeni komşuları için evde terzi, balkon tarım, sanat ve akıllı ev yaşam rehberi.">
+  <link rel="stylesheet" href="./komsu4kapi.css">
+  <script defer src="./komsu4kapi.js"></script>
+</head>
+<body>
+  <header class="res-head">
+    <strong>MODERN ATAŞEHİR · YENİ KOMŞU MASASI</strong>
+    <span>3 BLOK · ~1000 KONUT · 4 YAŞAM KAPISI</span>
   </header>
 
-  <section class="baslik-katmani" aria-live="polite">
-    <h1 id="hero-baslik">Dokun. Çevir. Şehre uç.</h1>
-    <p id="hero-alt">360° sürükle. Üç çatıdan yönünü seç.</p>
-  </section>
+  <main class="res-wrap">
+    <section class="res-hero">
+      <p class="eyebrow">TAŞINDIĞIN İLK GÜN HAYATLA TANIŞ</p>
+      <h1>Daireni seç. Dört yaşam kapını planla.</h1>
+      <p class="lead">Yeni evine yerleşirken evde terzi, balkon/Gaia tarım danışmanı, sanat atölyesi ve akıllı ev/toplantı odası ihtiyaçlarını tek masada taslakla.</p>
+    </section>
 
-  <aside class="mini-kart gizli" id="mini-cekmece" aria-live="polite">
-    <p id="cekmece-metin">Terzi görüşmesi hazırlığı · müsaitlik doğrulanmadı.</p>
-    <video id="cekmece-video" class="gizli" controls="" playsinline="" loop="" muted="" preload="none" data-src="/dokuma-ufuk/medya/genie_ucus_referans.mp4"></video>
-    <div class="mini-aksiyon">
-      <a class="cam-dugme aktif" id="cekmece-bag" href="https://www.afair.live/dila/iki-mezura.html">Aç ↗</a>
-      <button type="button" class="cam-dugme" id="cekmece-kapat">Kapat</button>
-    </div>
-  </aside>
+    <section class="block-picker">
+      <h2>1 · Bloğunu &amp; Katını Seç</h2>
+      <div class="block-row" id="block-row"></div>
+      <div class="floor-box">
+        <label for="floor-range">Kat Seçimi <strong id="floor-val">18. Kat</strong></label>
+        <input id="floor-range" type="range" min="1" max="43" value="18">
+        <p class="floor-note" id="floor-note">Flex Blok · 18. Kat · Kuzeydoğu cephe — yüksek rüzgâr, Finanskent görüş hattı.</p>
+      </div>
+    </section>
 
-  <footer class="alt-bar">
-    <div class="alt-dugmeler">
-      <button type="button" class="cam-dugme" id="btn-sec">Kumaş</button>
-      <button type="button" class="cam-dugme" id="btn-ruzgar">Rüzgâr</button>
-      <button type="button" class="cam-dugme" id="btn-ses">8D Ses</button>
-    </div>
-    <span class="durum-etiket" id="canli-durum">Şampanya İpeği · 22°</span>
-  </footer>
-
-  <script src="/prizma-atolye/afair-8d.js"></script>
-
-
-<footer class="sayfa-kimligi"><p>Modern Ataşehir · Bina yaşamı · Dokun. Çevir. Şehre uç.</p><a href="/sayfalar/">Modern Ataşehir deneyimlerini keşfet ↗</a></footer></body></html>
+    <section class="doors-section">
+      <h2>2 · Dört Yaşam Kapısı (Yerel Talep Taslağı)</h2>
+      <div class="doors-grid" id="doors-grid"></div>
+      <div class="summary-card" id="summary-card" aria-live="polite"></div>
+    </section>
+  </main>
+</body>
+</html>
