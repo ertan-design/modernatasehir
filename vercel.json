@@ -51,5 +51,39 @@
     }
   ],
   "buildCommand": "",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/final-bin-konut-konsiyerj",
+      "destination": "/final-bin-konut-konsiyerj/index.html"
+    },
+    {
+      "source": "/final-bin-konut-konsiyerj/",
+      "destination": "/final-bin-konut-konsiyerj/index.html"
+    },
+    {
+      "source": "/final-sakinler-barista-sanart",
+      "destination": "/final-sakinler-barista-sanart/index.html"
+    },
+    {
+      "source": "/final-sakinler-barista-sanart/",
+      "destination": "/final-sakinler-barista-sanart/index.html"
+    },
+    {
+      "source": "/final-balkon-tarim-iklim",
+      "destination": "/final-balkon-tarim-iklim/index.html"
+    },
+    {
+      "source": "/final-balkon-tarim-iklim/",
+      "destination": "/final-balkon-tarim-iklim/index.html"
+    },
+    {
+      "source": "/final-gaia-istasyon-farm",
+      "destination": "/final-gaia-istasyon-farm/index.html"
+    },
+    {
+      "source": "/final-gaia-istasyon-farm/",
+      "destination": "/final-gaia-istasyon-farm/index.html"
+    }
+  ]
 }

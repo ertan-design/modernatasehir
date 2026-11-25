@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MODERN · FİNAL 2 — Kahven demde. Sanat duvarda.</title>
+  <meta name="description" content="Zemin kat Sakinler Kafesi espresso basınç/sıcaklık ayarı ve SanArt 8 odalı mimari eser + tekstil eşleştirici.">
+  <link rel="stylesheet" href="./final.css">
+</head>
+<body>
+  <canvas id="tuval" aria-label="360 derece yönlendirilebilir 3 boyutlu final sahnesi"></canvas>
+
+  <header class="ust">
+    <div class="sol">
+      <a class="damga" href="/">MODERN · FİNAL 2</a>
+    </div>
+    <nav class="sag" aria-label="Final sahne geçişi">
+      <button type="button" class="dugme" id="atolye-ac" aria-expanded="false">Final Atölyesi ＋</button>
+      <a class="dugme" href="/final-balkon-tarim-iklim/">Sonraki →</a>
+    </nav>
+  </header>
+
+  <section class="atolye-panel" id="atolye-panel" aria-label="Sakinler Barista & SanArt 8-Oda Final" hidden>
+    <h2>Sakinler Barista & SanArt 8-Oda Final</h2>
+    <p class="aciklama">Zemin kat Sakinler Kafesi espresso basınç/sıcaklık ayarı ve SanArt 8 odalı mimari eser + tekstil eşleştirici.</p>
+    
+        <div class="form-izgara">
+          <div class="alan"><label for="inp-oda">SanArt 8-Oda Sergisi</label>
+            <select id="inp-oda">
+              <option value="1">Oda 1 · Kıyı Işığı &amp; Ham İpek</option><option value="2">Oda 2 · Karabağ Sumakh Geometrisi</option>
+              <option value="3">Oda 3 · Botanik Bakır Rölyef</option><option value="4">Oda 4 · Finanskent Kristal Prizma</option>
+              <option value="5">Oda 5 · Gospor Tek Çizgi Kinetik</option><option value="6">Oda 6 · FreeHand 4-Renk Bezier</option>
+              <option value="7">Oda 7 · Y1904 Akustik Sessizlik</option><option value="8">Oda 8 · Toiji Ufuk Haritası</option>
+            </select>
+          </div>
+          <div class="alan"><label for="inp-barista">Barista #10 Demleme Sıcaklığı (°C)</label>
+            <input id="inp-barista" type="range" min="88" max="96" value="93">
+          </div>
+        </div>
+    <div class="sonuc-kutu" id="canli-sonuc">Hesaplanıyor...</div>
+    <div class="svg-kutu" id="canli-svg" hidden></div>
+    <div class="aksiyon-bar">
+      <a class="indir-bag" id="btn-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-sakinler-barista-sanart-cikti.json">Çıktıyı İndir (.json)</a>
+      <a class="indir-bag" id="btn-svg-indir" href="data:image/svg+xml;charset=utf-8," download="final-sakinler-barista-sanart-plan.svg" hidden>Paftayı İndir (.svg)</a>
+      <button type="button" class="dugme" id="btn-senkron-yay">Senkron Zincirine Yaz</button>
+      <button type="button" class="dugme" id="atolye-kapat">Kapat ✕</button>
+    </div>
+    <pre class="kod-cikti" id="zincir-cikti"></pre>
+  </section>
+
+  <section class="baslik" aria-label="Sahne özeti">
+    <h1>Kahven demde. Sanat duvarda.</h1>
+    <p>Sakinler Kafesi Barista #10 ve SanArt 8-oda daire kürasyonu.</p>
+  </section>
+
+  <footer class="alt">
+    <div class="kontrol" role="group" aria-label="Sahne kontrolleri">
+      <button type="button" class="dugme" id="btn-ruzgar">Rüzgâr</button>
+      <button type="button" class="dugme" id="btn-isik">Işık</button>
+      <button type="button" class="dugme" id="btn-ses" aria-pressed="false">8D Ses</button>
+    </div>
+    <div class="etiket" id="durum">19-2428 TCX Galeri Mürdüm · 360°</div>
+  </footer>
+
+  <script src="./final.js"></script>
+</body>
+</html>

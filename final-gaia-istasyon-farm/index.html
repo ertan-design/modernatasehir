@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MODERN · FİNAL 4 — Çalıştıkça büyüyen GAIA ağı.</title>
+  <meta name="description" content="Misafir istasyonu rezervasyonu ve arkada çalışan GPT filosunun GAIA'ya kazandırdığı yeni bilgisayarların canlı hesabı.">
+  <link rel="stylesheet" href="./final.css">
+</head>
+<body>
+  <canvas id="tuval" aria-label="360 derece yönlendirilebilir 3 boyutlu final sahnesi"></canvas>
+
+  <header class="ust">
+    <div class="sol">
+      <a class="damga" href="/">MODERN · FİNAL 4</a>
+    </div>
+    <nav class="sag" aria-label="Final sahne geçişi">
+      <button type="button" class="dugme" id="atolye-ac" aria-expanded="false">Final Atölyesi ＋</button>
+      <a class="dugme" href="/">Sonraki →</a>
+    </nav>
+  </header>
+
+  <section class="atolye-panel" id="atolye-panel" aria-label="Kafe & Toplantı GAIA Farm Final" hidden>
+    <h2>Kafe & Toplantı GAIA Farm Final</h2>
+    <p class="aciklama">Misafir istasyonu rezervasyonu ve arkada çalışan GPT filosunun GAIA'ya kazandırdığı yeni bilgisayarların canlı hesabı.</p>
+    
+        <div class="form-izgara">
+          <div class="alan"><label for="inp-masa">Aktif Misafir Bilgisayarı (Kafe + Toplantı)</label>
+            <input id="inp-masa" type="range" min="4" max="64" value="24">
+          </div>
+          <div class="alan"><label for="inp-saat-farm">Günlük Ortak Çalışma Süresi (saat)</label>
+            <input id="inp-saat-farm" type="range" min="2" max="20" value="11">
+          </div>
+          <div class="alan"><label for="inp-mekan-farm">İstasyon Noktası</label>
+            <select id="inp-mekan-farm"><option value="modern">Modern Ataşehir Ortak Kafe &amp; Salon</option><option value="afair">AFAIR Studio Mağaza &amp; Lounge</option><option value="birlesik">Birleşik Tüm İstasyonlar Ağı</option></select>
+          </div>
+        </div>
+    <div class="sonuc-kutu" id="canli-sonuc">Hesaplanıyor...</div>
+    <div class="svg-kutu" id="canli-svg" hidden></div>
+    <div class="aksiyon-bar">
+      <a class="indir-bag" id="btn-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-gaia-istasyon-farm-cikti.json">Çıktıyı İndir (.json)</a>
+      <a class="indir-bag" id="btn-svg-indir" href="data:image/svg+xml;charset=utf-8," download="final-gaia-istasyon-farm-plan.svg" hidden>Paftayı İndir (.svg)</a>
+      <button type="button" class="dugme" id="btn-senkron-yay">Senkron Zincirine Yaz</button>
+      <button type="button" class="dugme" id="atolye-kapat">Kapat ✕</button>
+    </div>
+    <pre class="kod-cikti" id="zincir-cikti"></pre>
+  </section>
+
+  <section class="baslik" aria-label="Sahne özeti">
+    <h1>Çalıştıkça büyüyen GAIA ağı.</h1>
+    <p>Toplantı odası ve kafe bilgisayarlarıyla yeni düğüm kazanımı.</p>
+  </section>
+
+  <footer class="alt">
+    <div class="kontrol" role="group" aria-label="Sahne kontrolleri">
+      <button type="button" class="dugme" id="btn-ruzgar">Rüzgâr</button>
+      <button type="button" class="dugme" id="btn-isik">Işık</button>
+      <button type="button" class="dugme" id="btn-ses" aria-pressed="false">8D Ses</button>
+    </div>
+    <div class="etiket" id="durum">17-4427 TCX İstasyon Turkuaz · 360°</div>
+  </footer>
+
+  <script src="./final.js"></script>
+</body>
+</html>

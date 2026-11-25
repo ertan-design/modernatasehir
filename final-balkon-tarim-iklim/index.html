@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MODERN · FİNAL 3 — Katına göre rüzgâr ve hasat.</title>
+  <meta name="description" content="Kat yüksekliği rüzgâr formülü v(z), cephe güneş saati, günlük ml damla sulama hesabı ve tarım danışmanı randevusu.">
+  <link rel="stylesheet" href="./final.css">
+</head>
+<body>
+  <canvas id="tuval" aria-label="360 derece yönlendirilebilir 3 boyutlu final sahnesi"></canvas>
+
+  <header class="ust">
+    <div class="sol">
+      <a class="damga" href="/">MODERN · FİNAL 3</a>
+    </div>
+    <nav class="sag" aria-label="Final sahne geçişi">
+      <button type="button" class="dugme" id="atolye-ac" aria-expanded="false">Final Atölyesi ＋</button>
+      <a class="dugme" href="/final-gaia-istasyon-farm/">Sonraki →</a>
+    </nav>
+  </header>
+
+  <section class="atolye-panel" id="atolye-panel" aria-label="Balkon Tarımı & Su Bütçesi Final" hidden>
+    <h2>Balkon Tarımı & Su Bütçesi Final</h2>
+    <p class="aciklama">Kat yüksekliği rüzgâr formülü v(z), cephe güneş saati, günlük ml damla sulama hesabı ve tarım danışmanı randevusu.</p>
+    
+        <div class="form-izgara">
+          <div class="alan"><label for="inp-tkat">Balkon Katı (1 .. 43)</label>
+            <input id="inp-tkat" type="range" min="1" max="43" value="18">
+          </div>
+          <div class="alan"><label for="inp-cephe">Cephe Yönü</label>
+            <select id="inp-cephe"><option value="guney">Güney · Marmara Tam Güneş (7,5 sa)</option><option value="dogu">Doğu · Sabah Güneşi (5,2 sa)</option><option value="bati">Batı · İkindi Işığı (5,0 sa)</option><option value="kuzey">Kuzey · Serin Gölge (2,8 sa)</option></select>
+          </div>
+          <div class="alan"><label for="inp-urun">Balkon Yetiştirme Kiti</label>
+            <select id="inp-urun"><option value="zeytin">Bodur Gökçeada Zeytini &amp; Kekik</option><option value="sebze">Çeri Domates &amp; Fesleğen</option><option value="mikro">Mikro Filiz &amp; Lavanta</option></select>
+          </div>
+        </div>
+    <div class="sonuc-kutu" id="canli-sonuc">Hesaplanıyor...</div>
+    <div class="svg-kutu" id="canli-svg" hidden></div>
+    <div class="aksiyon-bar">
+      <a class="indir-bag" id="btn-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-balkon-tarim-iklim-cikti.json">Çıktıyı İndir (.json)</a>
+      <a class="indir-bag" id="btn-svg-indir" href="data:image/svg+xml;charset=utf-8," download="final-balkon-tarim-iklim-plan.svg" hidden>Paftayı İndir (.svg)</a>
+      <button type="button" class="dugme" id="btn-senkron-yay">Senkron Zincirine Yaz</button>
+      <button type="button" class="dugme" id="atolye-kapat">Kapat ✕</button>
+    </div>
+    <pre class="kod-cikti" id="zincir-cikti"></pre>
+  </section>
+
+  <section class="baslik" aria-label="Sahne özeti">
+    <h1>Katına göre rüzgâr ve hasat.</h1>
+    <p>1–43. kat rüzgâr kayması, damla su bütçesi ve danışman randevusu.</p>
+  </section>
+
+  <footer class="alt">
+    <div class="kontrol" role="group" aria-label="Sahne kontrolleri">
+      <button type="button" class="dugme" id="btn-ruzgar">Rüzgâr</button>
+      <button type="button" class="dugme" id="btn-isik">Işık</button>
+      <button type="button" class="dugme" id="btn-ses" aria-pressed="false">8D Ses</button>
+    </div>
+    <div class="etiket" id="durum">16-0213 TCX Filiz Yeşili · 360°</div>
+  </footer>
+
+  <script src="./final.js"></script>
+</body>
+</html>
