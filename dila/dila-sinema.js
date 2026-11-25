@@ -342,6 +342,7 @@
 
       var topGecerli = 0;
       var topGecersiz = 0;
+      var okumaHatalari = [];
 
       var thead = document.createElement('thead');
       var trh = document.createElement('tr');
@@ -363,6 +364,7 @@
           var r = await fetch('/kapi-evreni/uzanti/' + ad, { cache: 'no-store' });
           if (!r.ok) {
             durum = 'HTTP ' + r.status;
+            okumaHatalari.push(ad + ': ' + durum);
           } else {
             var icerik = await r.text();
             var sat = icerik.split(/\r?\n/).filter(function (x) { return x.trim().length > 0; });
@@ -373,6 +375,7 @@
           }
         } catch (_) {
           durum = 'OKUMA_HATASI';
+          okumaHatalari.push(ad + ': ' + durum);
         }
         topGecerli += gecerli;
         topGecersiz += gecersiz;
@@ -386,14 +389,14 @@
       }
       if (tablo) tablo.appendChild(tbody);
       if (metrik) {
-        metrik.textContent = 'Taranan dosya: ' + dosyalar.length + ' · Geçerli kayıt: ' + topGecerli + ' · Geçersiz satır: ' + topGecersiz;
+        metrik.textContent = 'Taranan dosya: ' + dosyalar.length + ' · Geçerli kayıt: ' + topGecerli + ' · Geçersiz satır: ' + topGecersiz + ' · Okuma hatası: ' + okumaHatalari.length + (dosyalar.length ? '' : ' · Dizin boş: doğrulama tamamlanmadı');
       }
-      return { dosya: dosyalar.length, gecerli: topGecerli, gecersiz: topGecersiz };
+      return { ok: dosyalar.length > 0 && okumaHatalari.length === 0 && topGecersiz === 0, dosya: dosyalar.length, gecerli: topGecerli, gecersiz: topGecersiz, hatalar: okumaHatalari };
     } catch (err) {
       if (metrik) {
         metrik.textContent = 'Uzantı dizini okunamadı (' + (err && err.message ? err.message : 'bağlantı kısıtı') + ')';
       }
-      return { dosya: 0, gecerli: 0, gecersiz: 0 };
+      return { ok: false, dosya: 0, gecerli: 0, gecersiz: 0, hatalar: [String(err && err.message || err)] };
     }
   }
 
@@ -426,11 +429,12 @@
     var s3 = rA09.satir === 5 && rA09.sutun === 5;
     var s4 = uzantiSatirGecerliMi('{"tip":"alindi","acik_id":"A-12","gpt":"gemini_ag1"}') === true;
     var s5 = uzantiSatirGecerliMi('{"tip":"kapi","ad":"<b>x</b>","girdi":"a","sonuc":"b","kabul":"1"}') === false;
-    var failSayi = [s1, s2, s3, s4, s5].filter(function (x) { return !x; }).length;
+    var s6 = rA10.ok === true;
+    var failSayi = [s1, s2, s3, s4, s5, s6].filter(function (x) { return !x; }).length;
 
     var stKutu = document.getElementById('selftest-kutu');
     if (stKutu) {
-      stKutu.textContent = 'SELFTEST: ' + (5 - failSayi) + '/5 PASS · FAIL=' + failSayi +
+      stKutu.textContent = 'SELFTEST: ' + (6 - failSayi) + '/6 PASS · FAIL=' + failSayi +
         ' | A-12 Hücre=' + rGpu.hucre + ' (' + rGpu.sureMs.toFixed(2) + ' ms)' +
         ' | A-05 Sicil=' + rA05 +
         ' | A-09 Tablo=' + rA09.satir + 'x' + rA09.sutun +
