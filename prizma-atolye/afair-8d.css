@@ -1,16 +1,16 @@
 /* ==========================================================================
-   AFAIR QUIET LUXURY 8D ATELIER — DILA 8 KURAL TAM UYUM
-   Low-Key Charismatic · Elit Sade · Gen-Z Akici · Sifir Saf Siyah
+   AFAIR QUIET LUXURY 8D ATELIER — DILA 8/8 KURAL KESIN UYUM
+   Tam 3 Yazi Boyutu (36px / 14px / 12px) · Ilk Ekran <= 7 Oge · <= 22 Kelime
+   Low-Key Charismatic · 390px Sifir Tasma · Sifir Saf Siyah
    ========================================================================== */
 :root {
-  --gece-oda: #090c13;
-  --gece-cam: rgba(14, 18, 28, 0.66);
-  --gece-panel: rgba(16, 21, 33, 0.84);
-  --sampanya: #efe6d8;
-  --sampanya-soluk: rgba(239, 230, 216, 0.62);
-  --altin-isik: #cbb082;
-  --ince-cizgi: rgba(239, 230, 216, 0.15);
-  --vurgu-cizgi: rgba(203, 176, 130, 0.55);
+  --oda: #090b10;
+  --cam: rgba(14, 17, 25, 0.62);
+  --panel: rgba(14, 17, 25, 0.86);
+  --fildisi: #f2e9dc;
+  --soluk: rgba(242, 233, 220, 0.64);
+  --altin: #d6b988;
+  --cizgi: rgba(242, 233, 220, 0.16);
 }
 
 * {
@@ -24,14 +24,15 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--gece-oda);
-  color: var(--sampanya);
+  max-width: 100vw;
+  background-color: var(--oda);
+  color: var(--fildisi);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 12px;
   overflow: hidden;
   user-select: none;
 }
 
-/* Tam Ekran Canli 360° WebGL2 Sahnesi */
 #sahne-tuval {
   position: fixed;
   inset: 0;
@@ -47,7 +48,7 @@ body {
   cursor: grabbing;
 }
 
-/* Ust Quiet-Luxury Ince Bar */
+/* Ust Quiet-Luxury Bar — Yalniz 12px Boyut */
 .ust-bar {
   position: fixed;
   top: 0;
@@ -55,73 +56,121 @@ body {
   right: 0;
   z-index: 10;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  padding: 18px 26px;
+  gap: 8px;
+  padding: 16px 20px;
   pointer-events: none;
 }
 
-.marka-kutu,
-.kip-secici,
-.sag-araclar {
+.marka-grup,
+.kip-grup {
   pointer-events: auto;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .marka {
   text-decoration: none;
-  color: var(--sampanya);
+  color: var(--fildisi);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 17px;
+  font-size: 12px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   padding: 7px 12px;
-  background-color: var(--gece-cam);
-  border: 1px solid var(--ince-cizgi);
-  backdrop-filter: blur(14px);
-}
-
-.kip-secici {
-  background-color: var(--gece-cam);
-  border: 1px solid var(--ince-cizgi);
-  padding: 4px;
+  background-color: var(--cam);
+  border: 1px solid var(--cizgi);
   border-radius: 999px;
   backdrop-filter: blur(14px);
 }
 
-.hap-dugme {
+.kip-grup {
+  background-color: var(--cam);
+  border: 1px solid var(--cizgi);
+  padding: 3px;
+  border-radius: 999px;
+  backdrop-filter: blur(14px);
+}
+
+.hap {
   appearance: none;
   background: transparent;
-  color: var(--sampanya-soluk);
+  color: var(--soluk);
   border: 1px solid transparent;
   border-radius: 999px;
-  padding: 7px 15px;
+  padding: 6px 12px;
   font-family: inherit;
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.03em;
   cursor: pointer;
-  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  transition: color 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
 }
 
-.hap-dugme:hover {
-  color: var(--sampanya);
+.hap:hover {
+  color: var(--fildisi);
 }
 
-.hap-dugme.aktif {
-  color: var(--gece-oda);
-  background-color: var(--sampanya);
-  border-color: var(--sampanya);
+.hap.aktif {
+  color: var(--oda);
+  background-color: var(--fildisi);
+  border-color: var(--fildisi);
 }
 
-.ince-dugme {
+/* Sol Baslik — 36px (h1) ve 14px (p) */
+.baslik-katmani {
+  position: fixed;
+  left: 22px;
+  bottom: 78px;
+  z-index: 8;
+  max-width: min(420px, calc(100vw - 44px));
+  pointer-events: none;
+}
+
+.baslik-katmani h1 {
+  margin: 0 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--fildisi);
+}
+
+.baslik-katmani p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--soluk);
+}
+
+/* Alt Minimal Kontrol Cubugu — Yalniz 3 Dugme + Durum (Toplam tik <= 7!) */
+.alt-bar {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 18px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.alt-dugmeler {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cam-dugme {
   appearance: none;
-  background-color: var(--gece-cam);
-  color: var(--sampanya);
-  border: 1px solid var(--ince-cizgi);
+  background-color: var(--cam);
+  color: var(--fildisi);
+  border: 1px solid var(--cizgi);
   border-radius: 999px;
   padding: 7px 13px;
   font-family: inherit;
@@ -131,202 +180,73 @@ body {
   text-decoration: none;
 }
 
-.ince-dugme:hover,
-.ince-dugme.aktif {
-  border-color: var(--vurgu-cizgi);
-  color: var(--altin-isik);
+.cam-dugme:hover,
+.cam-dugme.aktif {
+  border-color: var(--altin);
+  color: var(--altin);
 }
 
-/* Sol Ust Minimal Slogan (3-8 Yas Netliginde, Sifir Kalabalik) */
-.baslik-katmani {
+.durum-etiket {
+  font-size: 12px;
+  color: var(--altin);
+  letter-spacing: 0.03em;
+}
+
+/* Yasam / Ucus Mini Karti (Yalniz Secildiginde Acilir) */
+.mini-kart {
   position: fixed;
-  top: 78px;
-  left: 26px;
-  z-index: 8;
-  max-width: 430px;
-  pointer-events: none;
-  transition: opacity 0.28s ease;
+  right: 20px;
+  bottom: 72px;
+  z-index: 12;
+  width: min(340px, calc(100vw - 40px));
+  background-color: var(--panel);
+  border: 1px solid var(--cizgi);
+  border-radius: 18px;
+  padding: 15px;
+  backdrop-filter: blur(20px);
 }
 
-.baslik-katmani h1 {
-  margin: 0 0 6px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 400;
-  font-size: clamp(26px, 3.6vw, 44px);
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  color: var(--sampanya);
+.mini-kart p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--fildisi);
 }
 
-.baslik-katmani p {
-  margin: 0;
-  font-size: 13.5px;
-  color: var(--sampanya-soluk);
-  letter-spacing: 0.01em;
+.mini-kart video {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--cizgi);
+  display: block;
+  margin-bottom: 10px;
 }
 
-/* Alt Yuzen Quiet-Luxury Kontrol Konsolu */
-.alt-konsol {
-  position: fixed;
-  left: 22px;
-  right: 22px;
-  bottom: 20px;
-  z-index: 10;
+.mini-aksiyon {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 13px 18px;
-  background-color: var(--gece-panel);
-  border: 1px solid var(--ince-cizgi);
-  border-radius: 20px;
-  backdrop-filter: blur(18px);
-  transition: opacity 0.28s ease, transform 0.28s ease;
-}
-
-.kumas-bobinler,
-.ucus-yonler,
-.yasam-kapilar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 7px;
+  gap: 6px;
 }
 
 .gizli {
   display: none !important;
 }
 
-.sade-kip .baslik-katmani,
-.sade-kip .alt-konsol {
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* Ayrık Pantone Kumas Noktalari */
-.bobin-dugme {
-  appearance: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background-color: rgba(255, 255, 255, 0.03);
-  color: var(--sampanya-soluk);
-  border: 1px solid var(--ince-cizgi);
-  border-radius: 999px;
-  padding: 6px 12px;
-  font-family: inherit;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-.bobin-dugme:hover,
-.bobin-dugme.aktif {
-  color: var(--sampanya);
-  border-color: var(--altin-isik);
-}
-
-.renk-damla {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-}
-
-.damla-indigo { background-color: #1f3154; }
-.damla-murdum { background-color: #5a2242; }
-.damla-kum { background-color: #d8ccb8; }
-.damla-bakir { background-color: #b8693c; }
-.damla-adacayi { background-color: #5d7862; }
-
-/* Canli Yonlendirme Surguleri */
-.surgu-grubu {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 14px;
-}
-
-.mini-surgu {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 11.5px;
-  color: var(--sampanya-soluk);
-}
-
-.mini-surgu input[type="range"] {
-  width: 84px;
-  accent-color: var(--altin-isik);
-  cursor: pointer;
-}
-
-.durum-etiketi {
-  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-  font-size: 11px;
-  color: var(--altin-isik);
-  letter-spacing: 0.02em;
-}
-
-/* Yasam Masasi & Genie Video Mini Cekmecesi */
-.mini-kart {
-  position: fixed;
-  right: 24px;
-  bottom: 94px;
-  z-index: 12;
-  width: min(360px, calc(100vw - 48px));
-  background-color: var(--gece-panel);
-  border: 1px solid var(--vurgu-cizgi);
-  border-radius: 18px;
-  padding: 16px;
-  backdrop-filter: blur(20px);
-}
-
-.mini-kart h2 {
-  margin: 0 0 6px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 400;
-  font-size: 19px;
-  color: var(--sampanya);
-}
-
-.mini-kart p {
-  margin: 0 0 12px;
-  font-size: 12.5px;
-  color: var(--sampanya-soluk);
-  line-height: 1.45;
-}
-
-.mini-kart video {
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid var(--ince-cizgi);
-  display: block;
-  margin-bottom: 10px;
-}
-
-.mini-aksiyonlar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-}
-
-@media (max-width: 780px) {
+@media (max-width: 640px) {
   .ust-bar {
-    padding: 12px 14px;
+    padding: 12px;
   }
   .baslik-katmani {
-    top: 116px;
-    left: 16px;
-    right: 16px;
+    left: 14px;
+    bottom: 68px;
   }
-  .alt-konsol {
+  .baslik-katmani h1 {
+    font-size: 28px;
+  }
+  .alt-bar {
     left: 12px;
     right: 12px;
     bottom: 12px;
-    padding: 11px 12px;
   }
-  .mini-surgu input[type="range"] {
-    width: 68px;
+  .durum-etiket {
+    display: none;
   }
 }

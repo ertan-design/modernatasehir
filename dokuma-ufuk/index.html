@@ -4,77 +4,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <title>ATAŞEHİR × AFAIR · Çatıdan Uç, Kumaşa Dokun, Şehri Yaşa</title>
+  <title>ATAŞEHİR × AFAIR · Dokun, Çevir, Şehre Uç</title>
   <meta name="description" content="Kumaşa dokun, 360° çevir, rüzgârla dalgalandır veya üç çatıdan Watergarden, Finanskent ve Maltepe sahiline uç.">
   <link rel="stylesheet" href="./afair-8d.css">
 </head>
-<body data-baslangic-kip="kumas" data-kumas-baslik="Dokun. Rüzgârı çevir. Şehre uç.">
+<body data-baslik="Dokun. Çevir. Şehre uç.">
   <canvas id="sahne-tuval" aria-label="360 derece yönlendirilebilir gerçek kumaş ve üç blok çatı uçuş sahnesi"></canvas>
 
   <header class="ust-bar">
-    <div class="marka-kutu">
-      <a class="marka" href="./index.html">ATAŞEHİR × AFAIR</a>
+    <div class="marka-grup">
+      <a class="marka" href="./index.html">ATAŞEHİR</a>
     </div>
-
-    <nav class="kip-secici" aria-label="Sahne Kipi">
-      <button type="button" class="hap-dugme aktif" id="kip-kumas">360° Kumaş</button>
-      <button type="button" class="hap-dugme" id="kip-ucus">Çatıdan Uç</button>
-      <button type="button" class="hap-dugme" id="kip-yasam">Yaşam</button>
+    <nav class="kip-grup" aria-label="Sahne">
+      <button type="button" class="hap aktif" id="kip-kumas">Kumaş</button>
+      <button type="button" class="hap" id="kip-ucus">Uçuş</button>
+      <button type="button" class="hap" id="kip-yasam">Yaşam</button>
     </nav>
-
-    <div class="sag-araclar">
-      <button type="button" class="ince-dugme" id="btn-8d-ses">8D Ses</button>
-      <button type="button" class="ince-dugme" id="btn-sade">Sade Görünüm</button>
-      <a class="ince-dugme" href="/ryte-canli.json">GPT · RYTE</a>
-    </div>
   </header>
 
   <section class="baslik-katmani" aria-live="polite">
-    <h1 id="hero-baslik">Dokun. Rüzgârı çevir. Şehre uç.</h1>
-    <p id="hero-alt">Sürükleyip 360° döndür. Üç çatıdan yönünü seç.</p>
+    <h1 id="hero-baslik">Dokun. Çevir. Şehre uç.</h1>
+    <p id="hero-alt">360° sürükle. Üç çatıdan yönünü seç.</p>
   </section>
 
   <aside class="mini-kart gizli" id="mini-cekmece" aria-live="polite">
-    <h2 id="cekmece-baslik">Online Terzi Şu An Müsait</h2>
-    <p id="cekmece-ozet">AFAIR İki-Mezura ustası 6 dk içinde görüntülü bağlanır.</p>
-    <video id="cekmece-video" class="gizli" controls playsinline loop muted preload="metadata" src="./medya/genie_ucus_referans.mp4"></video>
-    <div class="mini-aksiyonlar">
-      <a class="ince-dugme aktif" id="cekmece-bag" href="https://www.afair.live/dila/iki-mezura.html">Hemen Aç ↗</a>
-      <button type="button" class="ince-dugme" id="cekmece-kapat">Kapat</button>
+    <p id="cekmece-metin">Online İki-Mezura Terzi şu an müsait.</p>
+    <video id="cekmece-video" class="gizli" controls playsinline loop muted preload="none" data-src="/dokuma-ufuk/medya/genie_ucus_referans.mp4"></video>
+    <div class="mini-aksiyon">
+      <a class="cam-dugme aktif" id="cekmece-bag" href="https://www.afair.live/dila/iki-mezura.html">Aç ↗</a>
+      <button type="button" class="cam-dugme" id="cekmece-kapat">Kapat</button>
     </div>
   </aside>
 
-  <footer class="alt-konsol">
-    <div class="kumas-bobinler" id="grup-kumas">
-      <button type="button" class="bobin-dugme aktif" data-kumas="0"><span class="renk-damla damla-indigo"></span>Gece İpeği</button>
-      <button type="button" class="bobin-dugme" data-kumas="1"><span class="renk-damla damla-murdum"></span>Mürdüm Kadife</button>
-      <button type="button" class="bobin-dugme" data-kumas="2"><span class="renk-damla damla-kum"></span>Kum Keteni</button>
-      <button type="button" class="bobin-dugme" data-kumas="3"><span class="renk-damla damla-bakir"></span>Bakır Atlas</button>
-      <button type="button" class="bobin-dugme" data-kumas="4"><span class="renk-damla damla-adacayi"></span>Adaçayı Yün</button>
-      <button type="button" class="ince-dugme" id="btn-dalga">Dalga Vur</button>
+  <footer class="alt-bar">
+    <div class="alt-dugmeler">
+      <button type="button" class="cam-dugme" id="btn-sec">Kumaş</button>
+      <button type="button" class="cam-dugme" id="btn-ruzgar">Rüzgâr</button>
+      <button type="button" class="cam-dugme" id="btn-ses">8D Ses</button>
     </div>
-
-    <div class="ucus-yonler gizli" id="grup-ucus">
-      <button type="button" class="bobin-dugme aktif" data-hedef="0">1 · Su Bahçesi (Watergarden)</button>
-      <button type="button" class="bobin-dugme" data-hedef="1">2 · İş Kuleleri (Finanskent)</button>
-      <button type="button" class="bobin-dugme" data-hedef="2">3 · Deniz Sahnesi (Maltepe)</button>
-      <button type="button" class="ince-dugme" id="btn-genie-film">Uçuş Videosu</button>
-    </div>
-
-    <div class="yasam-kapilar gizli" id="grup-yasam">
-      <button type="button" class="bobin-dugme aktif" data-yasam="terzi">Terzi Çağır</button>
-      <button type="button" class="bobin-dugme" data-yasam="tarim">Bahçe Kur</button>
-      <button type="button" class="bobin-dugme" data-yasam="sanat">Sanat Seç</button>
-      <button type="button" class="bobin-dugme" data-yasam="ses">Ses Kur</button>
-    </div>
-
-    <div class="surgu-grubu">
-      <label class="mini-surgu">360°<input type="range" id="surgu-aci" min="0" max="360" value="24"></label>
-      <label class="mini-surgu">Rüzgâr<input type="range" id="surgu-ruzgar" min="0" max="100" value="64"></label>
-      <label class="mini-surgu">Gölge<input type="range" id="surgu-isik" min="0" max="360" value="45"></label>
-      <label class="mini-surgu">8D<input type="range" id="surgu-surreal" min="0" max="100" value="72"></label>
-      <span class="durum-etiketi" id="canli-durum">Gece İpeği (19-4027 TCX) · 360° Aktif</span>
-    </div>
+    <span class="durum-etiket" id="canli-durum">Şampanya İpeği · 22°</span>
   </footer>
 
   <script src="./afair-8d.js"></script>
