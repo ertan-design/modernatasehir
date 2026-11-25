@@ -1,431 +1,54 @@
 <!doctype html>
 <html lang="tr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ataşehir Modern × Başka İstanbul Yok · 3-Kule Kanat Uçuşu, Pantone İplik Dokuma &amp; 4-Site Yaşam Masası</title>
-  <meta name="description" content="Sıfır Google Maps ilkesiyle Ataşehir Modern Arya, Beste ve Opera kulelerinden GAIA'ya kanat-tulum uçuşu, Pantone TCX ayrık iplik/kumaş dokuma tezgahı ve yeni sakinler için online terzi, tarım danışmanı, sanat ve elektronik yaşam masaları.">
-  <link rel="stylesheet" href="./dokuma-ufuk.css">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Kumaşı 360° çevir. Rüzgârı, ışığı ve dokuyu değiştir. AFAIR Studio’nun etkileşimli kumaş sahnesi.">
+<title>AFAIR Studio · Kumaşı hisset</title>
+<link rel="stylesheet" href="/kumas-360/kumas.b95c75f807.css"><script src="/kumas-360/kumas.1a8d96aa32.js" defer></script>
 </head>
 <body>
-  <header class="kenar-serit" role="banner">
-    <div class="marka-damga">
-      <strong>DOKUMA UFUK · ATAŞEHİR → BAŞKA İSTANBUL YOK</strong>
-      <span>SIFIR GOOGLE MAPS · 8 AYRIK PANTONE TCX İPLİK · SAF SİYAH = 0</span>
+<a class="skip" href="#ana">İçeriğe geç</a>
+<header class="mast"><a class="mark" href="https://www.afair.studio/">AFAIR <span>STUDIO</span></a><nav aria-label="Ana menü"><a href="#dokuma">Kumaş</a><a href="https://www.afair.studio/dila/">Dila</a><a href="https://www.afair.studio/dila-hareket-atolyesi/">Filmler</a><a id="baska-istanbul" href="https://www.xn--ataehirmodern-ktc.com/gaia-ucus/#yasam">Yaşam</a></nav></header>
+<main id="ana">
+<section class="hero" aria-labelledby="baslik">
+  <div class="intro">
+    <p class="tone">DOKUMA ATÖLYESİ</p>
+    <h1 id="baslik">Kumaşı <em>hisset.</em></h1>
+    <p>Kumaşı döndür. Rüzgârı aç. Işığı değiştir.</p>
+    <a class="primary" href="#dokuma">Kumaşı keşfet ↓</a>
+  </div>
+  <div id="dokuma" class="work" aria-labelledby="scene-title">
+    <h2 id="scene-title" class="sr">360 derece kumaş sahnesi</h2>
+    <div class="stage"><canvas id="kumas" tabindex="0" aria-label="Kumaş sahnesi. Ok tuşları döndürür, artı ve eksi yakınlaştırır."></canvas><img id="yedek" src="/kumas-360/dimi.webp" alt="Gerçek dimi dokuma kumaşın yakın çekimi" width="960" height="830" hidden>
+    <div class="stage-badge"><strong id="material-name">Dimi</strong><output id="degree" aria-label="Yatay kamera açısı">0°</output></div></div>
+    <div class="controls" aria-label="Sahne kumandaları">
+      <button id="sol" type="button" title="Sola çevir" aria-label="Sola çevir">←</button>
+      <button id="sag" type="button" title="Sağa çevir" aria-label="Sağa çevir">→</button>
+      <button id="dur" class="play" type="button" aria-pressed="false">Duraklat</button>
+      <button id="basa" type="button">Açıyı sıfırla</button>
+      <label for="ruzgar">Rüzgâr <output id="ruzgar-deger" for="ruzgar">45</output></label><input id="ruzgar" type="range" min="0" max="100" value="45">
     </div>
-    <nav class="gezinti-baglar" aria-label="4 Yaşam Sitesi ve Üst Halka">
-      <a class="iplik-bag aktif" href="#ucus-sahnesi">3-Blok Kanat Uçuşu</a>
-      <a class="iplik-bag" href="#pantone-tezgah">Pantone Kumaş &amp; İplik</a>
-      <a class="iplik-bag" href="#yasam-masalari">Online Terzi &amp; Tarım Randevu</a>
-      <a class="iplik-bag" href="#baska-istanbul">Başka İstanbul Yok (7 Halka)</a>
-      <a class="iplik-bag" href="https://www.xn--ataehirmodern-ktc.com/dokuma-ufuk/">ataşehirmodern.com</a>
-      <a class="iplik-bag" href="https://www.afair.studio/dokuma-ufuk/">afair.studio</a>
-      <a class="iplik-bag" href="https://www.afair.live/dokuma-ufuk/">afair.live</a>
-      <a class="iplik-bag" href="https://www.selinahbap.com/dokuma-ufuk/">selinahbap.com</a>
-    </nav>
-  </header>
-
-  <main class="pafta">
-    <section class="manset-pafta">
-      <span class="manset-ust-etiket">İSTANBUL · ATAŞEHİR MODERN (BARBAROS / FİNANSKENT AKSI) · ÜST HALKA: BAŞKA İSTANBUL YOK</span>
-      <h1>Harita Karosu Değil, Dokunmuş Ufuk: Üç Kuleden GAIA’ya Kanat Açan Tam Yaşam Ekosistemi</h1>
-      <p class="manset-aciklama">
-        Google Maps’in karoları, iğneleri ve Mercator kopyaları sıfırlandı. Onun yerine tarımdaki parsel ve milimetre hassasiyetiyle çalışan
-        <strong>8 ayrık Pantone TCX gerçek iplik bobini</strong>, <strong>Arya (25K) · Beste (35K) · Opera (43K)</strong> çatı kotlarından
-        Watergarden AVM, Finanskent ve Maltepe Sahil Konser Alanı’na süzülen <strong>kanat-tulum (wingsuit) yörünge tezgâhı</strong> ve binaya yeni
-        taşınan bir misafirin moda, tarım, sanat ve elektronik gereksinimini tek ekranda karşılayan <strong>4 canlı yaşam masası</strong> kuruldu.
-      </p>
-
-      <div class="pantone-serit" id="pantone-kartela" aria-label="8 Ayrık Pantone TCX İplik Bobini">
-        <button type="button" class="pantone-kart" data-pt="0">
-          <span class="renk-numune numune-ekru"></span>
-          <span class="pantone-bilgi"><span class="pantone-kod">11-0604 TCX</span><span class="pantone-ad">Ham İpek Çözgü</span></span>
-        </button>
-        <button type="button" class="pantone-kart" data-pt="1">
-          <span class="renk-numune numune-keten"></span>
-          <span class="pantone-bilgi"><span class="pantone-kod">13-0905 TCX</span><span class="pantone-ad">Anadolu Keten Atkı</span></span>
-        </button>
-        <button type="button" class="pantone-kart secili" data-pt="2">
-          <span class="renk-numune numune-indigo"></span>
-          <span class="pantone-bilgi"><span class="pantone-kod">19-4027 TCX</span><span class="pantone-ad">Gece İndigosu (Veto)</span></span>
-        </button>
-        <button type="button" class="pantone-kart" data-pt="3">
-          <span class="renk-numune numune-murdum"></span>
-          <span class="pantone-bilgi"><span class="pantone-kod">19-2428 TCX</span><span class="pantone-ad">Mürdüm Mulberry</span></span>
-        </button>
-        <button type="button" class="pantone-kart" data-pt="4">
-          <span class="renk-numune numune-kobalt"></span>
-          <span class="pantone-bilgi"><span class="pantone-kod">18-4043 TCX</span><span class="pantone-ad">Finanskent Kobalt</span></span>
-        </button>
-        <button type="button" class="pantone-kart" data-pt="5">
-          <span class="renk-numune numune-terrakota"></span>
-          <span class="pantone-bilgi"><span class="pantone-kod">16-1342 TCX</span><span class="pantone-ad">Terracotta Kıyı</span></span>
-        </button>
-        <button type="button" class="pantone-kart" data-pt="6">
-          <span class="renk-numune numune-adacayi"></span>
-          <span class="pantone-bilgi"><span class="pantone-kod">16-0213 TCX</span><span class="pantone-ad">Adaçayı Parsel</span></span>
-        </button>
-        <button type="button" class="pantone-kart" data-pt="7">
-          <span class="renk-numune numune-pirinc"></span>
-          <span class="pantone-bilgi"><span class="pantone-kod">15-1040 TCX</span><span class="pantone-ad">Mezura Pirinç İplik</span></span>
-        </button>
+    <details class="advanced">
+      <summary id="pantone-tezgah">Doku ve ışık ayarları</summary>
+      <div class="settings">
+        <label>Doku<select id="malzeme"><option value="dimi">Dimi · fotoğraf</option><option value="denim">Kot lifi · fotoğraf</option><option value="ipek">İpek · tasarım</option></select></label>
+        <label>Rüzgâr yönü<select id="yon"><option value="1">Soldan sağa</option><option value="-1">Sağdan sola</option></select></label>
+        <label>Işık <output id="isik-deger" for="isik">Loş</output><input id="isik" type="range" min="0" max="100" value="36"></label>
+        <label>Yakınlık<input id="yakin" type="range" min="0" max="100" value="48"></label>
+        <label>Biçim<select id="askilar"><option value="aski">Asılı kumaş</option><option value="kanat">Kanat</option></select></label>
+        <label>Tempo<input id="tempo" type="range" min="25" max="100" value="75"></label>
       </div>
-    </section>
-
-    <!-- BOLUM 1: SIFIR GOOGLE MAPS 3-BLOK KANAT UCUSU & BASKA ISTANBUL YOK -->
-    <div class="bolum-baslik" id="ucus-sahnesi">
-      <h2>I · Üç Blok Çatısından GAIA’ya Kanat-Tulum Uçuş Tezgâhı (Sıfır Google Maps)</h2>
-      <span class="bolum-kod">ÖZGÜN JEODEZİK İPLİK-AZİMUT PROJEKSİYONU · L/D = 2.8 SÜZÜLÜŞ FİZİĞİ</span>
-    </div>
-
-    <section class="ucus-izgara">
-      <article class="cerceve-kutu">
-        <h3>Ataşehir Modern 3-Kule Rölyefi &amp; İplik Yörünge Ufku</h3>
-        <p>Kule seçin veya uçuş sürgüsünü kaydırın: karakter çatı kotundan GAIA rüzgâr koridoruna atlayıp seçili yaşam merkezine süzülür.</p>
-
-        <div class="kule-dugme-grubu" id="kule-dugmeleri">
-          <button type="button" class="pafta-dugme murdum aktif" data-kule="0">Blok 1 · Arya (25K) → Watergarden AVM</button>
-          <button type="button" class="pafta-dugme kobalt" data-kule="1">Blok 2 · Beste (35K) → Finanskent İFM</button>
-          <button type="button" class="pafta-dugme terrakota" data-kule="2">Blok 3 · Opera (43K) → Maltepe Sahil Konser</button>
-          <button type="button" class="pafta-dugme" id="btn-ust-halka">Üst Halka: Başka İstanbul Yok (7 Halka)</button>
-        </div>
-
-        <canvas id="ufuk-tuval" class="ufuk-tuval" width="1040" height="460"></canvas>
-
-        <div class="surgu-satir">
-          <span>Çatı Çıkışı (0%)</span>
-          <input type="range" id="ucus-surgu" min="0" max="100" value="62" aria-label="Kanat-Tulum Uçuş İlerlemesi">
-          <span>Hedef İniş (100%)</span>
-          <button type="button" class="pafta-dugme" id="btn-ucus-canlandir">Uçuşu Canlandır</button>
-        </div>
-
-        <div class="telemetri-serit" id="ucus-telemetri">
-          Yörünge hesaplanıyor...
-        </div>
-      </article>
-
-      <article class="cerceve-kutu">
-        <h3>Genie-4 Çatıdan GAIA’ya Uçuş Referansı &amp; İniş Kapısı</h3>
-        <p>Her bloğun çatısından farklı yöne açılan süzülüş videosu ve iniş noktasında misafiri karşılayan gerçek yaşam uçları:</p>
-        <video class="genie-video" controls playsinline preload="metadata" poster="./medya/zehra_wingsuit_hero.jpg" src="./medya/genie_ucus_referans.mp4"></video>
-
-        <div class="hedef-ozet-kutu" id="inis-detay-kutu">
-          <h4 id="inis-baslik">Blok 1 · Arya Kulesi (25 Kat, +98 m) → Ataşehir Watergarden AVM</h4>
-          <p id="inis-aciklama">292° KB azimutta 680 m süzülüş (16 sn): Botanik şov havuzu, gastronomi sokağı, Dila AFAIR Studio sanat galerisi ve 12.38 × 9.76 m doğrulanmış rölöveli Barista &amp; SanArt salonu.</p>
-          <div class="hedef-etiketler" id="inis-baglantilar">
-            <a href="https://www.afair.studio/dila/index.html">afair.studio · Dila Galeri</a>
-            <a href="https://www.afair.live/dila/iki-mezura.html">afair.live · İki-Mezura Terzi</a>
-            <a href="#yasam-masalari">Online Terzi &amp; Tarım Randevu ↓</a>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- BOLUM 2: PANTONE AYRIK GERCEK KUMAS VE IPLIK DOKUMA MIKROSKOBU -->
-    <div class="bolum-baslik" id="pantone-tezgah">
-      <h2>II · Pantone Ayrık Gerçek Kumaş &amp; İplik Dokuma Mikroskobu (Tarımsal Hassasiyetle)</h2>
-      <span class="bolum-kod">ÇÖZGÜ × ATKI FİZİKSEL BÜKÜM MOTORU · DOKUMA LUP BÜYÜTECİ</span>
-    </div>
-
-    <section class="dokuma-izgara">
-      <article class="cerceve-kutu">
-        <h3>Canlı Çözgü × Atkı Tezgâhı (Kumaş Üzerinde Gezinerek 4× Lup Büyütecini Açın)</h3>
-        <p>Bulanık CSS gradyanı yoktur: her piksel, seçtiğiniz ayrık Pantone TCX çözgü ve atkı ipliklerinin Z-büküm lif açısı ve kesişim gölgesiyle tek tek dokunur.</p>
-        <canvas id="dokuma-tuval" class="dokuma-tuval" width="920" height="320"></canvas>
-        <div class="telemetri-serit" id="dokuma-telemetri">
-          Dokuma tezgâhı hazırlanıyor...
-        </div>
-      </article>
-
-      <article class="cerceve-kutu">
-        <h3>İplik Numarası, Örgü Şeması ve Siyah-Veto Ölçüm Cetveli</h3>
-        <div class="secim-iki">
-          <div>
-            <label class="alan-etiket" for="orgu-secim">Dokuma Örgüsü (Weave)</label>
-            <select id="orgu-secim">
-              <option value="saten5">5’li Atlas / Saten (Bursa Mulberry İpek · 92 GSM)</option>
-              <option value="dimi22">2/2 Dimi / Twill (Ege Merinos Super 140s · 260 GSM)</option>
-              <option value="bez11">1/1 Bezayağı (Anadolu Ham Keten · 185 GSM)</option>
-              <option value="jakar3">3-Kule Ataşehir Jakar (Çift Çözgü Kabartma · 310 GSM)</option>
-            </select>
-          </div>
-          <div>
-            <label class="alan-etiket" for="siklik-secim">Dokuma Sıklığı &amp; Ölçek</label>
-            <select id="siklik-secim">
-              <option value="14">Makro Lif Görünümü (42 tel/cm · İplik Bükümü Net)</option>
-              <option value="9">Terzi Numune Masası (58 tel/cm · Dengeli)</option>
-              <option value="6">İnce İpek Drape (76 tel/cm · Optik Karışım)</option>
-            </select>
-          </div>
-        </div>
-        <div class="secim-iki">
-          <div>
-            <label class="alan-etiket" for="cozgu-secim">Çözgü İpliği (Warp · Dikey)</label>
-            <select id="cozgu-secim">
-              <option value="2">19-4027 TCX · Gece İndigosu</option>
-              <option value="0">11-0604 TCX · Ham İpek Ekru</option>
-              <option value="3">19-2428 TCX · Mürdüm Mulberry</option>
-              <option value="4">18-4043 TCX · Finanskent Kobalt</option>
-            </select>
-          </div>
-          <div>
-            <label class="alan-etiket" for="atki-secim">Atkı İpliği (Weft · Yatay)</label>
-            <select id="atki-secim">
-              <option value="3">19-2428 TCX · Mürdüm Mulberry</option>
-              <option value="0">11-0604 TCX · Ham İpek Ekru</option>
-              <option value="5">16-1342 TCX · Terracotta Kıyı</option>
-              <option value="6">16-0213 TCX · Adaçayı Parsel</option>
-              <option value="7">15-1040 TCX · Mezura Pirinç</option>
-            </select>
-          </div>
-        </div>
-
-        <table class="teknik-tablo" id="kumas-tablo">
-          <tbody>
-            <tr><th>İplik Doğrusal Yoğunluk</th><td id="kt-denier">20/22 Denier (23.3 dtex · Z-680 tur/m)</td></tr>
-            <tr><th>Çözgü × Atkı Sıklığı</th><td id="kt-siklik">58 × 52 tel/cm</td></tr>
-            <tr><th>Gramaj &amp; Hava Geçirgenliği</th><td id="kt-gsm">92 g/m² · 148 mm/s (EN ISO 9237)</td></tr>
-            <tr><th>Renk Ayrıklığı (CIEDE2000)</th><td id="kt-delta">ΔE00 = 18.4 (Ayrık Çift Bobin · #000000 = 0)</td></tr>
-          </tbody>
-        </table>
-      </article>
-    </section>
-
-    <!-- BOLUM 3: YENI TASINAN SAKIN ICIN 4 SITEDE TAM YASAM GEREKSINIMI -->
-    <div class="bolum-baslik" id="yasam-masalari">
-      <h2>III · Binaya Yeni Taşınan Misafir İçin 4 Sitede Tam Yaşam Masaları</h2>
-      <span class="bolum-kod">ONLINE TERZİ MÜSAİTLİĞİ · TARIM DANIŞMANI RANDEVUSU · SANAT &amp; ELEKTRONİK</span>
-    </div>
-
-    <div class="daire-secici-kusak" aria-label="Yeni Sakin Daire Bilgisi">
-      <div>
-        <label class="alan-etiket" for="sakin-blok">Taşındığınız Blok</label>
-        <select id="sakin-blok">
-          <option value="Arya">Blok 1 · Arya Kulesi (max 25. Kat)</option>
-          <option value="Beste">Blok 2 · Beste Kulesi (max 35. Kat)</option>
-          <option value="Opera" selected>Blok 3 · Opera Kulesi (max 43. Kat)</option>
-        </select>
-      </div>
-      <div>
-        <label class="alan-etiket" for="sakin-kat">Bulunduğunuz Kat (1–43)</label>
-        <input type="number" id="sakin-kat" min="1" max="43" value="28">
-      </div>
-      <div>
-        <label class="alan-etiket" for="sakin-cephe">Daire Cephesi &amp; Rüzgâr Yönü</label>
-        <select id="sakin-cephe">
-          <option value="GB">Güney-Batı (Marmara &amp; Adalar Ufku)</option>
-          <option value="KB">Kuzey-Batı (Watergarden &amp; Botanik Aksı)</option>
-          <option value="KD">Kuzey-Doğu (Finanskent &amp; İFM Ufku)</option>
-          <option value="K">Kuzey (Çekmeköy Orman Rüzgâr Aksı)</option>
-        </select>
-      </div>
-      <div>
-        <label class="alan-etiket" for="sakin-daire">Daire Kapı No</label>
-        <input type="text" id="sakin-daire" value="D-284" maxlength="12">
-      </div>
-    </div>
-
-    <section class="dort-masa-izgara">
-      <!-- MASA 1: MODA & ONLINE TERZI -->
-      <article class="yasam-masa" id="masa-moda">
-        <div>
-          <span class="masa-ust-bant bant-moda">1 · MODA &amp; ATÖLYE · afair.live / afair.studio</span>
-          <h3>Online Terzi Müsait mi? (İki-Mezura &amp; Siyah-Veto)</h3>
-          <div class="durum-isigi" id="terzi-musait-kutu">
-            CANLI MÜSAİT: Usta Terzi Selin (Görüntülü İki-Mezura: 6 dk içinde) · Kalıp Ustası Kerem (Daireye Ziyaret: Bugün 18:30)
-          </div>
-          <label class="alan-etiket" for="terzi-kip">Hizmet &amp; Kumaş Seçimi</label>
-          <select id="terzi-kip">
-            <option value="Online Görüntülü İki-Mezura (15 dk)">Online Görüntülü İki-Mezura Ölçüm (6 dk içinde bağlan)</option>
-            <option value="Dairede AFAIR Terzi &amp; Kartela (45 dk)">Daireye AFAIR Terzi + Gerçek Kumaş Kartelası (18:30)</option>
-            <option value="Dila Galeri Gardırop Renk Analizi">Dila Galeri Siyah-Veto &amp; Pantone Kapsül Seansı (19:15)</option>
-          </select>
-        </div>
-        <div>
-          <button type="button" class="pafta-dugme murdum" id="btn-terzi-randevu">Terzi Müsaitliğini Kilitle &amp; Fiş Üret</button>
-          <div class="fis-cikti" id="fis-terzi">Daireniz için İki-Mezura terzi kaydı hazır.</div>
-        </div>
-      </article>
-
-      <!-- MASA 2: TARIM DANISMANI RANDEVUSU -->
-      <article class="yasam-masa" id="masa-tarim">
-        <div>
-          <span class="masa-ust-bant bant-tarim">2 · TARIM &amp; TOPRAK · selinahbap.com / tarim.online</span>
-          <h3>Tarım Danışmanımdan Nasıl Randevu Alabilirim?</h3>
-          <div class="durum-isigi" id="tarim-mikroklima">
-            Kat mikrokliması hesaplanıyor...
-          </div>
-          <label class="alan-etiket" for="tarim-konu">Danışmanlık &amp; Parsel Programı</label>
-          <select id="tarim-konu">
-            <option value="Teras Mikroklima &amp; Atalık Fide Kurulumu">Teras/Balkon Mikroklima Reçetesi + Ziraat Mühendisi Seansı</option>
-            <option value="Ege-Marmara Kardeş Parsel Hasat Kutusu">Kardeş Parsel Aboneliği (Zeytin · Bağ · Lavanta · Toprak Analizli)</option>
-            <option value="Toprak EC/pH &amp; Damla Sulama Kalibrasyonu">Daire Akıllı Damla Sulama &amp; Substrat pH/EC Kalibrasyonu</option>
-          </select>
-        </div>
-        <div>
-          <button type="button" class="pafta-dugme" id="btn-tarim-randevu">Tarım Danışmanı Randevusu Oluştur</button>
-          <div class="fis-cikti" id="fis-tarim">Kat yüksekliği ve cephenize göre ERA5 su bütçesi hesaplanır.</div>
-        </div>
-      </article>
-
-      <!-- MASA 3: SANAT, ROLOVE & BARISTA -->
-      <article class="yasam-masa" id="masa-sanat">
-        <div>
-          <span class="masa-ust-bant bant-sanat">3 · SANAT &amp; MEKÂN · afair.studio / SanArt Rölöve</span>
-          <h3>Daire Sanat Kürasyonu &amp; Rölöve Kahve Salonu</h3>
-          <div class="durum-isigi">
-            DOĞRULANMIŞ RÖLÖVE: 12.38 m × 9.76 m (H: 288 cm · CRI 97 3200K Galeri Aydınlatma) · SanArt 8-Sergi Açık
-          </div>
-          <label class="alan-etiket" for="sanat-secim">Kürasyon &amp; Sosyal Tanışma</label>
-          <select id="sanat-secim">
-            <option value="Daire Duvar Akustik Dokuma Panosu">Daireye Özel Dokuma Duvar Panosu &amp; Kelvin Işık Ayarı</option>
-            <option value="Watergarden SanArt &amp; Barista Masa Kaydı">Komşu Tanışma: SanArt 8-Sergi &amp; Nitelikli Kahve Tadımı</option>
-            <option value="Mimari Rölöve Mobilya Yerleşim Kontrolü">LibreDWG cm Hassasiyetli Salon Yerleşim Danışmanlığı</option>
-          </select>
-        </div>
-        <div>
-          <button type="button" class="pafta-dugme" id="btn-sanat-randevu">Sanat &amp; Mekân Kaydı Aç</button>
-          <div class="fis-cikti" id="fis-sanat">Yeni komşu galeri ve rölöve seansı hazır.</div>
-        </div>
-      </article>
-
-      <!-- MASA 4: ELEKTRONIK, AKUSTIK & HAREKET -->
-      <article class="yasam-masa" id="masa-elektronik">
-        <div>
-          <span class="masa-ust-bant bant-elektronik">4 · ELEKTRONİK &amp; HAREKET · codekafa / Pureaker / GoSpor</span>
-          <h3>Akıllı Ev Akustiği, Finanskent Fırsat &amp; Sahil Sporu</h3>
-          <div class="durum-isigi">
-            AKTİF HAT: Pureaker 3B Akustik Kalibrasyon · Finanskent TOIJI Fırsat Radarı · Maltepe GoSpor Rüzgâr Pisti
-          </div>
-          <label class="alan-etiket" for="elektronik-secim">Donanım &amp; Yaşam Paketi</label>
-          <select id="elektronik-secim">
-            <option value="Pureaker 3B Salon Akustik Kurulumu">Pureaker 3B Hoparlör &amp; Oda Akustiği Kalibrasyonu</option>
-            <option value="Finanskent TOIJI Girişim &amp; Fırsat Kartı">Finanskent Komşu Fırsat &amp; Çalışma İstasyonu Erişimi</option>
-            <option value="Maltepe Sahil GoSpor &amp; Uçuş Simülasyonu">Maltepe Sahil GoSpor Tek-Çizgi Koşu &amp; Rüzgâr Antrenmanı</option>
-          </select>
-        </div>
-        <div>
-          <button type="button" class="pafta-dugme kobalt" id="btn-elektronik-randevu">Elektronik &amp; Spor Kaydı Aç</button>
-          <div class="fis-cikti" id="fis-elektronik">Finanskent ve sahil hattı bağlantısı hazır.</div>
-        </div>
-      </article>
-    </section>
-
-    <!-- BOLUM 4: SAHA KANITLARI VE ZEHRAC GORSEL ARSIVI -->
-    <div class="bolum-baslik">
-      <h2>IV · Doğrulanmış Rölöve, Kanat-Tulum Uçuşu ve Yaşam İstasyonları Görsel Paftaları</h2>
-      <span class="bolum-kod">LIBREDWG CM HASSASİYETİ · SANART · PUREAKER · TOIJI · GOSPOR</span>
-    </div>
-
-    <section class="arsiv-izgara">
-      <article class="arsiv-kart">
-        <img src="./medya/x40_10_wingsuit_brew_fly.jpg" alt="Çatıdan GAIA kanat-tulum uçuş sahnesi" loading="lazy">
-        <strong>Çatıdan GAIA’ya Kanat-Tulum Süzülüşü</strong>
-        <span>Ataşehir kulelerinden rüzgâr koridoruyla şehre doğrudan iniş vizyonu.</span>
-      </article>
-      <article class="arsiv-kart">
-        <img src="./medya/konsept2_sakinler_dogrulanmis.svg" alt="LibreDWG doğrulanmış 12.38 x 9.76 m rölöve kat planı" loading="lazy">
-        <strong>Doğrulanmış Rölöve Planı (12.38 × 9.76 m)</strong>
-        <span>H: 288 / 264 / 268 cm tavan kotları ve 2 × 231.9 cm yan cam vitrin topolojisi.</span>
-      </article>
-      <article class="arsiv-kart">
-        <img src="./medya/x30_3_pureaker_3d_display.jpg" alt="Pureaker 3B elektronik ve akustik vitrin" loading="lazy">
-        <strong>Pureaker 3B Elektronik &amp; Akustik Vitrin</strong>
-        <span>Yeni daire sakinleri için 3 boyutlu ses ve elektronik sahne kurulumu.</span>
-      </article>
-      <article class="arsiv-kart">
-        <img src="./medya/x40_6_toiji_firsatlar_command.jpg" alt="Finanskent TOIJI Fırsatlar Komuta Merkezi" loading="lazy">
-        <strong>Blok 2 İnişi · Finanskent TOIJI Fırsat Üssü</strong>
-        <span>Beste Kulesi’nden 064° KD yönünde 940 m süzülüşle ulaşılan iş ve fırsat ağı.</span>
-      </article>
-      <article class="arsiv-kart">
-        <img src="./medya/x40_7_zehracevik_barista_cafe.jpg" alt="Watergarden komşuluk ve nitelikli kahve sahnesi" loading="lazy">
-        <strong>Blok 1 İnişi · Watergarden &amp; SanArt Kahve Eşiği</strong>
-        <span>Arya Kulesi’nden 292° KB yönünde 680 m süzülüşle komşuluk, sanat ve gastronomi.</span>
-      </article>
-      <article class="arsiv-kart">
-        <img src="./medya/x40_8_gospor_tek_cizgi.png" alt="Maltepe sahil GoSpor tek çizgi hareket hattı" loading="lazy">
-        <strong>Blok 3 İnişi · Maltepe Sahil Konser &amp; GoSpor</strong>
-        <span>Opera Kulesi’nden 208° GB yönünde Marmara kıyısına ve açık hava konser meydanına iniş.</span>
-      </article>
-    </section>
-
-    <!-- BOLUM 5: UST HALKA BASKA ISTANBUL YOK -->
-    <div class="bolum-baslik" id="baska-istanbul">
-      <h2>V · Üst Halka: Başka İstanbul Yok (Ataşehir Merkezli 7 Eşmerkezli İpek Halka)</h2>
-      <span class="bolum-kod">HARİTA KAROSU YERİNE İPLİK-AZİMUT HALKALARI · 4 YAŞAM SİTESİ TAM BAĞLI</span>
-    </div>
-
-    <div class="halka-tablo-sarmal">
-      <table class="halka-tablo">
-        <thead>
-          <tr>
-            <th>Halka</th>
-            <th>Kentsel Eşik</th>
-            <th>Ataşehir Merkezden Azimut &amp; Menzil</th>
-            <th>Pantone TCX İplik Kodu</th>
-            <th>Karşılık Gelen Yaşam Kapısı</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Halka 1</strong></td>
-            <td>Ataşehir Modern 3-Kule Çekirdek (Arya · Beste · Opera)</td>
-            <td>0 m · +98 m / +132 m / +162 m Çatı</td>
-            <td>19-4027 TCX Gece İndigosu</td>
-            <td>4-Site Birleşik Bina Yaşam &amp; Konsiyerj Üssü</td>
-          </tr>
-          <tr>
-            <td><strong>Halka 2</strong></td>
-            <td>Watergarden AVM &amp; Finanskent İFM İkiz Kanat Eşiği</td>
-            <td>292° KB (680 m) &amp; 064° KD (940 m)</td>
-            <td>19-2428 TCX Mürdüm / 18-4043 TCX</td>
-            <td>Moda Galeri (afair.studio), SanArt &amp; TOIJI Fırsatlar</td>
-          </tr>
-          <tr>
-            <td><strong>Halka 3</strong></td>
-            <td>Maltepe Sahil Miting, Konser &amp; Marmara Kıyı Koridoru</td>
-            <td>208° GB · 6.42 km Termal Süzülüş</td>
-            <td>16-1342 TCX Terracotta Kıyı</td>
-            <td>Açık Hava Sahnesi, GoSpor &amp; Deniz Ufku</td>
-          </tr>
-          <tr>
-            <td><strong>Halka 4</strong></td>
-            <td>Kadıköy – Moda – Bağdat Caddesi Terzi &amp; Atölye Aksı</td>
-            <td>254° GB · 7.80 km</td>
-            <td>15-1040 TCX Mezura Pirinç</td>
-            <td>AFAIR Live İki-Mezura Usta Terzi &amp; Kumaş Atölyeleri</td>
-          </tr>
-          <tr>
-            <td><strong>Halka 5</strong></td>
-            <td>Çekmeköy Hüseyinbey Rölöve &amp; Kuzey Tarım/Orman Kuşağı</td>
-            <td>032° KD · 9.60 km</td>
-            <td>16-0213 TCX Adaçayı Parsel</td>
-            <td>Tarım Danışmanı, ERA5 Su Bütçesi &amp; Kardeş Parseller</td>
-          </tr>
-          <tr>
-            <td><strong>Halka 6</strong></td>
-            <td>Üsküdar – Kuzguncuk – Ortaköy Boğaz Geçiş Eşiği</td>
-            <td>302° KB · 10.90 km</td>
-            <td>13-0905 TCX Anadolu Keten</td>
-            <td>Başka İstanbul Yok Boğaz İskeleleri &amp; Kültür Rotaları</td>
-          </tr>
-          <tr>
-            <td><strong>Halka 7</strong></td>
-            <td>Tarihi Yarımada (Sultanahmet ⇄ Süleymaniye ⇄ Galata 7 Rota)</td>
-            <td>286° BKB · 14.40 km</td>
-            <td>11-0604 TCX Ham İpek Çözgü</td>
-            <td>Kapalıçarşı Dokuma Hanları, 11 İstasyon &amp; Şehir Belleği</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <footer class="muhur-altbilgi" id="dokuma-selftest" aria-live="polite">
-      Doğrulama başlatılıyor...
-    </footer>
-  </main>
-
-  <script src="./dokuma-ufuk.js"></script>
-</body>
-</html>
+    </details>
+    <p class="feedback" id="durum" role="status">Sahne hazırlanıyor.</p>
+  </div>
+</section>
+<section class="notes" aria-labelledby="niyet">
+  <div><h2 id="niyet">Aynı kumaş, başka ışık.</h2><p>Terziye gitmeden önce dokuyu ve kumaşın hareketini karşılaştır. Rüzgârın değeri sahne ayarıdır.</p></div>
+  <div id="yasam-masalari"><a href="https://www.afair.studio/dila/#bu-gece">Dila ile provaya geç ↗</a><a id="ucus-sahnesi" href="https://www.xn--ataehirmodern-ktc.com/gaia-ucus/">GAIA ile şehri gör ↗</a><a href="https://www.afair.studio/lif-atolyesi/">Lif ve numune kayıtları ↗</a></div>
+</section>
+<details class="sources"><summary>Doku kaynakları</summary><p>İki gerçek kumaş fotoğrafı yüzeye uygulanıyor. Döküm, gölge ve rüzgâr simülasyondur. Fiziksel Pantone veya gramaj ölçümü bu ekranda yapılmaz.</p>
+<ul><li>Dimi dokuma, SMcCandlish. Boyut ve dosya biçimi değişti. <a href="https://commons.wikimedia.org/wiki/File:Tartan_cloth_closeup.jpg">Fotoğraf</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></li><li>Kot lifi, Rickfrombaltimore. Boyut küçültüldü. <a href="https://commons.wikimedia.org/wiki/File:Denim_Fibers.jpg">Fotoğraf</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li></ul>
+</details>
+<p><a href="/dokuma-ufuk/ilk-kurgu.html">Önceki Dokuma Ufuk sürümü</a></p>
+</main>
+<footer><span>AFAIR STUDIO</span><a href="https://www.afair.studio/lif-atolyesi/">Lif Atölyesi</a></footer>
+</body></html>
