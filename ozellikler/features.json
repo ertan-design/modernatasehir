@@ -2,6 +2,48 @@
   "site": "modernatasehir",
   "entries": [
     {
+      "path": "final/yasam-takvimi-ics/index.html",
+      "title": "8-Temas Yeni Misafir Yaşam Rehberi",
+      "description": "İlk gün yerleşiminden sanat, ses ve tarıma uzanan 8 temas noktalı rehber ve .ics indirici.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/teyel-dokuma-ucus/index.html",
+      "title": "Teyel İpliği 3-Kule Dokuma & 360°",
+      "description": "Üç bloktan Watergarden, Finanskent ve Maltepe'ye teyel dikişi uçuş ve 360° kumaş çevirici.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/dort-plaka-randevu/index.html",
+      "title": "4-Plaka Renk Ayrımı & Komşu Kartı",
+      "description": "Kendi görselini 4 dokuma plakasına ayıran tezgâh, müsaitlik tablosu ve yeni komşu karşılama kartı.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/sakinler-kafesi-8oyun/index.html",
+      "title": "Sakinler Kafesi & 8 Rölöve Oyunu",
+      "description": "80.50 m² Terrazzo bar planı üzerinde tefriş, Barista #10, Wingsuit 68.4 km/s ve Botanik oyunları.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/tarim-terzi-canli/index.html",
+      "title": "Online Terzi & Tarım Randevu Masası",
+      "description": "Online terzi müsaitlik slotlarını ve ziraat danışmanı randevusunu tek .ics takvimde birleştirir.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/kat-planlari-32tip/index.html",
+      "title": "32 Daire Tipi (1+1–5+1) Kat Planları",
+      "description": "Binaya yeni taşınan sakinler için 32 resmi kat planı seçici ve daireye özel hizmet bağlantısı.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
       "path": "ozellikler/dokunmus-yasam/index.html",
       "title": "Dokunmuş yaşam",
       "description": "Ev, blok ve kent arasındaki önceki yaşam sahnesini incele.",

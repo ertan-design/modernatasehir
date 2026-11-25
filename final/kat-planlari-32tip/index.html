@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Modern Ataşehir · 32 Daire Tipi (1+1 – 5+1) Kat Planı Seçici</title>
+<link rel="stylesheet" href="./final-style.css">
+<script src="./final-app.js" defer></script>
+</head>
+<body>
+<div class="karbon-final-topbar">
+  <span class="kf-title">MODERN ATAŞEHİR · 1.000 Konut 32 Daire Tipi Kat Planı &amp; Yerleşim Masası</span>
+  <div><a href="/">← Ana Sayfa</a> <a href="/final/tarim-terzi-canli/">Terzi &amp; Tarım Randevu</a> <a href="/ozellikler/">Tüm Özellikler</a></div>
+</div>
+<main class="wrap">
+  <section class="card">
+    <h1>Binaya Yeni Taşınan Komşu İçin 32 Resmi Kat Planı (<code>1+1</code> – <code>5+1</code>)</h1>
+    <p>Daire tipinizi seçip kat planını büyütün; ardından dairenizin cephe ve balkon ölçüsüne göre doğrudan <strong>evde iki-mezura terzi</strong> ve <strong>balkon/parsel ziraat danışmanı</strong> randevunuzu oluşturun.</p>
+    <div class="row">
+      <button type="button" class="pill on" data-oda="all">Tümü (32 Plan)</button>
+      <button type="button" class="pill" data-oda="1+1">1+1 Tipleri</button>
+      <button type="button" class="pill" data-oda="2+1">2+1 Tipleri</button>
+      <button type="button" class="pill" data-oda="3+1">3+1 Tipleri</button>
+      <button type="button" class="pill" data-oda="4+1">4+1 Tipleri</button>
+      <button type="button" class="pill" data-oda="5+1">5+1 Tipleri</button>
+    </div>
+  </section>
+  <section class="pgrid" id="planGrid" aria-label="Daire kat planları"></section>
+</main>
+<dialog id="planDlg">
+  <div class="row" style="justify-content:space-between;margin-bottom:10px">
+    <strong id="planTitle"></strong>
+    <button type="button" id="closePlanDlg" class="pill on">Kapat ✕</button>
+  </div>
+  <img id="planImg" alt="Büyütülmüş daire kat planı">
+</dialog>
+</body>
+</html>

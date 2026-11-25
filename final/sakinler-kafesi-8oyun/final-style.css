@@ -1,0 +1,44 @@
+
+.karbon-final-topbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:10px 18px;background:#121521;border-bottom:1px solid rgba(239,232,220,0.16);font:500 12.5px/1.3 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif;color:#efe8dc;position:sticky;top:0;z-index:9999}
+.karbon-final-topbar a{color:#efe8dc;text-decoration:none;padding:6px 12px;border-radius:999px;border:1px solid rgba(239,232,220,0.2);background:rgba(255,255,255,0.04)}
+.karbon-final-topbar a:hover{border-color:#d68e56;color:#d68e56}
+.karbon-final-topbar .kf-title{color:#82ccb4;font-weight:600;letter-spacing:0.03em}
+
+
+
+:root{--zemin:#10141f;--kart:#1a2133;--yazi:#fff;--soluk:#c7d0e0;--apricode:#ffb673;--aqua:#7fffd4;--bitter:#ff6f61;--mavi:#6f9fe8;--cizgi:#3a4663}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--zemin);color:var(--yazi);font:20px/1.45 system-ui,"Segoe UI",Arial,sans-serif}
+main{max-width:1180px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:clamp(32px,5vw,52px);margin:0 0 6px;color:var(--apricode)}
+h2{font-size:clamp(26px,4vw,38px);margin:0 0 6px;color:var(--aqua)}
+p{margin:0 0 14px;color:var(--soluk)}
+button{font:inherit;font-weight:700;color:#10141f;background:var(--apricode);border:2px solid transparent;border-radius:10px;padding:14px 18px;min-height:56px;cursor:pointer}
+button:hover{filter:brightness(1.1)}
+button:focus-visible{outline:4px solid var(--aqua);outline-offset:2px}
+button:disabled{opacity:.45;cursor:default}
+button.ikincil{background:var(--kart);color:var(--yazi);border:2px solid var(--cizgi)}
+button.secili{background:var(--aqua);color:#10141f}
+button.dogru{background:var(--aqua);color:#10141f}
+.kartlar{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin:18px 0}
+.kartlar button{display:block;text-align:left;background:var(--kart);color:var(--yazi);border:2px solid var(--cizgi);padding:16px;min-height:150px}
+.kartlar b{display:block;font-size:26px;color:var(--apricode)}
+.kartlar small{display:block;font-size:18px;font-weight:400;color:var(--soluk);margin-top:6px}
+.kartlar em{display:block;font-style:normal;font-size:18px;color:var(--aqua);margin-top:8px}
+.ust{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:14px}
+.sira{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.durum{font-size:24px;font-weight:700;color:var(--aqua);min-height:36px;margin:10px 0}
+.uyari{color:var(--bitter)}
+svg{display:block;width:100%;height:auto;background:#fff8ee;border-radius:10px}
+.izgara{display:grid;gap:10px}
+.izgara button{min-height:92px;font-size:22px}
+.kapali{background:var(--mavi)!important;color:#10141f!important}
+.bant{position:relative;height:72px;background:var(--kart);border:2px solid var(--cizgi);border-radius:10px;overflow:hidden;margin:14px 0}
+.hedef{position:absolute;top:0;bottom:0;background:var(--aqua)}
+.isaret{position:absolute;top:0;bottom:0;width:10px;background:var(--bitter)}
+.nefes{width:min(70vw,320px);height:min(70vw,320px);margin:20px auto;border-radius:50%;background:var(--aqua);color:#10141f;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:700;text-align:center;transform:scale(.55)}
+@media (prefers-reduced-motion:reduce){.nefes{transition:none!important}}
+/* Yuksek karsitlik modunda metin sistem renginde kalir; oyunun anlamini tasiyan yuzeyler korunur. */
+svg,svg *,.bant,.hedef,.isaret,.nefes{forced-color-adjust:none}
+footer{margin-top:28px;color:var(--soluk);font-size:17px}
+

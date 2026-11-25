@@ -3,9 +3,63 @@
   "site": "modernatasehir",
   "origin": "https://www.xn--modernataehir-qtc.com",
   "homepage_preserved": true,
-  "entry_count": 28,
-  "restored_count": 2,
+  "entry_count": 34,
+  "restored_count": 8,
   "entries": [
+    {
+      "path": "final/yasam-takvimi-ics/index.html",
+      "title": "8-Temas Yeni Misafir Yaşam Rehberi",
+      "description": "İlk gün yerleşiminden sanat, ses ve tarıma uzanan 8 temas noktalı rehber ve .ics indirici.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--modernataehir-qtc.com/final/yasam-takvimi-ics/index.html",
+      "sha256": "b2de245158ae73527a6e65f4cf397776eafc2c559fd47eef5ec5e0a6108d4b80"
+    },
+    {
+      "path": "final/teyel-dokuma-ucus/index.html",
+      "title": "Teyel İpliği 3-Kule Dokuma & 360°",
+      "description": "Üç bloktan Watergarden, Finanskent ve Maltepe'ye teyel dikişi uçuş ve 360° kumaş çevirici.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--modernataehir-qtc.com/final/teyel-dokuma-ucus/index.html",
+      "sha256": "189b486e457316dac1136b27b60a09a4b76d4bdd8908fb437d4ca6f5e46d36a8"
+    },
+    {
+      "path": "final/dort-plaka-randevu/index.html",
+      "title": "4-Plaka Renk Ayrımı & Komşu Kartı",
+      "description": "Kendi görselini 4 dokuma plakasına ayıran tezgâh, müsaitlik tablosu ve yeni komşu karşılama kartı.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--modernataehir-qtc.com/final/dort-plaka-randevu/index.html",
+      "sha256": "e2e3dab22a0e9f6f144f6a866963394ba0231aa8a87e71984bcd018479449cab"
+    },
+    {
+      "path": "final/sakinler-kafesi-8oyun/index.html",
+      "title": "Sakinler Kafesi & 8 Rölöve Oyunu",
+      "description": "80.50 m² Terrazzo bar planı üzerinde tefriş, Barista #10, Wingsuit 68.4 km/s ve Botanik oyunları.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--modernataehir-qtc.com/final/sakinler-kafesi-8oyun/index.html",
+      "sha256": "88ae272f74423ce035125dd8297cc65cbce92b96cf663fce9a818df6cee1cc06"
+    },
+    {
+      "path": "final/tarim-terzi-canli/index.html",
+      "title": "Online Terzi & Tarım Randevu Masası",
+      "description": "Online terzi müsaitlik slotlarını ve ziraat danışmanı randevusunu tek .ics takvimde birleştirir.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--modernataehir-qtc.com/final/tarim-terzi-canli/index.html",
+      "sha256": "320e9a20cdd19bb0518eb290e41a615a100da9413e4f2c7f0337ba8bde067c59"
+    },
+    {
+      "path": "final/kat-planlari-32tip/index.html",
+      "title": "32 Daire Tipi (1+1–5+1) Kat Planları",
+      "description": "Binaya yeni taşınan sakinler için 32 resmi kat planı seçici ve daireye özel hizmet bağlantısı.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--modernataehir-qtc.com/final/kat-planlari-32tip/index.html",
+      "sha256": "75085712bbb63f774f7fae24998b58342817a3e2fdb481828eb035ffe282eec9"
+    },
     {
       "path": "ozellikler/dokunmus-yasam/index.html",
       "title": "Dokunmuş yaşam",

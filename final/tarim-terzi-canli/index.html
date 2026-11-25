@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Modern Ataşehir · Online Terzi Müsaitliği &amp; Tarım Danışmanı Randevusu</title>
+<link rel="stylesheet" href="./final-style.css">
+<script src="./final-app.js" defer></script>
+</head>
+<body>
+<div class="karbon-final-topbar">
+  <span class="kf-title">MODERN ATAŞEHİR · Online Terzi Müsait mi? &amp; Tarım Danışmanı Randevu Masası</span>
+  <div><a href="/">← Ana Sayfa</a> <a href="/final/kat-planlari-32tip/">32 Kat Planı</a> <a href="/ozellikler/">Tüm Özellikler</a></div>
+</div>
+<main class="wrap">
+  <section class="card">
+    <h1>Yeni Taşınan Misafir İçin Tek Masada Terzi &amp; Tarım Danışmanı Randevusu</h1>
+    <p>Binada yaşam başladığında dairenize gelen <strong>AFFFAIR İki-Mezura</strong> terzi ekibinin anlık müsaitliğini ve <strong>Tarım Online</strong> ziraat mühendisi balkon/kardeş parsel randevusunu birlikte planlayın:</p>
+    <div class="grid2">
+      <div class="card">
+        <h2>1 · Blok, Daire &amp; Online Terzi Müsaitliği</h2>
+        <label>Blok Seçimi
+          <select id="blokSel">
+            <option>Blok A (Arya · 43 Kat)</option>
+            <option>Blok B (Beste · 35 Kat)</option>
+            <option>Blok C (Opera · 25 Kat)</option>
+          </select>
+        </label>
+        <label>Daire Tipi / Notu
+          <input id="unitInp" type="text" value="3+1 · Tip 1 (Güney-Batı Balkon)">
+        </label>
+        <label>Online Terzi Müsait Slotlar (AFAIR İki-Mezura)
+          <select id="terziSel">
+            <option>Bugün 17:00 – Evde İki-Mezura &amp; Kumaş Kartelası (MÜSAİT)</option>
+            <option>Bugün 19:30 – Online Video Ölçü &amp; Renk Analizi (MÜSAİT)</option>
+            <option>Yarın 11:00 – rufat.afair.studio Özel Prova (MÜSAİT)</option>
+          </select>
+        </label>
+        <label>Pantone Doğal Lif Kartelası (Saf Siyahsız)
+          <select id="kumasSel">
+            <option>Pantone 13-0919 Ham Keten &amp; Gece Çiviti (#141826)</option>
+            <option>Pantone 19-5918 Zümrüt İpek Şantuk</option>
+            <option>Pantone 16-0948 Kehribar Kaşmir-Yün</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="card">
+        <h2>2 · Ziraat Danışmanı &amp; Kardeş Parsel</h2>
+        <label>Tarım Danışmanı Görüşme Slotu
+          <select id="tarimSel">
+            <option>Bugün 16:30 – Ziraat Mühendisi Online Randevu (MÜSAİT)</option>
+            <option>Yarın 10:30 – Balkon Güneş/Rüzgâr &amp; Toprak Analizi (MÜSAİT)</option>
+            <option>Cumartesi 14:00 – Kardeş Parsel Canlı Hasat Bağlantısı (MÜSAİT)</option>
+          </select>
+        </label>
+        <label>Balkon &amp; Kardeş Parsel Paketi (SoilGrids + ERA5)
+          <select id="parselSel">
+            <option>Balkon Aromatik &amp; Lavanta + Keten Lif Kardeş Parseli</option>
+            <option>Gökçeada Zeytin &amp; Doğal Sebze Komşu Hasat Kutusu</option>
+            <option>Ege Pamuk-Keten Liften Gardıroba İzlenebilir Paket</option>
+          </select>
+        </label>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px">
+          <button type="button" id="dlIcs" class="pill">Takvim Dosyasını (.ics) İndir</button>
+          <a class="pill sec" href="https://www.afair.live/iki-mezura-randevu">afair.live Terzi Sahnesi ↗</a>
+          <a class="pill sec" href="https://tarim-ortak-yayin.vercel.app/petek/atasehir-tarim-randevu/">Tarım Ortak Saha ↗</a>
+        </div>
+      </div>
+    </div>
+    <div id="summaryOut" class="out"></div>
+  </section>
+</main>
+</body>
+</html>

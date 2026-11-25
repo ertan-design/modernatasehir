@@ -1,0 +1,10 @@
+{
+ "kaynak": "OpenStreetMap Nominatim arama sonucu, 25.11.2026; veri © OpenStreetMap katkıcıları, ODbL",
+ "yontem": "Yalnız enlem/boylam alındı; harita döşemesi, uydu ya da sokak katmanı kullanılmadı. Mesafe ve yön yerel düzlem yaklaşımıyla hesaplanır.",
+ "merkez": {"ad": "Ataşehir Modern", "lat": 40.9884455, "lon": 29.1196231, "not": "3 blok, yaklaşık 1.000 konut (Kaptan'ın tanımı); blokların tek tek konumu: kayıt yok"},
+ "hedefler": [
+  {"blok": 1, "ad": "Watergarden AVM", "konu": "alışveriş · moda · sanat", "lat": 40.9973096, "lon": 29.099515},
+  {"blok": 2, "ad": "Finanskent (İstanbul Finans Merkezi)", "konu": "iş · fırsat", "lat": 41.0016232, "lon": 29.1097239},
+  {"blok": 3, "ad": "Maltepe miting alanı", "konu": "sahil · konser", "lat": 40.9204021, "lon": 29.1243388}
+ ]
+}
