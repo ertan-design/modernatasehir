@@ -1,54 +1,82 @@
 <!doctype html>
 <html lang="tr">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Kumaşı 360° çevir. Rüzgârı, ışığı ve dokuyu değiştir. AFAIR Studio’nun etkileşimli kumaş sahnesi.">
-<title>AFAIR Studio · Kumaşı hisset</title>
-<link rel="stylesheet" href="/kumas-360/kumas.b95c75f807.css"><script src="/kumas-360/kumas.1a8d96aa32.js" defer></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>ATAŞEHİR × AFAIR · Çatıdan Uç, Kumaşa Dokun, Şehri Yaşa</title>
+  <meta name="description" content="Kumaşa dokun, 360° çevir, rüzgârla dalgalandır veya üç çatıdan Watergarden, Finanskent ve Maltepe sahiline uç.">
+  <link rel="stylesheet" href="./afair-8d.css">
 </head>
-<body>
-<a class="skip" href="#ana">İçeriğe geç</a>
-<header class="mast"><a class="mark" href="https://www.afair.studio/">AFAIR <span>STUDIO</span></a><nav aria-label="Ana menü"><a href="#dokuma">Kumaş</a><a href="https://www.afair.studio/dila/">Dila</a><a href="https://www.afair.studio/dila-hareket-atolyesi/">Filmler</a><a id="baska-istanbul" href="https://www.xn--ataehirmodern-ktc.com/gaia-ucus/#yasam">Yaşam</a></nav></header>
-<main id="ana">
-<section class="hero" aria-labelledby="baslik">
-  <div class="intro">
-    <p class="tone">DOKUMA ATÖLYESİ</p>
-    <h1 id="baslik">Kumaşı <em>hisset.</em></h1>
-    <p>Kumaşı döndür. Rüzgârı aç. Işığı değiştir.</p>
-    <a class="primary" href="#dokuma">Kumaşı keşfet ↓</a>
-  </div>
-  <div id="dokuma" class="work" aria-labelledby="scene-title">
-    <h2 id="scene-title" class="sr">360 derece kumaş sahnesi</h2>
-    <div class="stage"><canvas id="kumas" tabindex="0" aria-label="Kumaş sahnesi. Ok tuşları döndürür, artı ve eksi yakınlaştırır."></canvas><img id="yedek" src="/kumas-360/dimi.webp" alt="Gerçek dimi dokuma kumaşın yakın çekimi" width="960" height="830" hidden>
-    <div class="stage-badge"><strong id="material-name">Dimi</strong><output id="degree" aria-label="Yatay kamera açısı">0°</output></div></div>
-    <div class="controls" aria-label="Sahne kumandaları">
-      <button id="sol" type="button" title="Sola çevir" aria-label="Sola çevir">←</button>
-      <button id="sag" type="button" title="Sağa çevir" aria-label="Sağa çevir">→</button>
-      <button id="dur" class="play" type="button" aria-pressed="false">Duraklat</button>
-      <button id="basa" type="button">Açıyı sıfırla</button>
-      <label for="ruzgar">Rüzgâr <output id="ruzgar-deger" for="ruzgar">45</output></label><input id="ruzgar" type="range" min="0" max="100" value="45">
+<body data-baslangic-kip="kumas" data-kumas-baslik="Dokun. Rüzgârı çevir. Şehre uç.">
+  <canvas id="sahne-tuval" aria-label="360 derece yönlendirilebilir gerçek kumaş ve üç blok çatı uçuş sahnesi"></canvas>
+
+  <header class="ust-bar">
+    <div class="marka-kutu">
+      <a class="marka" href="./index.html">ATAŞEHİR × AFAIR</a>
     </div>
-    <details class="advanced">
-      <summary id="pantone-tezgah">Doku ve ışık ayarları</summary>
-      <div class="settings">
-        <label>Doku<select id="malzeme"><option value="dimi">Dimi · fotoğraf</option><option value="denim">Kot lifi · fotoğraf</option><option value="ipek">İpek · tasarım</option></select></label>
-        <label>Rüzgâr yönü<select id="yon"><option value="1">Soldan sağa</option><option value="-1">Sağdan sola</option></select></label>
-        <label>Işık <output id="isik-deger" for="isik">Loş</output><input id="isik" type="range" min="0" max="100" value="36"></label>
-        <label>Yakınlık<input id="yakin" type="range" min="0" max="100" value="48"></label>
-        <label>Biçim<select id="askilar"><option value="aski">Asılı kumaş</option><option value="kanat">Kanat</option></select></label>
-        <label>Tempo<input id="tempo" type="range" min="25" max="100" value="75"></label>
-      </div>
-    </details>
-    <p class="feedback" id="durum" role="status">Sahne hazırlanıyor.</p>
-  </div>
-</section>
-<section class="notes" aria-labelledby="niyet">
-  <div><h2 id="niyet">Aynı kumaş, başka ışık.</h2><p>Terziye gitmeden önce dokuyu ve kumaşın hareketini karşılaştır. Rüzgârın değeri sahne ayarıdır.</p></div>
-  <div id="yasam-masalari"><a href="https://www.afair.studio/dila/#bu-gece">Dila ile provaya geç ↗</a><a id="ucus-sahnesi" href="https://www.xn--ataehirmodern-ktc.com/gaia-ucus/">GAIA ile şehri gör ↗</a><a href="https://www.afair.studio/lif-atolyesi/">Lif ve numune kayıtları ↗</a></div>
-</section>
-<details class="sources"><summary>Doku kaynakları</summary><p>İki gerçek kumaş fotoğrafı yüzeye uygulanıyor. Döküm, gölge ve rüzgâr simülasyondur. Fiziksel Pantone veya gramaj ölçümü bu ekranda yapılmaz.</p>
-<ul><li>Dimi dokuma, SMcCandlish. Boyut ve dosya biçimi değişti. <a href="https://commons.wikimedia.org/wiki/File:Tartan_cloth_closeup.jpg">Fotoğraf</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></li><li>Kot lifi, Rickfrombaltimore. Boyut küçültüldü. <a href="https://commons.wikimedia.org/wiki/File:Denim_Fibers.jpg">Fotoğraf</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li></ul>
-</details>
-<p><a href="/dokuma-ufuk/ilk-kurgu.html">Önceki Dokuma Ufuk sürümü</a></p>
-</main>
-<footer><span>AFAIR STUDIO</span><a href="https://www.afair.studio/lif-atolyesi/">Lif Atölyesi</a></footer>
-</body></html>
+
+    <nav class="kip-secici" aria-label="Sahne Kipi">
+      <button type="button" class="hap-dugme aktif" id="kip-kumas">360° Kumaş</button>
+      <button type="button" class="hap-dugme" id="kip-ucus">Çatıdan Uç</button>
+      <button type="button" class="hap-dugme" id="kip-yasam">Yaşam</button>
+    </nav>
+
+    <div class="sag-araclar">
+      <button type="button" class="ince-dugme" id="btn-8d-ses">8D Ses</button>
+      <button type="button" class="ince-dugme" id="btn-sade">Sade Görünüm</button>
+      <a class="ince-dugme" href="/ryte-canli.json">GPT · RYTE</a>
+    </div>
+  </header>
+
+  <section class="baslik-katmani" aria-live="polite">
+    <h1 id="hero-baslik">Dokun. Rüzgârı çevir. Şehre uç.</h1>
+    <p id="hero-alt">Sürükleyip 360° döndür. Üç çatıdan yönünü seç.</p>
+  </section>
+
+  <aside class="mini-kart gizli" id="mini-cekmece" aria-live="polite">
+    <h2 id="cekmece-baslik">Online Terzi Şu An Müsait</h2>
+    <p id="cekmece-ozet">AFAIR İki-Mezura ustası 6 dk içinde görüntülü bağlanır.</p>
+    <video id="cekmece-video" class="gizli" controls playsinline loop muted preload="metadata" src="./medya/genie_ucus_referans.mp4"></video>
+    <div class="mini-aksiyonlar">
+      <a class="ince-dugme aktif" id="cekmece-bag" href="https://www.afair.live/dila/iki-mezura.html">Hemen Aç ↗</a>
+      <button type="button" class="ince-dugme" id="cekmece-kapat">Kapat</button>
+    </div>
+  </aside>
+
+  <footer class="alt-konsol">
+    <div class="kumas-bobinler" id="grup-kumas">
+      <button type="button" class="bobin-dugme aktif" data-kumas="0"><span class="renk-damla damla-indigo"></span>Gece İpeği</button>
+      <button type="button" class="bobin-dugme" data-kumas="1"><span class="renk-damla damla-murdum"></span>Mürdüm Kadife</button>
+      <button type="button" class="bobin-dugme" data-kumas="2"><span class="renk-damla damla-kum"></span>Kum Keteni</button>
+      <button type="button" class="bobin-dugme" data-kumas="3"><span class="renk-damla damla-bakir"></span>Bakır Atlas</button>
+      <button type="button" class="bobin-dugme" data-kumas="4"><span class="renk-damla damla-adacayi"></span>Adaçayı Yün</button>
+      <button type="button" class="ince-dugme" id="btn-dalga">Dalga Vur</button>
+    </div>
+
+    <div class="ucus-yonler gizli" id="grup-ucus">
+      <button type="button" class="bobin-dugme aktif" data-hedef="0">1 · Su Bahçesi (Watergarden)</button>
+      <button type="button" class="bobin-dugme" data-hedef="1">2 · İş Kuleleri (Finanskent)</button>
+      <button type="button" class="bobin-dugme" data-hedef="2">3 · Deniz Sahnesi (Maltepe)</button>
+      <button type="button" class="ince-dugme" id="btn-genie-film">Uçuş Videosu</button>
+    </div>
+
+    <div class="yasam-kapilar gizli" id="grup-yasam">
+      <button type="button" class="bobin-dugme aktif" data-yasam="terzi">Terzi Çağır</button>
+      <button type="button" class="bobin-dugme" data-yasam="tarim">Bahçe Kur</button>
+      <button type="button" class="bobin-dugme" data-yasam="sanat">Sanat Seç</button>
+      <button type="button" class="bobin-dugme" data-yasam="ses">Ses Kur</button>
+    </div>
+
+    <div class="surgu-grubu">
+      <label class="mini-surgu">360°<input type="range" id="surgu-aci" min="0" max="360" value="24"></label>
+      <label class="mini-surgu">Rüzgâr<input type="range" id="surgu-ruzgar" min="0" max="100" value="64"></label>
+      <label class="mini-surgu">Gölge<input type="range" id="surgu-isik" min="0" max="360" value="45"></label>
+      <label class="mini-surgu">8D<input type="range" id="surgu-surreal" min="0" max="100" value="72"></label>
+      <span class="durum-etiketi" id="canli-durum">Gece İpeği (19-4027 TCX) · 360° Aktif</span>
+    </div>
+  </footer>
+
+  <script src="./afair-8d.js"></script>
+</body>
+</html>

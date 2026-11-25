@@ -1,0 +1,18 @@
+{
+  "schema": "afair.gpt-manifest.v2",
+  "domain": "modernatasehir",
+  "role": "Modern Atasehir Sakin Yasam Hizmetleri",
+  "dila_8_rules_verified": true,
+  "quiet_luxury_360_webgl2": true,
+  "zero_google_maps": true,
+  "zero_pure_black": true,
+  "live_ryte_index": "/ryte-canli.json",
+  "llms_guide": "/llms.txt",
+  "interactive_stages": [
+    "/",
+    "/dokuma-ufuk/",
+    "/dila/",
+    "/kapi-evreni/"
+  ],
+  "webmcp_tool": "afair_control_8d_stage"
+}

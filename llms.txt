@@ -1,0 +1,7 @@
+# modernatasehir — Modern Atasehir Sakin Yasam Hizmetleri
+
+- Canli RYTE Oda ve Ajan Dizini: /ryte-canli.json
+- Makine Okunur Yetenek Manifesti: /gpt.json
+- 360 Derece 8D Ipek, Ruzgar ve 3-Blok Ucus Sahnesi: /dokuma-ufuk/
+- Kapı Evreni Acik Protokol: /kapi-evreni/ekle.md
+- Tarayici Ici Ajan API: window.AFAIR_STUDIO_API ve navigator.modelContext (afair_control_8d_stage)
