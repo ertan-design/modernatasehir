@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Çatıdan uç, şehre kon. Ataşehir'in üç kulesinden üç uçuş, iplikle işlenmiş bir kumaşta.">
+<meta name="theme-color" content="#0b0d14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230b0d14'/%3E%3Cpath d='M0 4h16M0 8h16M0 12h16' stroke='%23d9cdb8' stroke-width='1.4'/%3E%3Ccircle cx='8' cy='8' r='3.2' fill='none' stroke='%236bb1d5' stroke-width='1.4'/%3E%3C/svg%3E">
+<title>Başka İstanbul yok</title>
+<link rel="stylesheet" href="dokuma.css">
+<script src="dokuma.js" defer></script>
+<script src="bez3b.js" defer></script>
+<link rel="stylesheet" href="./kf-nav.css">
+</head>
+<body>
+<div class="karbon-final-topbar"><span class="kf-title">MODERN ATAŞEHİR · Teyel İpliği 3-Kule Dokuma &amp; 360° Kumaş</span><div><a href="/">← Ana Sayfa</a> <a href="/ozellikler/">Tüm Özellikler</a></div></div>
+<main>
+  <section class="sahne" aria-label="Üç uçuş">
+    <canvas id="kumas" role="img" aria-label="Rüzgârda dalgalanan dokuma kumaş; üç kuleden üç hedefe işlenmiş uçuş dikişleri"></canvas>
+    <div class="ust-yazi">
+      <p class="marka">başka istanbul yok</p>
+      <h1>Çatıdan uç.<br><em>Şehre kon.</em></h1>
+    </div>
+    <div class="kumanda">
+      <div class="secim" role="group" aria-label="Uçuş">
+        <button type="button" data-secim="0" aria-pressed="true">Hepsi</button>
+        <button type="button" data-secim="1" aria-pressed="false">Watergarden</button>
+        <button type="button" data-secim="2" aria-pressed="false">Finanskent</button>
+        <button type="button" data-secim="3" aria-pressed="false">Sahil</button>
+      </div>
+      <div class="surec">
+        <button type="button" id="oynat" aria-label="Durdur">❚❚</button>
+        <input type="range" id="ilerleme" min="0" max="1000" value="0" aria-label="Uçuşu elle sür">
+      </div>
+      <p class="ipucu">Kumaşı sürükle: uçuşu sen yönet.</p>
+    </div>
+  </section>
+
+  <section class="incele" aria-label="Kumaşı çevir">
+    <canvas id="bez3b" tabindex="0" role="img" aria-label="Rüzgârda dalgalanan üç boyutlu kumaş; sürükleyerek ya da ok tuşlarıyla 360 derece çevrilir"></canvas>
+    <div class="incele-yazi">
+      <h2>Kumaşı çevir.</h2>
+      <p>Sürükle. 360° dön.</p>
+      <div class="secim" role="group" aria-label="Kumaş">
+        <button type="button" data-bez="gece" aria-pressed="true">Gece</button>
+        <button type="button" data-bez="su" aria-pressed="false">Su</button>
+        <button type="button" data-bez="altin" aria-pressed="false">Altın</button>
+        <button type="button" data-bez="mercan" aria-pressed="false">Mercan</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="kisa" aria-label="Uçuşlar">
+    <ol class="ucus-liste" id="ucus-liste"></ol>
+  </section>
+
+  <section class="misafir" aria-label="Yeni misafir">
+    <h2>Yeni taşındın mı?</h2>
+    <div class="kartlar">
+      <a class="kart" href="https://www.afair.live/"><b>Moda</b><span>afair.live</span></a>
+      <a class="kart" href="https://www.afair.studio/"><b>Tasarım</b><span>afair.studio</span></a>
+      <a class="kart" href="https://www.selinahbap.com/"><b>Sanat · teknoloji</b><span>selinahbap.com</span></a>
+      <a class="kart" href="https://tarim.online/"><b>Tarım</b><span>tarim.online</span></a>
+      <a class="kart" href="https://www.xn--ataehirmodern-ktc.com/"><b>Bina</b><span>ataşehirmodern.com</span></a>
+      <button type="button" class="kart" data-talep="Terzi"><b>Terzi müsait mi?</b><span>takvim: kayıt yok · talep yaz</span></button>
+      <button type="button" class="kart" data-talep="Tarım danışmanı randevusu"><b>Danışman randevusu</b><span>takvim: kayıt yok · talep yaz</span></button>
+    </div>
+    <form class="talep" id="talep" hidden>
+      <label><span id="talep-tur">Talep</span><input name="konu" maxlength="120" required placeholder="Ne istiyorsun?"></label>
+      <button type="submit">Taslağı hazırla</button>
+      <textarea id="taslak" readonly rows="5" hidden aria-label="Hazırlanan taslak (gönderilmedi)"></textarea>
+      <button type="button" id="indir" hidden>İndir</button>
+    </form>
+  </section>
+
+  <section class="iplik" aria-label="İplik kartı">
+    <ul class="makaralar" id="makaralar"></ul>
+  </section>
+
+  <details class="nasil">
+    <summary>Nasıl yapıldı</summary>
+    <p>Harita yok: konumlar OpenStreetMap'ten (© OpenStreetMap katkıcıları, ODbL) yalnız enlem ve boylam olarak alındı; yön gerçek, uzaklık sığsın diye karekökle sıkıştırıldı. Kumaş 2/1 dimi örgü, uçuşlar koşu dikişi, halkalar wingsuit provasından. Üç iplik rengi provanın karelerinden ölçüldü. Terzi ve danışman takvimi bağlı değil; talep tarayıcında kalır, gönderilmez.</p>
+    <video src="/uc-cati/referans.mp4" poster="ucus-provasi.jpg" controls muted playsinline preload="none"></video>
+    <p>CLAUDE · claude-opus-5-5 · Codekafa Yayın</p>
+  </details>
+</main>
+</body>
+</html>

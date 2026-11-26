@@ -84,6 +84,38 @@
     {
       "source": "/final-gaia-istasyon-farm/",
       "destination": "/final-gaia-istasyon-farm/index.html"
+    },
+    {
+      "source": "/final-sakinler-ikiz-svg",
+      "destination": "/final-sakinler-ikiz-svg/index.html"
+    },
+    {
+      "source": "/final-sakinler-ikiz-svg/",
+      "destination": "/final-sakinler-ikiz-svg/index.html"
+    },
+    {
+      "source": "/science-bik-iplik",
+      "destination": "/science-bik-iplik/index.html"
+    },
+    {
+      "source": "/science-bik-iplik/",
+      "destination": "/science-bik-iplik/index.html"
+    },
+    {
+      "source": "/yasam-takvimi-ics",
+      "destination": "/yasam-takvimi-ics/index.html"
+    },
+    {
+      "source": "/yasam-takvimi-ics/",
+      "destination": "/yasam-takvimi-ics/index.html"
+    },
+    {
+      "source": "/teyel-dokuma-ucus",
+      "destination": "/teyel-dokuma-ucus/index.html"
+    },
+    {
+      "source": "/teyel-dokuma-ucus/",
+      "destination": "/teyel-dokuma-ucus/index.html"
     }
   ]
 }

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MODERN · RÖLÖVE SVG — İki gerçek rölöve paftası.</title>
+  <meta name="description" content="Arşivdeki 29 KB konsept1_sakinler.svg ve konsept2_sakinler_dogrulanmis.svg paftalarının gerçek mimari karşılaştırması.">
+  <link rel="stylesheet" href="./plus.css">
+</head>
+<body>
+  <canvas id="tuval" aria-label="360 derece yönlendirilebilir 3 boyutlu arşiv sahnesi"></canvas>
+
+  <header class="ust">
+    <div class="sol">
+      <a class="damga" href="/">MODERN · RÖLÖVE SVG</a>
+    </div>
+    <nav class="sag" aria-label="Arşiv paneli ve geçiş">
+      <button type="button" class="dugme" id="arsiv-ac" aria-expanded="false">Arşiv Paftası ＋</button>
+      <a class="dugme" href="/final-bin-konut-konsiyerj/">Sonraki →</a>
+    </nav>
+  </header>
+
+  <section class="arsiv-panel" id="arsiv-panel" aria-label="Sakinler Konsept-1 & Doğrulanmış Konsept-2 SVG Final" hidden>
+    <h2>Sakinler Konsept-1 & Doğrulanmış Konsept-2 SVG Final</h2>
+    <p class="not">Arşivdeki 29 KB konsept1_sakinler.svg ve konsept2_sakinler_dogrulanmis.svg paftalarının gerçek mimari karşılaştırması.</p>
+    
+            <div class="secim-satir">
+              <div class="kutu"><label for="sec-pafta">Mimari Rölöve Paftası Seçimi</label>
+                <select id="sec-pafta">
+                  <option value="konsept2_sakinler_dogrulanmis.svg">Doğrulanmış Konsept-2 Paftası (81,0 m² · Terrazzo Bar + Sol Niş Mutfak)</option>
+                  <option value="konsept1_sakinler.svg">İlk Konsept-1 Taslak Paftası (Karşılaştırmalı Arşiv Kaydı)</option>
+                </select>
+              </div>
+            </div>
+            <div class="gorsel-cerceve"><img id="pafta-gorsel" src="./konsept2_sakinler_dogrulanmis.svg" alt="Sakinler Rölöve SVG Paftası"></div>
+            
+    <div class="detay-metin" id="arsiv-detay">Arşiv verisi yüklendi.</div>
+    <div class="alt-aksiyon">
+      <a class="dugme" id="arsiv-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-sakinler-ikiz-svg-arsiv.json">Arşiv Özeti İndir (.json)</a>
+      <button type="button" class="dugme" id="arsiv-kapat">Kapat ✕</button>
+    </div>
+  </section>
+
+  <section class="baslik" aria-label="Sahne özeti">
+    <h1>İki gerçek rölöve paftası.</h1>
+    <p>konsept1 ve doğrulanmış konsept2 SVG çizimlerinin birebir karşılaştırması.</p>
+  </section>
+
+  <footer class="alt">
+    <div class="kontrol" role="group" aria-label="Sahne kontrolleri">
+      <button type="button" class="dugme" id="btn-ruzgar">Rüzgâr</button>
+      <button type="button" class="dugme" id="btn-isik">Işık</button>
+      <button type="button" class="dugme" id="btn-ses" aria-pressed="false">8D Ses</button>
+    </div>
+    <div class="etiket" id="durum">16-0213 TCX Pafta Yeşili · 360°</div>
+  </footer>
+
+  <script src="./plus.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Başka İstanbul Yok · Ataşehir</title>
+<meta name="description" content="Ataşehir'de üç çatı, üç yön. İplikle bağlanan, ölçüsü yazılı bir yaşam sitesi.">
+<link rel="stylesheet" href="bik.css">
+</head>
+<body>
+<div class="iplik-ilerleme" aria-hidden="true"></div>
+<header class="ust">
+  <a class="marka" href="#cati">Başka İstanbul Yok</a>
+  <a class="geri" href="/">← Ana sahne</a>
+  <nav aria-label="Bölümler"><a href="#cati">Çatı</a><a href="#yonler">Üç yön</a><a href="#dokuma">Dokuma</a><a href="#musait">Müsait mi?</a><a href="#komsu">Yeni komşu</a><a href="#olcu">Ölçü ilkesi</a></nav>
+</header>
+<noscript><p class="kutu">Bu sayfa betik olmadan yalnız metin gösterir; ipliklerin hareketi ve araçlar için JavaScript gerekir.</p></noscript>
+<main>
+<section id="cati" class="bolum kahraman">
+  <div class="sutun">
+    <p class="etiket">ATAŞEHİR · ÜÇ ÇATI · ÜÇ YÖN</p>
+    <h1>Başka İstanbul Yok.</h1>
+    <p class="giris">Ataşehir'de üç blok var. Her bloğun çatısından bir iplik bırakılır; iplik seni Watergarden'a, Finanskent'e ya da Maltepe sahiline taşır. Yeni taşınan komşu için moda, sanat, elektronik ve tarım aynı ipliğe bağlanır.</p>
+    <p class="not">Bu sayfa bir harita değildir: karo, iğne, yakınlaştırma ve rota çizgisi yoktur. Yönler iplikle gösterilir; şema ölçekli değildir.</p>
+  </div>
+  <figure class="cizim">
+    <svg id="ucus" viewBox="0 0 1200 620" role="img" aria-labelledby="ucus-b ucus-a">
+      <title id="ucus-b">Üç bloğun çatısından üç yöne uzanan iplikler</title>
+      <desc id="ucus-a">Soldan sağa üç blok; her birinin çatısından bir iplik, sağdaki üç durağa uzanır: Ataşehir Watergarden AVM, Finanskent, Maltepe sahili. Şema ölçekli değildir.</desc>
+      <defs>
+        <pattern id="izgara" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" class="izgara-cizgi"/></pattern>
+        <pattern id="pencere" width="20" height="26" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="9" height="13" class="pencere-kutu"/></pattern>
+      </defs>
+      <rect width="1200" height="620" fill="url(#izgara)"/>
+      <line x1="40" y1="560" x2="1160" y2="560" class="zemin"/>
+      <g class="kule" data-blok="1" role="button" tabindex="0" aria-label="Blok 1 çatısından atla"><rect x="90" y="170" width="100" height="390" class="gov"/><rect x="90" y="170" width="100" height="390" fill="url(#pencere)"/><line x1="90" y1="590" x2="190" y2="590" class="olcu"/><line x1="90" y1="582" x2="90" y2="598" class="olcu"/><line x1="190" y1="582" x2="190" y2="598" class="olcu"/><text x="140" y="610" class="olcu-yazi" text-anchor="middle">Blok 1</text></g>
+      <g class="kule" data-blok="2" role="button" tabindex="0" aria-label="Blok 2 çatısından atla"><rect x="250" y="120" width="100" height="440" class="gov"/><rect x="250" y="120" width="100" height="440" fill="url(#pencere)"/><line x1="250" y1="590" x2="350" y2="590" class="olcu"/><line x1="250" y1="582" x2="250" y2="598" class="olcu"/><line x1="350" y1="582" x2="350" y2="598" class="olcu"/><text x="300" y="610" class="olcu-yazi" text-anchor="middle">Blok 2</text></g>
+      <g class="kule" data-blok="3" role="button" tabindex="0" aria-label="Blok 3 çatısından atla"><rect x="410" y="210" width="100" height="350" class="gov"/><rect x="410" y="210" width="100" height="350" fill="url(#pencere)"/><line x1="410" y1="590" x2="510" y2="590" class="olcu"/><line x1="410" y1="582" x2="410" y2="598" class="olcu"/><line x1="510" y1="582" x2="510" y2="598" class="olcu"/><text x="460" y="610" class="olcu-yazi" text-anchor="middle">Blok 3</text></g>
+      <text x="40" y="60" class="olcu-yazi">Yükseklikler ölçülmedi; blok boyları şematiktir.</text>
+      <path class="yol" stroke-dasharray="6 9" id="yol1" d="M140 170 C140 380 780 -20 1040 130" stroke="#0e7c7b"/>
+      <path class="yol" stroke-dasharray="6 9" id="yol2" d="M300 120 C300 420 760 190 1040 310" stroke="#b3410f"/>
+      <path class="yol" stroke-dasharray="6 9" id="yol3" d="M460 210 C460 540 760 640 1040 490" stroke="#6a58a8"/>
+      <g class="dugum" data-durak="0"><circle cx="1040" cy="130" r="16"/><text x="1020" y="104" text-anchor="end" class="dugum-yazi">Ataşehir Watergarden AVM</text></g>
+      <g class="dugum" data-durak="1"><circle cx="1040" cy="310" r="16"/><text x="1020" y="284" text-anchor="end" class="dugum-yazi">Finanskent</text></g>
+      <g class="dugum" data-durak="2"><circle cx="1040" cy="490" r="16"/><text x="1020" y="464" text-anchor="end" class="dugum-yazi">Maltepe sahili</text></g>
+      <g id="suzulen" aria-hidden="true"><polygon points="-9,-8 15,0 -9,8 -3,0" class="suzulen"/></g>
+    </svg>
+    <figcaption>Şema ölçekli değildir. Kulelere tıklayın ya da Enter ile atlayın; iplik çekilir, süzülen uç yolu izler.</figcaption>
+  </figure>
+</section>
+
+<section id="yonler" class="bolum">
+  <p class="etiket">ÜÇ YÖN</p>
+  <h2>Her çatıdan farklı bir yöne</h2>
+  <div class="kartlar" id="yon-kartlari"></div>
+  <div class="durak-karti" id="durak-karti" aria-live="polite" tabindex="-1"><p class="etiket">DURAK</p><h3 id="dk-ad">Bir çatı seçin</h3><p id="dk-tur"></p><p id="dk-icin"></p></div>
+</section>
+
+<section id="dokuma" class="bolum">
+  <p class="etiket">GÖRÜNTÜLEME · AYRIK RENK LEVHALARI</p>
+  <h2>Kumaş, iplik, levha</h2>
+  <p class="giris">Ekrandaki her yüzey, gerçek dokumadaki gibi çözgü ve atkı iplikleriyle kurulur; renkler baskıdaki gibi ayrı levhalara bölünür. Levhaları tek tek açıp kapatın, kayıt kaymasını artırın.</p>
+  <div class="dokuma-duzen">
+    <div class="tuval-kutu"><canvas id="dk-tuval" width="640" height="400" role="img" aria-label="Dokuma önizlemesi: renk levhalarıyla kurulan kumaş"></canvas></div>
+    <div class="kontrol">
+      <div class="alan"><label for="dk-durak">Durağın rengiyle</label><select id="dk-durak"></select></div>
+      <div class="alan"><label for="dk-tur2">Dokuma</label><select id="dk-tur2"><option value="bez">Bez ayağı</option><option value="dimi">Dimi</option><option value="saten">Saten</option></select></div>
+      <div class="alan"><label for="dk-hucre">İplik kalınlığı (piksel)</label><input id="dk-hucre" type="range" min="5" max="16" value="8"></div>
+      <div class="alan"><label for="dk-kayma">Kayıt kayması (piksel)</label><input id="dk-kayma" type="range" min="0" max="6" value="0"></div>
+      <fieldset class="levhalar"><legend>Levhalar</legend><div id="dk-levhalar"></div></fieldset>
+      <div class="alan"><label for="dk-dosya">Kendi kumaş görselin</label><input id="dk-dosya" type="file" accept="image/*"><p class="ipucu">Görsel bu tarayıcıdan çıkmaz; renkler 4 ayrık levhaya bölünür.</p></div>
+      <div class="satir"><button type="button" id="dk-ayir">Üretilen dokumayı ayır</button><button type="button" id="dk-geri" class="ikincil">Üretilene dön</button></div>
+    </div>
+  </div>
+  <p id="dk-durum" role="status" class="durum"></p>
+  <table class="tablo" id="dk-tablo"><thead><tr><th>Levha</th><th>Renk kodu</th><th>Kapsama</th></tr></thead><tbody></tbody></table>
+  <p class="ipucu">Hücre haritası (16×10): her hücrede baskın levha.</p><canvas id="dk-hucre-haritasi" width="640" height="400" role="img" aria-label="Hücre haritası: her hücrede baskın levha"></canvas>
+  <p class="not">Renk kodları bu sayfanın kendi kodlarıdır (IP- ve onaltılık değer). Pantone eşleştirmesi yapılmaz: lisanslı bir renk kütüphanesi gerekir.</p>
+</section>
+
+<section id="musait" class="bolum">
+  <p class="etiket">MÜSAİT Mİ? · RANDEVU</p>
+  <h2>Terzi, tarım danışmanı, galeri, ana site</h2>
+  <p class="durum" id="ms-kaynak" role="status"></p>
+  <div class="kartlar" id="ms-hizmetler"></div>
+  <div class="slotlar" id="ms-slotlar" aria-live="polite"></div>
+  <form class="randevu" id="ms-form">
+    <div class="alan"><label for="ms-ad">Takma ad</label><input id="ms-ad" maxlength="40" autocomplete="off"></div>
+    <div class="alan onay"><input id="ms-riza" type="checkbox"><label for="ms-riza">Takma adımın bu sayfada, yalnız bu tarayıcıda randevu isteği olarak yazılmasını kabul ediyorum.</label></div>
+    <div class="satir"><button type="button" id="ms-uret">Randevu isteği yaz</button><button type="button" id="ms-kopya" class="ikincil" disabled>Kopyala</button></div>
+    <pre id="ms-cikti" class="cikti" aria-live="polite"></pre>
+  </form>
+</section>
+
+<section id="komsu" class="bolum">
+  <p class="etiket">YENİ KOMŞU</p>
+  <h2>Binaya yeni taşındın</h2>
+  <p class="giris">Bloğunu ve ilgilerini seç; sana ilk randevunu ve sonraki iki adımı yazalım.</p>
+  <div class="komsu-duzen">
+    <fieldset><legend>Blok</legend><div id="kn-blok"></div></fieldset>
+    <fieldset><legend>İlgi</legend><div id="kn-ilgi"></div></fieldset>
+    <div><button type="button" id="kn-uret">Karşılama kartı yaz</button><pre id="kn-cikti" class="cikti" aria-live="polite"></pre></div>
+  </div>
+</section>
+
+<section id="olcu" class="bolum">
+  <p class="etiket">ÖLÇÜ İLKESİ</p>
+  <h2>Her sayı kaynağıyla ve toleransıyla</h2>
+  <ol class="ilke">
+    <li>Ölçülmeyen sayı yazılmaz: blok boyları çizimde yoktur, çünkü ölçülmedi.</li>
+    <li>Ölçülen sayının yanında tolerans yazılır.</li>
+    <li>Örnek veri her yerde "örnek" diye işaretlenir; gerçek takvim bağlanana kadar saatler örnektir.</li>
+    <li>Harita yöntemleri kullanılmaz: karo, iğne, yakınlaştırma ve kaydırma, uydu katmanı, mavi nokta, adım adım rota.</li>
+  </ol>
+  <table class="tablo" id="ol-tablo"><thead><tr><th>Bu sayfada şimdi ölçülen</th><th>Değer</th><th>Tolerans</th></tr></thead><tbody></tbody></table>
+</section>
+
+<section id="teknik" class="bolum">
+  <p class="etiket">TEKNİKLER</p>
+  <h2>Kullanılan ve tarayıcıda denetlenen</h2>
+  <table class="tablo" id="tk-tablo"><thead><tr><th>Teknik</th><th>Ne için</th><th>Bu tarayıcıda</th></tr></thead><tbody></tbody></table>
+  <p class="not">Sınama kipi: adrese <code>?selftest=1</code> ekleyin.</p>
+</section>
+</main>
+<footer class="alt"><p>Başka İstanbul Yok · Ataşehir · sürüm 1 · örnek veriler işaretlidir.</p></footer>
+<script type="application/json" id="veri">{"surum":1,"duraklar":[{"id":"d1","blok":1,"ad":"Ataşehir Watergarden AVM","tur":"AVM","icin":"Alışveriş ve buluşma noktası","dokuma":"bez","seed":11,"palet":["#0e7c7b","#14264a","#f2b84b","#c9bfa9"]},{"id":"d2","blok":2,"ad":"Finanskent","tur":"İş ve fırsatlar","icin":"Finanskent fırsatları","dokuma":"dimi","seed":23,"palet":["#b3410f","#14264a","#e8c9a0","#7c8f6a"]},{"id":"d3","blok":3,"ad":"Maltepe sahili","tur":"Miting ve konser alanı","icin":"Sahil: miting ve konser alanı","dokuma":"saten","seed":37,"palet":["#6a58a8","#14264a","#e98f7a","#a9c6c9"]}],"hizmetler":[{"id":"terzi","ad":"Online terzi","not":"Ölçü, renk ve dikim randevusu (AFAIR / LIVE)"},{"id":"tarim","ad":"Tarım danışmanı","not":"Danışman randevusu"},{"id":"galeri","ad":"Galeri","not":"Yapay zekâ destekli galeri ziyareti (AFAIR Studio)"},{"id":"ana","ad":"Ataşehir ana site","not":"Ana site ile görüşme"}],"ornekSlotlar":[{"id":"terzi-1","hizmet":"terzi","etiket":"Salı 10:00","durum":"musait"},{"id":"terzi-2","hizmet":"terzi","etiket":"Salı 14:30","durum":"dolu"},{"id":"terzi-3","hizmet":"terzi","etiket":"Çarşamba 11:00","durum":"musait"},{"id":"tarim-1","hizmet":"tarim","etiket":"Pazartesi 09:30","durum":"musait"},{"id":"tarim-2","hizmet":"tarim","etiket":"Perşembe 15:00","durum":"musait"},{"id":"tarim-3","hizmet":"tarim","etiket":"Cuma 10:00","durum":"dolu"},{"id":"galeri-1","hizmet":"galeri","etiket":"Cumartesi 13:00","durum":"musait"},{"id":"galeri-2","hizmet":"galeri","etiket":"Pazar 15:30","durum":"musait"},{"id":"ana-1","hizmet":"ana","etiket":"Çarşamba 16:00","durum":"musait"},{"id":"ana-2","hizmet":"ana","etiket":"Cuma 11:30","durum":"dolu"}]}</script>
+<script src="bik.js"></script>
+</body>
+</html>
