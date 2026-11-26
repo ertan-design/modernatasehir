@@ -116,6 +116,14 @@
     {
       "source": "/teyel-dokuma-ucus/",
       "destination": "/teyel-dokuma-ucus/index.html"
+    },
+    {
+      "source": "/prizma-ryte-hece",
+      "destination": "/prizma-ryte-hece/index.html"
+    },
+    {
+      "source": "/prizma-ryte-hece/",
+      "destination": "/prizma-ryte-hece/index.html"
     }
   ]
 }
